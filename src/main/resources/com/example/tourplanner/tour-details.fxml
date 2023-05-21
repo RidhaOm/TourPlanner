@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tourplanner.Controllers.TourDetailsController">
+    <VBox>
+        <HBox prefHeight="14.0" prefWidth="700.0">
+            <children>
+                <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="General" />
+                <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="Route" />
+                <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="Misc" />
+            </children>
+        </HBox>
+        <ImageView fitHeight="250.0" fitWidth="704.0" pickOnBounds="true" preserveRatio="true" />
+    </VBox>
+</AnchorPane>
