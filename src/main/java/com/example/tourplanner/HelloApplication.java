@@ -13,8 +13,8 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         Parent root = FXMLDependencyInjection.load("MainView.fxml", Locale.GERMAN);
-        Scene scene = new Scene(root, 800, 600);
-        stage.setTitle("Hello!");
+        Scene scene = new Scene(root, 1000, 600);
+        stage.setTitle("Tour Planner");
         stage.setScene(scene);
         stage.show();
     }
