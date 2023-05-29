@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.tourplanner.Controllers.TourListController">
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tourplanner.Controllers.TourListController">
     <VBox prefHeight="550.0" prefWidth="300.0">
         <children>
             <HBox prefHeight="25.0" prefWidth="300.0">
                 <children>
                     <Button id="tours-button" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="Tours" />
                     <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="164.0" visible="false" />
-                    <Button id="plus-button" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="+" />
+                    <Button id="add-tour-button" mnemonicParsing="false" onAction="#openAddTourWindow" prefHeight="25.0" prefWidth="25.0" text="+" />
                     <Button id="minus-button" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="-" />
                     <Button id="more-button" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="..." />
                 </children>
             </HBox>
-            <ListView prefHeight="524.0" prefWidth="300.0" />
+            <ListView id="tourListView" fx:id="tourListView" prefHeight="524.0" prefWidth="300.0" />
         </children>
     </VBox>
-
 </AnchorPane>
