@@ -4,6 +4,8 @@ module com.example.tourplanner {
     requires lombok;
     requires com.fasterxml.jackson.annotation;
     requires opencsv;
+    requires org.hibernate.orm.core;
+    requires java.naming;
 
 
     opens com.example.tourplanner to javafx.fxml;
