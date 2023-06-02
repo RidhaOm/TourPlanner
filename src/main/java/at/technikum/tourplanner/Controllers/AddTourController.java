@@ -1,5 +1,6 @@
 package at.technikum.tourplanner.Controllers;
 
+import at.technikum.tourplanner.ViewModel.AddTourViewModel;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -7,6 +8,7 @@ import javafx.scene.control.MenuButton;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+
 
 public class AddTourController {
 
@@ -28,21 +30,19 @@ public class AddTourController {
     @FXML
     private Label testLabel;
 
-    public void saveTour(ActionEvent event){
-        String tourName = tourNameTextField.getText();
-        String from = fromTextField.getText();
-        String to = toTextField.getText();
+    private final AddTourViewModel addTourViewModel=new AddTourViewModel();
 
-        testLabel.setText(tourName);
-        System.out.println("Tour Name: " + tourName);
-        System.out.println("From: " + from);
-        System.out.println("To: " + to);
-        //System.out.println("Transport Type: " + transportType);
+    @FXML
+    void initialize() {
+        tourNameTextField.textProperty().bindBidirectional(addTourViewModel.tourNameTextFieldProperty());
+        fromTextField.textProperty().bindBidirectional(addTourViewModel.fromTextFieldProperty());
+        toTextField.textProperty().bindBidirectional(addTourViewModel.toTextFieldProperty());
+        testLabel.textProperty().bind(addTourViewModel.testLabelProperty());
+    }
 
-        // Get the stage (window) associated with the rootPane
+    public void saveTour(){
+        addTourViewModel.saveTour();
         Stage stage = (Stage) rootPane.getScene().getWindow();
-
-        // Close the window
         //stage.close();
     }
 }
