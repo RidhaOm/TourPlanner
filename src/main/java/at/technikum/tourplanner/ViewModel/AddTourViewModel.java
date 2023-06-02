@@ -3,46 +3,63 @@ package at.technikum.tourplanner.ViewModel;
 import at.technikum.tourplanner.Model.TourRepository;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 
 public class AddTourViewModel {
-
     private final StringProperty tourNameTextField = new SimpleStringProperty("");
     private final StringProperty fromTextField = new SimpleStringProperty("");
     private final StringProperty toTextField = new SimpleStringProperty("");
 
-
     private final TourRepository tourRepository;
 
     public AddTourViewModel(TourRepository tourRepository) {
-
-        this.tourRepository=tourRepository;
+        this.tourRepository = tourRepository;
     }
 
+    public String getTourNameTextField() {
+        return tourNameTextField.get();
+    }
+
+    public void setTourNameTextField(String tourName) {
+        tourNameTextField.set(tourName);
+    }
 
     public StringProperty tourNameTextFieldProperty() {
         return tourNameTextField;
     }
+
+    public String getFromTextField() {
+        return fromTextField.get();
+    }
+
+    public void setFromTextField(String from) {
+        fromTextField.set(from);
+    }
+
     public StringProperty fromTextFieldProperty() {
         return fromTextField;
     }
+
+    public String getToTextField() {
+        return toTextField.get();
+    }
+
+    public void setToTextField(String to) {
+        toTextField.set(to);
+    }
+
     public StringProperty toTextFieldProperty() {
         return toTextField;
     }
 
+    public void saveTour() {
+        System.out.println("Tour Name: " + getTourNameTextField());
+        System.out.println("From: " + getFromTextField());
+        System.out.println("To: " + getToTextField());
 
-    public void saveTour(){
+        tourRepository.save(getTourNameTextField());
 
-        System.out.println("Tour Name: " + tourNameTextField.get());
-        System.out.println("From: " + fromTextField.get());
-        System.out.println("To: " + toTextField.get());
-
-        tourRepository.save(tourNameTextField.get());
-
-        tourNameTextField.set("");
-        fromTextField.set("");
-        toTextField.set("");
+        setTourNameTextField("");
+        setFromTextField("");
+        setToTextField("");
     }
 }

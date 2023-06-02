@@ -18,7 +18,7 @@ public class TourListViewModel {
 
         tourListView.addAll(tourRepository.findAll());
 
-        eventAggregator.addSubscriber(Event.NEW_TOUR, this::onNewTour );
+        eventAggregator.addSubscriber(Event.NEW_TOUR, this::onNewTour);
     }
 
     private void onNewTour() {
@@ -29,4 +29,17 @@ public class TourListViewModel {
     public ObservableList<String> getTourListView() {
         return tourListView;
     }
+
+    public void setTourListView(ObservableList<String> tours) {
+        this.tourListView.setAll(tours);
+    }
+
+    public EventAggregator getEventAggregator() {
+        return eventAggregator;
+    }
+
+    public TourRepository getTourRepository() {
+        return tourRepository;
+    }
+
 }
