@@ -12,19 +12,13 @@ public class AddTourViewModel {
     private final StringProperty tourNameTextField = new SimpleStringProperty("");
     private final StringProperty fromTextField = new SimpleStringProperty("");
     private final StringProperty toTextField = new SimpleStringProperty("");
-    private final StringProperty testLabel = new SimpleStringProperty("");
 
-    private final ObservableList<String> testList = FXCollections.observableArrayList();
 
     private final TourRepository tourRepository;
 
     public AddTourViewModel(TourRepository tourRepository) {
 
         this.tourRepository=tourRepository;
-
-        //testList.addAll(tourRepository.findAll());
-
-        //tourRepository.addNewWordListener(this::addNewTour);
     }
 
 
@@ -37,20 +31,7 @@ public class AddTourViewModel {
     public StringProperty toTextFieldProperty() {
         return toTextField;
     }
-    public StringProperty testLabelProperty() {
-        return testLabel;
-    }
 
-    public ObservableList<String> getTestList() {
-        return testList;
-    }
-
-
-
-
-    private void addNewTour(String tourName) {
-        testList.add(tourName);
-    }
 
     public void saveTour(){
 
@@ -58,9 +39,10 @@ public class AddTourViewModel {
         System.out.println("From: " + fromTextField.get());
         System.out.println("To: " + toTextField.get());
 
-        testLabel.set(tourNameTextField.get());
         tourRepository.save(tourNameTextField.get());
 
-        //testList.add(tourNameTextField.get());
+        tourNameTextField.set("");
+        fromTextField.set("");
+        toTextField.set("");
     }
 }

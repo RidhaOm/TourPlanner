@@ -8,4 +8,16 @@ public class MainView {
 
     @FXML
     private TourListView tourListView;
+
+    @FXML
+    private NavigationBarView navigationBarView;
+
+    @FXML
+    private SearchBarView searchBarView;
+
+    @FXML
+    private TourDetailsView tourDetailsView;
+
+    @FXML
+    private TourLogView tourLogView;
 }

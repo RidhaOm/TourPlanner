@@ -27,11 +27,6 @@ public class AddTourView {
     @FXML
     private MenuButton transportTypeMenuButton;
 
-    @FXML
-    private Label testLabel;
-
-    @FXML
-    private ListView<String> testList;
 
     private final AddTourViewModel addTourViewModel;
 
@@ -44,13 +39,11 @@ public class AddTourView {
         tourNameTextField.textProperty().bindBidirectional(addTourViewModel.tourNameTextFieldProperty());
         fromTextField.textProperty().bindBidirectional(addTourViewModel.fromTextFieldProperty());
         toTextField.textProperty().bindBidirectional(addTourViewModel.toTextFieldProperty());
-        testLabel.textProperty().bind(addTourViewModel.testLabelProperty());
-        testList.setItems(addTourViewModel.getTestList());
     }
 
     public void saveTour(){
         addTourViewModel.saveTour();
         Stage stage = (Stage) rootPane.getScene().getWindow();
-        //stage.close();
+        stage.close();
     }
 }

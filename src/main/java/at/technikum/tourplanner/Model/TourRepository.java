@@ -1,5 +1,7 @@
 package at.technikum.tourplanner.Model;
 
+import at.technikum.tourplanner.event.Event;
+import at.technikum.tourplanner.event.EventAggregator;
 import at.technikum.tourplanner.event.NewTourEvent;
 
 import java.util.ArrayList;
@@ -9,28 +11,18 @@ public class TourRepository {
 
     private final List<String> tours;
 
-    private final List<NewTourEvent> newTourEvents;
+    private final EventAggregator eventAggregator;
 
-    public TourRepository() {
+    public TourRepository(EventAggregator eventAggregator) {
+        this.eventAggregator = eventAggregator;
         tours = new ArrayList<>();
-        newTourEvents = new ArrayList<>();
-    }
-
-    private void notifyNewTourListeners(String word) {
-        for (NewTourEvent nte: newTourEvents) {
-            nte.newTour(word);
-        }
-    }
-
-    public void addNewWordListener(NewTourEvent newTourEvent) {
-        newTourEvents.add(newTourEvent);
     }
 
 
     public void save(String word) {
         tours.add(word);
+        eventAggregator.publish(Event.NEW_TOUR);
 
-        notifyNewTourListeners(word);
     }
 
     public List<String> findAll() {
