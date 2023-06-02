@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.technikum.tourplanner.Controllers.NavigationBarController">
+    <HBox id="navbar" alignment="TOP_CENTER" prefHeight="25.0" prefWidth="1000.0">
+        <children>
+            <Button id="file-button" mnemonicParsing="false" prefHeight="25.0" prefWidth="167.0" text="File">
+                <opaqueInsets>
+                    <Insets />
+                </opaqueInsets>
+            </Button>
+            <Button id="edit-button" layoutX="260.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="167.0" text="Edit">
+                <opaqueInsets>
+                    <Insets />
+                </opaqueInsets>
+            </Button>
+            <Button id="options-button" layoutX="210.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="167.0" text="Options">
+                <opaqueInsets>
+                    <Insets />
+                </opaqueInsets>
+            </Button>
+            <Button disable="true" layoutX="360.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="166.0">
+                <opaqueInsets>
+                    <Insets />
+                </opaqueInsets>
+            </Button>
+            <Button disable="true" layoutX="310.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="166.0">
+                <opaqueInsets>
+                    <Insets />
+                </opaqueInsets>
+            </Button>
+            <Button id="help-button" layoutX="360.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="167.0" text="Help">
+                <opaqueInsets>
+                    <Insets />
+                </opaqueInsets>
+            </Button>
+        </children>
+    </HBox>
+</AnchorPane>

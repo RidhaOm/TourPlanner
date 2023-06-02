@@ -8,7 +8,7 @@ module com.example.tourplanner {
     requires java.naming;
 
 
-    opens com.example.tourplanner to javafx.fxml;
-    opens com.example.tourplanner.Controllers to javafx.fxml;
-    exports com.example.tourplanner;
+    opens at.technikum.tourplanner to javafx.fxml;
+    opens at.technikum.tourplanner.Controllers to javafx.fxml;
+    exports at.technikum.tourplanner;
 }

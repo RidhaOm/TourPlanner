@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.technikum.tourplanner.Controllers.TourLogController">
+   <VBox prefWidth="704.0">
+      <children>
+          <HBox prefHeight="25.0" prefWidth="300.0">
+              <children>
+                  <Button id="tour-logs-button" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text=" Tour Logs" />
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="540.0" visible="false" />
+                  <Button id="plus-button" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="+" />
+                  <Button id="minus-button" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="-" />
+                  <Button id="more-button" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="..." />
+              </children>
+          </HBox>
+          <TableView prefHeight="252.0" prefWidth="704.0">
+              <columns>
+                  <TableColumn prefWidth="233.0" text="Date" />
+                  <TableColumn prefWidth="233.0" text="Durration" />
+                  <TableColumn prefWidth="233.0" text="Distance" />
+              </columns>
+          </TableView>
+      </children>
+   </VBox>
+
+
+</AnchorPane>
