@@ -3,18 +3,24 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="rootPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.technikum.tourplanner.Controllers.AddTourController">
+<AnchorPane fx:id="rootPane" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.technikum.tourplanner.Controllers.AddTourController">
    <children>
+      <VBox>
+         <children>
+            <Label layoutX="31.0" layoutY="60.0" prefHeight="23.0" prefWidth="70.0" text="Tour name" />
+            <Label layoutX="31.0" layoutY="103.0" prefHeight="23.0" prefWidth="70.0" text="From" />
+            <Label layoutX="31.0" layoutY="151.0" prefHeight="23.0" prefWidth="70.0" text="To" />
+            <TextField id="tour-name" fx:id="tourNameTextField" layoutX="101.0" layoutY="59.0" />
+            <TextField id="from" fx:id="fromTextField" layoutX="101.0" layoutY="102.0" />
+            <TextField id="to" fx:id="toTextField" layoutX="101.0" layoutY="150.0" />
 
-      <Label layoutX="31.0" layoutY="60.0" prefHeight="23.0" prefWidth="70.0" text="Tour name" />
-      <Label layoutX="31.0" layoutY="103.0" prefHeight="23.0" prefWidth="70.0" text="From" />
-      <Label layoutX="31.0" layoutY="151.0" prefHeight="23.0" prefWidth="70.0" text="To" />
-      <TextField id="tour-name" fx:id="tourNameTextField" layoutX="101.0" layoutY="59.0" />
-      <TextField id="from" fx:id="fromTextField" layoutX="101.0" layoutY="102.0" />
-      <TextField id="to" fx:id="toTextField" layoutX="101.0" layoutY="150.0" />
-      <Label id="test-label" fx:id="testLabel" layoutX="31.0" layoutY="151.0" prefHeight="23.0" prefWidth="70.0" text="" />
+            <Button id="save-tour-button" layoutX="209.0" layoutY="209.0" mnemonicParsing="false" onAction="#saveTour" prefHeight="37.0" prefWidth="82.0" text="Save Tour" />
+            <Label id="test-label" fx:id="testLabel" layoutX="31.0" layoutY="151.0" prefHeight="23.0" prefWidth="70.0" text="" />
+            <ListView id="test-list" fx:id="testList"  />
+         </children>
+      </VBox>
 
-      <Button id="save-tour-button" layoutX="209.0" layoutY="209.0" mnemonicParsing="false" onAction="#saveTour" prefHeight="37.0" prefWidth="82.0" text="Save Tour" />
+
 
    </children>
 </AnchorPane>

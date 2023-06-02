@@ -4,6 +4,7 @@ import at.technikum.tourplanner.ViewModel.AddTourViewModel;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
@@ -30,6 +31,9 @@ public class AddTourController {
     @FXML
     private Label testLabel;
 
+    @FXML
+    private ListView<String> testList;
+
     private final AddTourViewModel addTourViewModel=new AddTourViewModel();
 
     @FXML
@@ -38,6 +42,7 @@ public class AddTourController {
         fromTextField.textProperty().bindBidirectional(addTourViewModel.fromTextFieldProperty());
         toTextField.textProperty().bindBidirectional(addTourViewModel.toTextFieldProperty());
         testLabel.textProperty().bind(addTourViewModel.testLabelProperty());
+        testList.setItems(addTourViewModel.getTestList());
     }
 
     public void saveTour(){
