@@ -16,7 +16,16 @@ public class AddTourViewModel {
 
     private final ObservableList<String> testList = FXCollections.observableArrayList();
 
-    private final TourRepository tourRepository = new TourRepository();
+    private final TourRepository tourRepository;
+
+    public AddTourViewModel(TourRepository tourRepository) {
+
+        this.tourRepository=tourRepository;
+
+        //testList.addAll(tourRepository.findAll());
+
+        //tourRepository.addNewWordListener(this::addNewTour);
+    }
 
 
     public StringProperty tourNameTextFieldProperty() {
@@ -37,11 +46,7 @@ public class AddTourViewModel {
     }
 
 
-    public AddTourViewModel() {
-        testList.addAll(tourRepository.findAll());
 
-        tourRepository.addNewWordListener(this::addNewTour);
-    }
 
     private void addNewTour(String tourName) {
         testList.add(tourName);

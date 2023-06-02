@@ -1,7 +1,6 @@
-package at.technikum.tourplanner.Controllers;
+package at.technikum.tourplanner.view;
 
 import at.technikum.tourplanner.ViewModel.AddTourViewModel;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
@@ -11,7 +10,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 
-public class AddTourController {
+public class AddTourView {
 
     @FXML
     private AnchorPane rootPane;
@@ -34,7 +33,11 @@ public class AddTourController {
     @FXML
     private ListView<String> testList;
 
-    private final AddTourViewModel addTourViewModel=new AddTourViewModel();
+    private final AddTourViewModel addTourViewModel;
+
+    public AddTourView(AddTourViewModel addTourViewModel) {
+        this.addTourViewModel=addTourViewModel;
+    }
 
     @FXML
     void initialize() {

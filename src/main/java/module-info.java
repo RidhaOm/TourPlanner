@@ -9,6 +9,6 @@ module com.example.tourplanner {
 
 
     opens at.technikum.tourplanner to javafx.fxml;
-    opens at.technikum.tourplanner.Controllers to javafx.fxml;
+    opens at.technikum.tourplanner.view to javafx.fxml;
     exports at.technikum.tourplanner;
 }
