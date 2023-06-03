@@ -1,6 +1,7 @@
 package at.technikum.tourplanner.ViewModel;
 
 import at.technikum.tourplanner.Model.TourRepository;
+import at.technikum.tourplanner.Service.TourService;
 import at.technikum.tourplanner.event.Event;
 import at.technikum.tourplanner.event.EventAggregator;
 import javafx.collections.FXCollections;
@@ -10,20 +11,20 @@ public class TourListViewModel {
     private final ObservableList<String> tourListView = FXCollections.observableArrayList();
 
     private final EventAggregator eventAggregator;
-    private final TourRepository tourRepository;
+    private final TourService tourService;
 
-    public TourListViewModel(EventAggregator eventAggregator, TourRepository tourRepository) {
+    public TourListViewModel(EventAggregator eventAggregator, TourService tourService) {
         this.eventAggregator = eventAggregator;
-        this.tourRepository = tourRepository;
+        this.tourService = tourService;
 
-        tourListView.addAll(tourRepository.findAll());
+        tourListView.addAll(tourService.findAll());
 
         eventAggregator.addSubscriber(Event.NEW_TOUR, this::onNewTour);
     }
 
     private void onNewTour() {
         tourListView.clear();
-        tourListView.addAll(tourRepository.findAll());
+        tourListView.addAll(tourService.findAll());
     }
 
     public ObservableList<String> getTourListView() {
@@ -39,7 +40,7 @@ public class TourListViewModel {
     }
 
     public TourRepository getTourRepository() {
-        return tourRepository;
+        return getTourRepository();
     }
 
 }

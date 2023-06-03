@@ -1,6 +1,7 @@
 package at.technikum.tourplanner.ViewModel;
 
 import at.technikum.tourplanner.Model.TourRepository;
+import at.technikum.tourplanner.Service.TourService;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
@@ -9,10 +10,10 @@ public class AddTourViewModel {
     private final StringProperty fromTextField = new SimpleStringProperty("");
     private final StringProperty toTextField = new SimpleStringProperty("");
 
-    private final TourRepository tourRepository;
+    private final TourService tourService;
 
-    public AddTourViewModel(TourRepository tourRepository) {
-        this.tourRepository = tourRepository;
+    public AddTourViewModel(TourService tourService) {
+        this.tourService = tourService;
     }
 
     public String getTourNameTextField() {
@@ -56,7 +57,7 @@ public class AddTourViewModel {
         System.out.println("From: " + getFromTextField());
         System.out.println("To: " + getToTextField());
 
-        tourRepository.save(getTourNameTextField());
+        tourService.save(getTourNameTextField());
 
         setTourNameTextField("");
         setFromTextField("");

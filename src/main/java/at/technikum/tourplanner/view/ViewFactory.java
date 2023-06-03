@@ -1,6 +1,7 @@
 package at.technikum.tourplanner.view;
 
 import at.technikum.tourplanner.Model.TourRepository;
+import at.technikum.tourplanner.Service.TourService;
 import at.technikum.tourplanner.ViewModel.AddTourViewModel;
 import at.technikum.tourplanner.ViewModel.TourListViewModel;
 import at.technikum.tourplanner.event.EventAggregator;
@@ -12,12 +13,14 @@ public class ViewFactory {
     private final TourRepository tourRepository;
     private final AddTourViewModel addTourViewModel;
     private final TourListViewModel tourListViewModel;
+    private final TourService tourService;
 
     private ViewFactory() {
         eventAggregator = new EventAggregator();
         tourRepository = new TourRepository(eventAggregator);
-        addTourViewModel = new AddTourViewModel(tourRepository);
-        tourListViewModel = new TourListViewModel(eventAggregator,tourRepository);
+        tourService = new TourService(tourRepository);
+        addTourViewModel = new AddTourViewModel(tourService);
+        tourListViewModel = new TourListViewModel(eventAggregator,tourService);
     }
 
     public Object create(Class<?> viewClass) {

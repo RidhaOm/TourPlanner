@@ -1,6 +1,7 @@
 package at.technikum.tourplanner.viewmodel;
 
 import at.technikum.tourplanner.Model.TourRepository;
+import at.technikum.tourplanner.Service.TourService;
 import at.technikum.tourplanner.ViewModel.TourListViewModel;
 import at.technikum.tourplanner.event.EventAggregator;
 import org.junit.Test;
@@ -18,23 +19,23 @@ import static org.mockito.Mockito.when;
 public class TourListViewModelTest {
 
     EventAggregator eventAggregator;
-    TourRepository tourRepository;
+    TourService tourService;
     TourListViewModel tourListViewModel;
 
     @Test
     public void initialWTourListTest() {
         // Arrange
         eventAggregator = mock(EventAggregator.class);
-        tourRepository = mock(TourRepository.class);
+        tourService = mock(TourService.class);
 
         List<String> tours = new ArrayList<>();
         tours.add("Tour 1");
 
-        when(tourRepository.findAll()).thenReturn(tours);
+        when(tourService.findAll()).thenReturn(tours);
 
         // Act
         tourListViewModel = new TourListViewModel(
-                eventAggregator, tourRepository
+                eventAggregator, tourService
         );
 
         // Assert
