@@ -8,15 +8,32 @@ public class Tour {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
     private Long id;
-
     @Column
-    private String value;
+    private String name;
+   // @Column
+   // private String description;
+    @Column
+    private String tourFrom;
+    @Column
+    private String tourTo;
+    /*@Column
+    private String transportType;
+    @Column
+    private Long distance;
+    @Column
+    private String time;
+    @Column
+    private String routeInformation;*/
+
 
     public Tour() {
     }
 
-    public Tour(String value) {
-        this.value = value;
+    public Tour(String name, String tourFrom, String tourTo) {
+        this.name = name;
+        this.tourFrom = tourFrom;
+        this.tourTo = tourTo;
+
     }
 
     public Long getId() {
@@ -28,10 +45,10 @@ public class Tour {
     }
 
     public String getValue() {
-        return value;
+        return name;
     }
 
     public void setValue(String value) {
-        this.value = value;
+        this.name = value;
     }
 }

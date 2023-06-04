@@ -14,8 +14,8 @@ public class TourService {
         this.tourRepository = tourRepository;
     }
 
-    public void save(String word) {
-        tourRepository.save(new Tour(word));
+    public void save(String name, String from, String to ) {
+        tourRepository.save(new Tour(name, from, to));
     }
 
     public List<String> findAll() {

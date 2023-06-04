@@ -57,7 +57,7 @@ public class AddTourViewModel {
         System.out.println("From: " + getFromTextField());
         System.out.println("To: " + getToTextField());
 
-        tourService.save(getTourNameTextField());
+        tourService.save(getTourNameTextField(), getFromTextField(), getToTextField());
 
         setTourNameTextField("");
         setFromTextField("");
