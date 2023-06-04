@@ -1,6 +1,6 @@
 package at.technikum.tourplanner.repository;
 
-import at.technikum.tourplanner.Model.Tour;
+import at.technikum.tourplanner.model.Tour;
 import at.technikum.tourplanner.data.HibernateSessionFactory;
 import at.technikum.tourplanner.event.Event;
 import at.technikum.tourplanner.event.EventAggregator;

@@ -1,4 +1,4 @@
-package at.technikum.tourplanner.Model;
+package at.technikum.tourplanner.model;
 
 import jakarta.persistence.*;
 

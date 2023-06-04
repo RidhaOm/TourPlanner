@@ -10,7 +10,7 @@ module com.example.tourplanner {
 
     opens at.technikum.tourplanner to javafx.fxml, org.hibernate.orm.core;
     opens at.technikum.tourplanner.view to javafx.fxml;
-    opens at.technikum.tourplanner.Model to org.hibernate.orm.core;
+    opens at.technikum.tourplanner.model to org.hibernate.orm.core;
 
     exports at.technikum.tourplanner;
 }

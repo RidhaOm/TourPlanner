@@ -14,6 +14,6 @@
         <property name="hibernate.hbm2ddl.auto">update</property>
         <property name="hibernate.show_sql">true</property>
 
-        <mapping class="at.technikum.tourplanner.Model.Tour"/>
+        <mapping class="at.technikum.tourplanner.model.Tour"/>
     </session-factory>
 </hibernate-configuration>

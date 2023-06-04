@@ -1,16 +1,13 @@
 package at.technikum.tourplanner.view;
 
 import at.technikum.tourplanner.FXMLDependencyInjector;
-import at.technikum.tourplanner.ViewModel.TourListViewModel;
+import at.technikum.tourplanner.viewModel.TourListViewModel;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.util.Locale;

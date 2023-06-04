@@ -1,6 +1,6 @@
-package at.technikum.tourplanner.Service;
+package at.technikum.tourplanner.service;
 
-import at.technikum.tourplanner.Model.Tour;
+import at.technikum.tourplanner.model.Tour;
 import at.technikum.tourplanner.repository.TourRepository;
 //import at.technikum.tourplanner.Model.TourRepository;
 

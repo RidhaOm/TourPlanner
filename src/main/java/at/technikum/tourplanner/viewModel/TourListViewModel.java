@@ -1,7 +1,7 @@
-package at.technikum.tourplanner.ViewModel;
+package at.technikum.tourplanner.viewModel;
 
 //import at.technikum.tourplanner.Model.TourRepository;
-import at.technikum.tourplanner.Service.TourService;
+import at.technikum.tourplanner.service.TourService;
 import at.technikum.tourplanner.event.Event;
 import at.technikum.tourplanner.event.EventAggregator;
 import at.technikum.tourplanner.repository.TourRepository;

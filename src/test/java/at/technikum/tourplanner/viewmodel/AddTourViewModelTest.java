@@ -1,8 +1,8 @@
 package at.technikum.tourplanner.viewmodel;
 
-import at.technikum.tourplanner.Model.TourRepository;
-import at.technikum.tourplanner.Service.TourService;
-import at.technikum.tourplanner.ViewModel.AddTourViewModel;
+import at.technikum.tourplanner.model.TourRepository;
+import at.technikum.tourplanner.service.TourService;
+import at.technikum.tourplanner.viewModel.AddTourViewModel;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.junit.MockitoJUnitRunner;

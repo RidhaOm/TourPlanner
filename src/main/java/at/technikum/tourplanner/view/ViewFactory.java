@@ -1,10 +1,9 @@
 package at.technikum.tourplanner.view;
 
 //import at.technikum.tourplanner.Model.TourRepository;
-import at.technikum.tourplanner.Model.Tour;
-import at.technikum.tourplanner.Service.TourService;
-import at.technikum.tourplanner.ViewModel.AddTourViewModel;
-import at.technikum.tourplanner.ViewModel.TourListViewModel;
+import at.technikum.tourplanner.service.TourService;
+import at.technikum.tourplanner.viewModel.AddTourViewModel;
+import at.technikum.tourplanner.viewModel.TourListViewModel;
 import at.technikum.tourplanner.data.HibernateSessionFactory;
 import at.technikum.tourplanner.event.EventAggregator;
 import at.technikum.tourplanner.repository.TourRepository;

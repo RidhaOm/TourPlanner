@@ -1,7 +1,7 @@
-package at.technikum.tourplanner.ViewModel;
+package at.technikum.tourplanner.viewModel;
 
 //import at.technikum.tourplanner.Model.TourRepository;
-import at.technikum.tourplanner.Service.TourService;
+import at.technikum.tourplanner.service.TourService;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 

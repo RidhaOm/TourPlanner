@@ -1,9 +1,7 @@
 package at.technikum.tourplanner.view;
 
-import at.technikum.tourplanner.ViewModel.AddTourViewModel;
+import at.technikum.tourplanner.viewModel.AddTourViewModel;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
