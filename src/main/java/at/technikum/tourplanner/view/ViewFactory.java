@@ -1,10 +1,13 @@
 package at.technikum.tourplanner.view;
 
-import at.technikum.tourplanner.Model.TourRepository;
+//import at.technikum.tourplanner.Model.TourRepository;
+import at.technikum.tourplanner.Model.Tour;
 import at.technikum.tourplanner.Service.TourService;
 import at.technikum.tourplanner.ViewModel.AddTourViewModel;
 import at.technikum.tourplanner.ViewModel.TourListViewModel;
+import at.technikum.tourplanner.data.HibernateSessionFactory;
 import at.technikum.tourplanner.event.EventAggregator;
+import at.technikum.tourplanner.repository.TourRepository;
 
 public class ViewFactory {
     private static ViewFactory instance;
@@ -14,10 +17,12 @@ public class ViewFactory {
     private final AddTourViewModel addTourViewModel;
     private final TourListViewModel tourListViewModel;
     private final TourService tourService;
+    private final HibernateSessionFactory sessionFactory;
 
     private ViewFactory() {
         eventAggregator = new EventAggregator();
-        tourRepository = new TourRepository(eventAggregator);
+        sessionFactory = new HibernateSessionFactory();
+        tourRepository = new TourRepository(sessionFactory, eventAggregator);
         tourService = new TourService(tourRepository);
         addTourViewModel = new AddTourViewModel(tourService);
         tourListViewModel = new TourListViewModel(eventAggregator,tourService);

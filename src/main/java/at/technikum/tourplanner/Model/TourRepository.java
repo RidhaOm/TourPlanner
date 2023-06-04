@@ -1,4 +1,4 @@
-package at.technikum.tourplanner.Model;
+/*package at.technikum.tourplanner.Model;
 
 import at.technikum.tourplanner.event.Event;
 import at.technikum.tourplanner.event.EventAggregator;
@@ -30,3 +30,4 @@ public class TourRepository {
     }
 
 }
+*/

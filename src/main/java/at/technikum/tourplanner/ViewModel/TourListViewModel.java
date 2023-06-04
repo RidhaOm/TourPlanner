@@ -1,9 +1,10 @@
 package at.technikum.tourplanner.ViewModel;
 
-import at.technikum.tourplanner.Model.TourRepository;
+//import at.technikum.tourplanner.Model.TourRepository;
 import at.technikum.tourplanner.Service.TourService;
 import at.technikum.tourplanner.event.Event;
 import at.technikum.tourplanner.event.EventAggregator;
+import at.technikum.tourplanner.repository.TourRepository;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
