@@ -2,6 +2,7 @@ package at.technikum.tourplanner.view;
 
 import at.technikum.tourplanner.viewModel.AddTourViewModel;
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
@@ -23,6 +24,9 @@ public class AddTourView {
     private TextField toTextField;
 
     @FXML
+    private Label information;
+
+    @FXML
     private MenuButton transportTypeMenuButton;
 
 
@@ -37,6 +41,7 @@ public class AddTourView {
         tourNameTextField.textProperty().bindBidirectional(addTourViewModel.tourNameTextFieldProperty());
         fromTextField.textProperty().bindBidirectional(addTourViewModel.fromTextFieldProperty());
         toTextField.textProperty().bindBidirectional(addTourViewModel.toTextFieldProperty());
+        information.textProperty().bind(addTourViewModel.informationTextFieldProperty());
     }
 
     public void saveTour(){

@@ -14,14 +14,14 @@ public class TourService {
         this.tourRepository = tourRepository;
     }
 
-    public void save(String name, String from, String to ) {
-        tourRepository.save(new Tour(name, from, to));
+    public void save(String name, String tourFrom, String tourTo, Double distance, String time, String description, String transportType, String routeInformation ) {
+        tourRepository.save(new Tour(name, tourFrom, tourTo, distance, time, description, transportType, routeInformation));
     }
 
     public List<String> findAll() {
         return tourRepository.findAll()
                 .stream()
-                .map(Tour::getValue)
+                .map(Tour::getName)
                 .collect(Collectors.toList());
     }
 }
