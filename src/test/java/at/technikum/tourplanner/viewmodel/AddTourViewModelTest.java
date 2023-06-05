@@ -1,6 +1,6 @@
 package at.technikum.tourplanner.viewmodel;
 
-import at.technikum.tourplanner.model.TourRepository;
+import at.technikum.tourplanner.service.RouteService;
 import at.technikum.tourplanner.service.TourService;
 import at.technikum.tourplanner.viewModel.AddTourViewModel;
 import org.junit.Test;
@@ -13,6 +13,7 @@ import static org.mockito.Mockito.mock;
 @RunWith(MockitoJUnitRunner.class)
 public class AddTourViewModelTest {
 
+    RouteService routeService;
     TourService tourService;
 
     AddTourViewModel addTourViewModel;
@@ -21,7 +22,7 @@ public class AddTourViewModelTest {
     public void inputStringClearTest() {
         // Arrange
         tourService = mock(TourService.class);
-        addTourViewModel = new AddTourViewModel(tourService);
+        addTourViewModel = new AddTourViewModel(routeService, tourService);
         addTourViewModel.setTourNameTextField("Tour 1");
         addTourViewModel.setFromTextField("Wien");
         addTourViewModel.setToTextField("Salzburg");
