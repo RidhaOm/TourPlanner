@@ -19,8 +19,8 @@ public class TourService {
         tourRepository.save(new Tour(name, tourFrom, tourTo, distance, time, description, transportType, routeInformation));
     }
 
-    public void delete(Long id) {
-        tourRepository.delete(id);
+    public void delete(String tourName) {
+        tourRepository.delete(tourName);
     }
     public List<String> findAll() {
         return tourRepository.findAll()
@@ -31,5 +31,8 @@ public class TourService {
 
     public Tour findById(Long id) {
         return tourRepository.findById(id);
+    }
+    public Tour findByName(String name) {
+        return tourRepository.findByName(name);
     }
 }

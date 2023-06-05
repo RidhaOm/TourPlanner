@@ -3,6 +3,7 @@ package at.technikum.tourplanner.model;
 import jakarta.persistence.*;
 
 @Entity
+@Table(uniqueConstraints = @UniqueConstraint(columnNames = {"name"}))
 public class Tour {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

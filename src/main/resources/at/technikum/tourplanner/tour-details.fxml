@@ -11,11 +11,13 @@
                 <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="General" />
                 <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="Route" />
                 <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="Misc" />
-                <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="Reload" onAction="#reloadImage" />
+                <Button mnemonicParsing="false" onAction="#reloadImage" prefHeight="25.0" prefWidth="60.0" text="Reload" />
 
             </children>
         </HBox>
         <ImageView id="mapview" fx:id="mapView" fitHeight="244.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
-         </ImageView>
+         <image>
+            <Image url="@maps/map.jpg" />
+         </image></ImageView>
     </VBox>
 </AnchorPane>

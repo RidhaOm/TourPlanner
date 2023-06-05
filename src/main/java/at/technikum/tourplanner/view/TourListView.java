@@ -56,7 +56,7 @@ public class TourListView {
     }
 
     public void deleteTour(ActionEvent event) {
-        long id=10;
-        tourListViewModel.deleteTour(id);
+        String selectedTourName = tourListView.getSelectionModel().getSelectedItem();
+        tourListViewModel.deleteTour(selectedTourName);
     }
 }

@@ -29,12 +29,16 @@ public class TourListViewModel {
         tourListView.addAll(tourService.findAll());
     }
 
-    public void deleteTour(Long id){
-//        tourService.delete(id);
-//        tourListView.removeIf(tourName -> tourService.findById(id).getName().equals(tourName));
-        String tourName = tourService.findById(id).getName();
-        tourService.delete(id);
-        tourListView.remove(tourName);
+    public void deleteTour(String tourName){
+        Tour tour = tourService.findByName(tourName);
+        if (tour != null) {
+            tourService.delete(tourName);
+            tourListView.remove(tourName);
+        } else {
+            System.out.println("Tour with name '" + tourName + "' does not exist.");
+        }
+//        tourService.delete(tourName);
+//        tourListView.remove(tourName);
     }
 
     public ObservableList<String> getTourListView() {
