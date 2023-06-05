@@ -23,16 +23,31 @@ public class TourRepository {
         this.eventAggregator = eventAggregator;
     }
 
-    public void save(Tour word) {
+    public void save(Tour name) {
         try (Session session = sessionFactory.openSession()) {
             session.getTransaction().begin();
-            session.persist(word);
+            session.persist(name);
             session.getTransaction().commit();
         }
 
         eventAggregator.publish(Event.NEW_TOUR);
     }
 
+    public void delete(Long id) {
+        try (Session session = sessionFactory.openSession()) {
+            session.getTransaction().begin();
+            Tour tour = session.get(Tour.class, id);
+            if (tour != null) {
+                session.delete(tour);
+                session.getTransaction().commit();
+                eventAggregator.publish(Event.DELETE_TOUR);
+            } else {
+                session.getTransaction().rollback();
+                // Handle case when the tour with the given ID doesn't exist
+                // You can throw an exception, log an error, or handle it in any way you prefer.
+            }
+        }
+    }
     public List<Tour> findAll() {
         try (Session session = sessionFactory.openSession()) {
             CriteriaBuilder builder = session.getCriteriaBuilder();
@@ -43,4 +58,9 @@ public class TourRepository {
         }
     }
 
+    public Tour findById(Long id) {
+        try (Session session = sessionFactory.openSession()) {
+            return session.get(Tour.class, id);
+        }
+    }
 }

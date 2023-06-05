@@ -1,6 +1,7 @@
 package at.technikum.tourplanner.viewModel;
 
 //import at.technikum.tourplanner.Model.TourRepository;
+import at.technikum.tourplanner.model.Tour;
 import at.technikum.tourplanner.service.TourService;
 import at.technikum.tourplanner.event.Event;
 import at.technikum.tourplanner.event.EventAggregator;
@@ -26,6 +27,14 @@ public class TourListViewModel {
     private void onNewTour() {
         tourListView.clear();
         tourListView.addAll(tourService.findAll());
+    }
+
+    public void deleteTour(Long id){
+//        tourService.delete(id);
+//        tourListView.removeIf(tourName -> tourService.findById(id).getName().equals(tourName));
+        String tourName = tourService.findById(id).getName();
+        tourService.delete(id);
+        tourListView.remove(tourName);
     }
 
     public ObservableList<String> getTourListView() {

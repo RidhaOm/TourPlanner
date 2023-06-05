@@ -2,6 +2,7 @@ package at.technikum.tourplanner.service;
 
 import at.technikum.tourplanner.model.Tour;
 import at.technikum.tourplanner.repository.TourRepository;
+import org.hibernate.Session;
 //import at.technikum.tourplanner.Model.TourRepository;
 
 import java.util.List;
@@ -18,10 +19,17 @@ public class TourService {
         tourRepository.save(new Tour(name, tourFrom, tourTo, distance, time, description, transportType, routeInformation));
     }
 
+    public void delete(Long id) {
+        tourRepository.delete(id);
+    }
     public List<String> findAll() {
         return tourRepository.findAll()
                 .stream()
                 .map(Tour::getName)
                 .collect(Collectors.toList());
+    }
+
+    public Tour findById(Long id) {
+        return tourRepository.findById(id);
     }
 }

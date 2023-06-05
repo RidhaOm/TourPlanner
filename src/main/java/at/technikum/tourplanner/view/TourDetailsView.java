@@ -12,7 +12,8 @@ public class TourDetailsView {
     private void reloadImage() {
         try {
             // Reload the image here
-            Image image = new Image(getClass().getResourceAsStream("/at/technikum/tourplanner/maps/map.jpg"));
+            //Image image = new Image(getClass().getResourceAsStream("/at/technikum/tourplanner/maps/map.jpg"));
+            Image image = new Image("file:maps/map.jpg");
             mapView.setImage(image);
         } catch (Exception e) {
             e.printStackTrace();

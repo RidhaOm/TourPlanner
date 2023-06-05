@@ -16,8 +16,6 @@
             </children>
         </HBox>
         <ImageView id="mapview" fx:id="mapView" fitHeight="244.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@maps/map.jpg" />
-         </image></ImageView>
+         </ImageView>
     </VBox>
 </AnchorPane>

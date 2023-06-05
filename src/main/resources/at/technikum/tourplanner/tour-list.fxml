@@ -11,7 +11,7 @@
                     <Button id="tours-button" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="Tours" />
                     <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="164.0" visible="false" />
                     <Button id="add-tour-button" mnemonicParsing="false" onAction="#openAddTourWindow" prefHeight="25.0" prefWidth="25.0" text="+" />
-                    <Button id="minus-button" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="-" />
+                    <Button id="delete-tour-button" fx:id="deleteTourButton" mnemonicParsing="false" onAction="#deleteTour" prefHeight="25.0" prefWidth="25.0" text="-" />
                     <Button id="more-button" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="..." />
                 </children>
             </HBox>

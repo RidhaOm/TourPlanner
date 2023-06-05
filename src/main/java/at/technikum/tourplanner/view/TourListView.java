@@ -21,7 +21,7 @@ public class TourListView {
     private Button addTourButton;
 
     @FXML
-    private Button minusButton;
+    private Button deleteTourButton;
 
     @FXML
     private Button moreButton;
@@ -53,5 +53,10 @@ public class TourListView {
         } catch (Exception e) {
             System.out.println(e);
         }
+    }
+
+    public void deleteTour(ActionEvent event) {
+        long id=10;
+        tourListViewModel.deleteTour(id);
     }
 }
