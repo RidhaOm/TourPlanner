@@ -1,5 +1,6 @@
 package at.technikum.tourplanner.viewmodel;
 
+import at.technikum.tourplanner.service.SelectedTourService;
 import at.technikum.tourplanner.service.TourService;
 import at.technikum.tourplanner.viewModel.TourListViewModel;
 import at.technikum.tourplanner.event.EventAggregator;
@@ -20,6 +21,7 @@ public class TourListViewModelTest {
     EventAggregator eventAggregator;
     TourService tourService;
     TourListViewModel tourListViewModel;
+    SelectedTourService selectedTourService;
 
     @Test
     public void initialWTourListTest() {
@@ -34,7 +36,7 @@ public class TourListViewModelTest {
 
         // Act
         tourListViewModel = new TourListViewModel(
-                eventAggregator, tourService
+                eventAggregator, tourService, selectedTourService
         );
 
         // Assert

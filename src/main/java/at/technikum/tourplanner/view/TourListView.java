@@ -59,4 +59,10 @@ public class TourListView {
         String selectedTourName = tourListView.getSelectionModel().getSelectedItem();
         tourListViewModel.deleteTour(selectedTourName);
     }
+
+    @FXML
+    public void selectTourName() {
+        String selectedTourName = tourListView.getSelectionModel().getSelectedItem();
+        tourListViewModel.selectTourName(selectedTourName);
+    }
 }

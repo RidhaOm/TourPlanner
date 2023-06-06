@@ -78,7 +78,7 @@ public class AddTourViewModel {
         String routeInformation = "No informations yet";
 
         Route route = routeService.getRoute(from, to);
-        String imagePath = "src/main/resources/at/technikum/tourplanner/maps/map.jpg";
+        String imagePath = "src/main/resources/at/technikum/tourplanner/maps/"+name+".jpg";
         routeService.saveMap(route.getSessionId(), imagePath);
         time = route.getFormattedTime();
         distance = route.getDistance();

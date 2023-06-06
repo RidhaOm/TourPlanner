@@ -15,7 +15,7 @@
                     <Button id="more-button" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="..." />
                 </children>
             </HBox>
-            <ListView id="tourListView" fx:id="tourListView" prefHeight="524.0" prefWidth="300.0" />
+            <ListView id="tourListView" fx:id="tourListView" prefHeight="524.0" prefWidth="300.0" onMouseClicked="#selectTourName"/>
         </children>
     </VBox>
 

@@ -42,13 +42,17 @@ public class TourRepository {
                 System.out.println("comm");
                 session.delete(tour);
                 session.getTransaction().commit();
-                eventAggregator.publish(Event.DELETE_TOUR);
+                eventAggregator.publish(Event.TOUR_DELETED);
             } else {
                 session.getTransaction().rollback();
                 // Handle case when the tour with the given name doesn't exist
                 // You can throw an exception, log an error, or handle it in any way you prefer.
             }
         }
+    }
+
+    public void selectTourName(String tourName){
+        eventAggregator.publish(Event.TOUR_SELECTED);
     }
     public List<Tour> findAll() {
         try (Session session = sessionFactory.openSession()) {

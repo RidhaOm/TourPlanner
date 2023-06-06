@@ -2,8 +2,10 @@ package at.technikum.tourplanner.view;
 
 import at.technikum.tourplanner.service.MapQuestRouteService;
 import at.technikum.tourplanner.service.RouteService;
+import at.technikum.tourplanner.service.SelectedTourService;
 import at.technikum.tourplanner.service.TourService;
 import at.technikum.tourplanner.viewModel.AddTourViewModel;
+import at.technikum.tourplanner.viewModel.TourDetailsViewModel;
 import at.technikum.tourplanner.viewModel.TourListViewModel;
 import at.technikum.tourplanner.data.HibernateSessionFactory;
 import at.technikum.tourplanner.event.EventAggregator;
@@ -17,7 +19,9 @@ public class ViewFactory {
     private final RouteService routeService;
     private final AddTourViewModel addTourViewModel;
     private final TourListViewModel tourListViewModel;
+    private final TourDetailsViewModel tourDetailsViewModel;
     private final TourService tourService;
+    private final SelectedTourService selectedTourService;
     private final HibernateSessionFactory sessionFactory;
 
     private ViewFactory() {
@@ -25,9 +29,11 @@ public class ViewFactory {
         sessionFactory = new HibernateSessionFactory();
         tourRepository = new TourRepository(sessionFactory, eventAggregator);
         tourService = new TourService(tourRepository);
+        selectedTourService = new SelectedTourService();
         routeService = new MapQuestRouteService();
         addTourViewModel = new AddTourViewModel(routeService, tourService);
-        tourListViewModel = new TourListViewModel(eventAggregator,tourService);
+        tourListViewModel = new TourListViewModel(eventAggregator,tourService, selectedTourService);
+        tourDetailsViewModel = new TourDetailsViewModel(eventAggregator,tourService, selectedTourService);
     }
 
     public Object create(Class<?> viewClass) {
@@ -41,7 +47,7 @@ public class ViewFactory {
             return new NavigationBarView();
         }
         if (viewClass == TourDetailsView.class) {
-            return new TourDetailsView();
+            return new TourDetailsView(tourDetailsViewModel);
         }
         if (viewClass == SearchBarView.class) {
             return new SearchBarView();

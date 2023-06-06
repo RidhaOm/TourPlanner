@@ -28,7 +28,9 @@ public class TourService {
                 .map(Tour::getName)
                 .collect(Collectors.toList());
     }
-
+    public void selectTourName(String tourName) {
+        tourRepository.selectTourName(tourName);
+    }
     public Tour findById(Long id) {
         return tourRepository.findById(id);
     }
