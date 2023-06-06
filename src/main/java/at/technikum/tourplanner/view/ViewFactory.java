@@ -5,6 +5,7 @@ import at.technikum.tourplanner.service.RouteService;
 import at.technikum.tourplanner.service.SelectedTourService;
 import at.technikum.tourplanner.service.TourService;
 import at.technikum.tourplanner.viewModel.AddTourViewModel;
+import at.technikum.tourplanner.viewModel.NavigationBarViewModel;
 import at.technikum.tourplanner.viewModel.TourDetailsViewModel;
 import at.technikum.tourplanner.viewModel.TourListViewModel;
 import at.technikum.tourplanner.data.HibernateSessionFactory;
@@ -23,6 +24,7 @@ public class ViewFactory {
     private final TourService tourService;
     private final SelectedTourService selectedTourService;
     private final HibernateSessionFactory sessionFactory;
+    private final NavigationBarViewModel navigationBarViewModel;
 
     private ViewFactory() {
         eventAggregator = new EventAggregator();
@@ -34,6 +36,7 @@ public class ViewFactory {
         addTourViewModel = new AddTourViewModel(routeService, tourService);
         tourListViewModel = new TourListViewModel(eventAggregator,tourService, selectedTourService);
         tourDetailsViewModel = new TourDetailsViewModel(eventAggregator,tourService, selectedTourService);
+        navigationBarViewModel = new NavigationBarViewModel(tourService, selectedTourService);
     }
 
     public Object create(Class<?> viewClass) {
@@ -44,7 +47,7 @@ public class ViewFactory {
             return new TourListView(tourListViewModel);
         }
         if (viewClass == NavigationBarView.class) {
-            return new NavigationBarView();
+            return new NavigationBarView(navigationBarViewModel);
         }
         if (viewClass == TourDetailsView.class) {
             return new TourDetailsView(tourDetailsViewModel);

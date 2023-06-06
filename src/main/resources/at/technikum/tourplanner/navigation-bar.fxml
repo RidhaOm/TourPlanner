@@ -4,14 +4,18 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.technikum.tourplanner.view.NavigationBarView"> <!---->
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.technikum.tourplanner.view.NavigationBarView">
     <HBox id="navbar" alignment="TOP_CENTER" prefHeight="25.0" prefWidth="1000.0">
         <children>
-            <Button id="file-button" mnemonicParsing="false" prefHeight="25.0" prefWidth="167.0" text="File">
+            <MenuButton id="file-button" mnemonicParsing="false" prefHeight="25.0" prefWidth="167.0" text="File">
                 <opaqueInsets>
                     <Insets />
                 </opaqueInsets>
-            </Button>
+                <items>
+                    <MenuItem fx:id="exportTour" text="Export Tour" onAction="#exportTour"/>
+                    <MenuItem text="Import" />
+                </items>
+            </MenuButton>
             <Button id="edit-button" layoutX="260.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="167.0" text="Edit">
                 <opaqueInsets>
                     <Insets />

@@ -10,6 +10,9 @@ module com.example.tourplanner {
     requires com.fasterxml.jackson.core;
     requires com.fasterxml.jackson.databind;
     requires java.net.http;
+    requires io;
+    requires kernel;
+    requires layout;
 
     opens at.technikum.tourplanner to javafx.fxml, org.hibernate.orm.core;
     opens at.technikum.tourplanner.view to javafx.fxml;

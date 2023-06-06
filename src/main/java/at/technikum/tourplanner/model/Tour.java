@@ -1,8 +1,12 @@
 package at.technikum.tourplanner.model;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
+@Getter
+@Setter
 @Table(uniqueConstraints = @UniqueConstraint(columnNames = {"name"}))
 public class Tour {
     @Id
