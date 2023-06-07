@@ -7,6 +7,8 @@ import at.technikum.tourplanner.service.TourService;
 import at.technikum.tourplanner.event.Event;
 import at.technikum.tourplanner.event.EventAggregator;
 import at.technikum.tourplanner.repository.TourRepository;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -16,6 +18,9 @@ public class TourListViewModel {
     private final EventAggregator eventAggregator;
     private final TourService tourService;
     private final SelectedTourService selectedTourService;
+
+    private final StringProperty selectedTourName = new SimpleStringProperty();
+
 
     public TourListViewModel(EventAggregator eventAggregator, TourService tourService, SelectedTourService selectedTourService) {
         this.eventAggregator = eventAggregator;
@@ -45,6 +50,7 @@ public class TourListViewModel {
     }
 
     public void selectTourName(String tourName) {
+        selectedTourName.set(tourName);
         selectedTourService.setTourName(tourName);
         eventAggregator.publish(Event.TOUR_SELECTED);
         System.out.println(tourName);
@@ -64,6 +70,18 @@ public class TourListViewModel {
 
     public TourRepository getTourRepository() {
         return getTourRepository();
+    }
+
+    public String getSelectedTourName() {
+        return selectedTourName.get();
+    }
+
+    public StringProperty selectedTourNameProperty() {
+        return selectedTourName;
+    }
+
+    public void setSelectedTourName(String selectedTourName) {
+        this.selectedTourName.set(selectedTourName);
     }
 
 }

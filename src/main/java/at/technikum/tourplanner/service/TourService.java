@@ -22,6 +22,11 @@ public class TourService {
     public void delete(String tourName) {
         tourRepository.delete(tourName);
     }
+
+    public void modify(String existingTourName, String name, String tourFrom, String tourTo, Double distance, String time, String description, String transportType, String routeInformation ){
+        Tour newTour = new Tour(name, tourFrom, tourTo, distance, time, description, transportType, routeInformation);
+        tourRepository.modify(existingTourName, newTour);
+    }
     public List<String> findAll() {
         return tourRepository.findAll()
                 .stream()
@@ -38,7 +43,7 @@ public class TourService {
         return tourRepository.findByName(name);
     }
     public String getTourDetailsByName(String name) {
-        String tourDetails = "Tour Details: \n\n\n";
+        String tourDetails = "";
         Tour tour = findByName(name);
         tourDetails += "Name: " + tour.getName()+"\n";
         tourDetails += "From: " + tour.getTourFrom()+"\n";

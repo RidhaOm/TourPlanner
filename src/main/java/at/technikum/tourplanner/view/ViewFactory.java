@@ -4,10 +4,7 @@ import at.technikum.tourplanner.service.MapQuestRouteService;
 import at.technikum.tourplanner.service.RouteService;
 import at.technikum.tourplanner.service.SelectedTourService;
 import at.technikum.tourplanner.service.TourService;
-import at.technikum.tourplanner.viewModel.AddTourViewModel;
-import at.technikum.tourplanner.viewModel.NavigationBarViewModel;
-import at.technikum.tourplanner.viewModel.TourDetailsViewModel;
-import at.technikum.tourplanner.viewModel.TourListViewModel;
+import at.technikum.tourplanner.viewModel.*;
 import at.technikum.tourplanner.data.HibernateSessionFactory;
 import at.technikum.tourplanner.event.EventAggregator;
 import at.technikum.tourplanner.repository.TourRepository;
@@ -19,6 +16,7 @@ public class ViewFactory {
     private final TourRepository tourRepository;
     private final RouteService routeService;
     private final AddTourViewModel addTourViewModel;
+    private final ModifyTourViewModel editTourViewModel;
     private final TourListViewModel tourListViewModel;
     private final TourDetailsViewModel tourDetailsViewModel;
     private final TourService tourService;
@@ -34,6 +32,7 @@ public class ViewFactory {
         selectedTourService = new SelectedTourService();
         routeService = new MapQuestRouteService();
         addTourViewModel = new AddTourViewModel(routeService, tourService);
+        editTourViewModel = new ModifyTourViewModel(eventAggregator, tourService, routeService, selectedTourService);
         tourListViewModel = new TourListViewModel(eventAggregator,tourService, selectedTourService);
         tourDetailsViewModel = new TourDetailsViewModel(eventAggregator,tourService, selectedTourService);
         navigationBarViewModel = new NavigationBarViewModel(tourService, selectedTourService);
@@ -57,6 +56,9 @@ public class ViewFactory {
         }
         if (viewClass == TourLogView.class) {
             return new TourLogView();
+        }
+        if (viewClass == ModifyTourView.class) {
+            return new ModifyTourView(editTourViewModel);
         }
         if (viewClass == MainView.class) {
             return new MainView();

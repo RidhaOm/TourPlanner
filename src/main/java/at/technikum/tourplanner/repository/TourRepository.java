@@ -34,10 +34,10 @@ public class TourRepository {
         eventAggregator.publish(Event.NEW_TOUR);
     }
 
-    public void delete(String name) {
+    public void delete(String existingTourName) {
         try (Session session = sessionFactory.openSession()) {
             session.getTransaction().begin();
-            Tour tour = findByName(name);
+            Tour tour = findByName(existingTourName);
             if (tour != null) {
                 System.out.println("comm");
                 session.delete(tour);
@@ -51,6 +51,24 @@ public class TourRepository {
         }
     }
 
+    public void modify(String tourName, Tour newTour) {
+        try (Session session = sessionFactory.openSession()) {
+            session.getTransaction().begin();
+            Tour existingTour = findByName(tourName);
+            if (existingTour != null) {
+                existingTour.setName(newTour.getName());
+                existingTour.setDescription(newTour.getDescription());
+                // Update other properties of the tour as needed
+
+                session.merge(existingTour);
+                session.getTransaction().commit();
+            } else {
+                session.getTransaction().rollback();
+                // Handle case when the tour with the given name doesn't exist
+                // You can throw an exception, log an error, or handle it in any way you prefer.
+            }
+        }
+    }
     public void selectTourName(String tourName){
         eventAggregator.publish(Event.TOUR_SELECTED);
     }
