@@ -17,14 +17,27 @@ public class TourDetailsViewModel {
     private final TourService tourService;
     private final SelectedTourService selectedTourService;
 
+    private final StringProperty tourDetailsLabel = new SimpleStringProperty("");
     private final ObjectProperty<Image> mapview = new SimpleObjectProperty();
 
+    public String getTourDetailsLabel() {
+        return tourDetailsLabel.get();
+    }
+
+    public StringProperty tourDetailsLabelProperty() {
+        return tourDetailsLabel;
+    }
+
+    public void setTourDetailsLabel(String tourDetailsLabel) {
+        this.tourDetailsLabel.set(tourDetailsLabel);
+    }
     public ObjectProperty mapviewProperty() {return mapview;}
     public TourDetailsViewModel(EventAggregator eventAggregator, TourService tourService, SelectedTourService selectedTourService) {
         this.eventAggregator = eventAggregator;
         this.tourService = tourService;
         this.selectedTourService = selectedTourService;
         eventAggregator.addSubscriber(Event.TOUR_SELECTED, this::updateMapView);
+        eventAggregator.addSubscriber(Event.TOUR_SELECTED, this::updateTourDetailsLabel);
     }
 
     public void writeNotify(){
@@ -40,6 +53,15 @@ public class TourDetailsViewModel {
             mapview.set(image);
         }
     }
+
+    public void updateTourDetailsLabel() {
+        String selectedTourName = getSelectedTourName();
+        String tourDetails = tourService.getTourDetailsByName(selectedTourName);
+        if (tourDetails != null) {
+            tourDetailsLabel.set(tourDetails);
+        }
+    }
+
     public String getSelectedTourName(){
         return selectedTourService.getTourName();
     }

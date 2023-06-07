@@ -3,6 +3,7 @@ package at.technikum.tourplanner.view;
 import at.technikum.tourplanner.viewModel.TourDetailsViewModel;
 import javafx.beans.binding.Bindings;
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
@@ -10,6 +11,9 @@ public class TourDetailsView {
 
     @FXML
     private ImageView mapView;
+
+    @FXML
+    private Label tourDetailsLabel;
     private final TourDetailsViewModel tourDetailsViewModel;
 
     public TourDetailsView(TourDetailsViewModel tourDetailsViewModel) {
@@ -18,6 +22,7 @@ public class TourDetailsView {
 
     public void initialize() {
         mapView.imageProperty().bindBidirectional(tourDetailsViewModel.mapviewProperty());
+        tourDetailsLabel.textProperty().bindBidirectional(tourDetailsViewModel.tourDetailsLabelProperty());
     }
     
     public void getSelectedTourName() {

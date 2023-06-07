@@ -37,7 +37,18 @@ public class TourService {
     public Tour findByName(String name) {
         return tourRepository.findByName(name);
     }
-
+    public String getTourDetailsByName(String name) {
+        String tourDetails = "Tour Details: \n\n\n";
+        Tour tour = findByName(name);
+        tourDetails += "Name: " + tour.getName()+"\n";
+        tourDetails += "From: " + tour.getTourFrom()+"\n";
+        tourDetails += "To: " + tour.getTourTo()+"\n";
+        tourDetails += "Transport type: " + tour.getTransportType()+"\n";
+        tourDetails += "Time: " + tour.getTime()+"\n";
+        tourDetails += "Distance: " + tour.getDistance()+"\n";
+        tourDetails += "Description: " + tour.getDescription()+"\n";
+        return tourDetails;
+    }
     public void saveTour(Tour tour) {
         tourRepository.save(tour);
     }
