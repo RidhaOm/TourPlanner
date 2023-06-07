@@ -3,7 +3,6 @@ package at.technikum.tourplanner.viewModel;
 import at.technikum.tourplanner.dto.Route;
 import at.technikum.tourplanner.service.RouteService;
 import at.technikum.tourplanner.service.TourService;
-
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
@@ -13,6 +12,8 @@ public class AddTourViewModel {
     private final StringProperty fromTextField = new SimpleStringProperty("");
     private final StringProperty toTextField = new SimpleStringProperty("");
     private final StringProperty informationTextfield = new SimpleStringProperty("");
+    private final StringProperty transportTypeChoiceBox = new SimpleStringProperty("");
+    private final StringProperty tourDescriptionTextArea = new SimpleStringProperty("");
     private final RouteService routeService;
     private final TourService tourService;
 
@@ -56,6 +57,7 @@ public class AddTourViewModel {
     public StringProperty toTextFieldProperty() {
         return toTextField;
     }
+
     public String getInformationTextField() {
         return informationTextfield.get();
     }
@@ -63,8 +65,33 @@ public class AddTourViewModel {
     public void setInformationTextField(String from) {
         informationTextfield.set(from);
     }
+
     public StringProperty informationTextFieldProperty() {
         return informationTextfield;
+    }
+
+    public String getTransportTypeChoiceBox() {
+        return transportTypeChoiceBox.get();
+    }
+
+    public void setTransportTypeChoiceBox(String transportType) {
+        transportTypeChoiceBox.set(transportType);
+    }
+
+    public StringProperty transportTypeChoiceBoxProperty() {
+        return transportTypeChoiceBox;
+    }
+
+    public String getTourDescriptionTextArea() {
+        return tourDescriptionTextArea.get();
+    }
+
+    public void setTourDescriptionTextArea(String description) {
+        tourDescriptionTextArea.set(description);
+    }
+
+    public StringProperty tourDescriptionTextAreaProperty() {
+        return tourDescriptionTextArea;
     }
 
     public void saveTour() {
@@ -73,12 +100,12 @@ public class AddTourViewModel {
         String to = toTextField.get();
         Double distance;
         String time;
-        String description = "No description yet";
-        String transportType = "Walking";
-        String routeInformation = "No informations yet";
-
+        String description = tourDescriptionTextArea.get();
+        String transportType = transportTypeChoiceBox.get();
+        String routeInformation = "No information yet";
+        System.out.println("Hier:::: \n name: -"+name+"- from -"+ from+"- to -"+ to + "- description -" + description+ "- transtype -"+ transportType+"-");
         Route route = routeService.getRoute(from, to);
-        String imagePath = "src/main/resources/at/technikum/tourplanner/maps/"+name+".jpg";
+        String imagePath = "src/main/resources/at/technikum/tourplanner/maps/" + name + ".jpg";
         routeService.saveMap(route.getSessionId(), imagePath);
         time = route.getFormattedTime();
         distance = route.getDistance();
@@ -88,12 +115,13 @@ public class AddTourViewModel {
                 + time
                 + " (" + distance + ")";
 
-
         setInformationTextField(information);
         System.out.println(information);
         tourService.save(name, from, to, distance, time, description, transportType, routeInformation);
         setTourNameTextField("");
         setFromTextField("");
         setToTextField("");
+        setTourDescriptionTextArea("");
+        setTransportTypeChoiceBox("");
     }
 }

@@ -45,7 +45,7 @@ public class TourListView {
     public void openAddTourWindow(ActionEvent event){
         try {
             Parent root = FXMLDependencyInjector.load("add-tour.fxml", Locale.GERMAN);
-            Scene scene = new Scene(root, 500, 300);
+            Scene scene = new Scene(root, 600, 300);
             Stage stage = new Stage();
             stage.setTitle("Add Tour");
             stage.setScene(scene);
