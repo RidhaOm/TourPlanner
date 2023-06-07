@@ -9,6 +9,8 @@ import javafx.scene.control.MenuItem;
 public class NavigationBarView {
     @FXML
     private MenuItem exportTour;
+    @FXML
+    private MenuItem importTour;
 
     private final NavigationBarViewModel navigationBarViewModel;
 
@@ -18,5 +20,8 @@ public class NavigationBarView {
 
     public void exportTour(ActionEvent event) {
         navigationBarViewModel.exportTour();
+    }
+    public void importTour(ActionEvent event) {
+        navigationBarViewModel.importTour();
     }
 }

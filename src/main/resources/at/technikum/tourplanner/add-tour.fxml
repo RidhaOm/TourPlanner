@@ -3,6 +3,8 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
 <AnchorPane fx:id="rootPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.technikum.tourplanner.view.AddTourView">
    <children>
       <Label layoutX="31.0" layoutY="60.0" prefHeight="23.0" prefWidth="70.0" text="Tour name" />
@@ -11,7 +13,6 @@
       <TextField id="tour-name" fx:id="tourNameTextField" layoutX="101.0" layoutY="59.0" />
       <TextField id="from" fx:id="fromTextField" layoutX="101.0" layoutY="102.0" />
       <TextField id="to" fx:id="toTextField" layoutX="101.0" layoutY="150.0" />
-
 
       <Button id="save-tour-button" layoutX="209.0" layoutY="209.0" mnemonicParsing="false" onAction="#saveTour" prefHeight="37.0" prefWidth="82.0" text="Save Tour" />
       <Label id="information" fx:id="information" layoutX="140.0" layoutY="246.0" prefHeight="23.0" prefWidth="446.0" />

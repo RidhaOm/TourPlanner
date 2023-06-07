@@ -13,7 +13,7 @@
                 </opaqueInsets>
                 <items>
                     <MenuItem fx:id="exportTour" text="Export Tour" onAction="#exportTour"/>
-                    <MenuItem text="Import" />
+                    <MenuItem fx:id="importTour" text="Import Tour" onAction="#importTour"/>
                 </items>
             </MenuButton>
             <Button id="edit-button" layoutX="260.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="167.0" text="Edit">

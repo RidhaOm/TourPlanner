@@ -19,7 +19,7 @@ import java.nio.channels.FileChannel;
 import java.nio.channels.ReadableByteChannel;
 
 public class MapQuestRouteService implements RouteService{
-    private static String API_KEY = "";
+    private static String API_KEY = "oSor2vC46DAJb8hjVXsOu9kE6Rjwa9Zz";
 
     @Override
     public Route getRoute(String from, String to) {

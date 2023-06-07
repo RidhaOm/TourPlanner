@@ -4,12 +4,20 @@ import at.technikum.tourplanner.model.Tour;
 import com.itextpdf.io.image.ImageData;
 import com.itextpdf.io.image.ImageDataFactory;
 import com.itextpdf.kernel.pdf.PdfDocument;
+import com.itextpdf.kernel.pdf.PdfReader;
 import com.itextpdf.kernel.pdf.PdfWriter;
+import com.itextpdf.kernel.pdf.canvas.parser.PdfCanvasProcessor;
+import com.itextpdf.kernel.pdf.canvas.parser.PdfTextExtractor;
+import com.itextpdf.kernel.pdf.canvas.parser.listener.LocationTextExtractionStrategy;
+import com.itextpdf.kernel.pdf.canvas.parser.listener.SimpleTextExtractionStrategy;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Image;
 import com.itextpdf.layout.element.Paragraph;
 
+import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.net.URL;
 
 public class PDFService {
@@ -50,5 +58,25 @@ public class PDFService {
             System.out.println("Error occurred while exporting PDF.");
             e.printStackTrace();
         }
+    }
+
+    public static Tour importTour(File file) throws IOException {
+        PdfReader reader = new PdfReader(file.getAbsolutePath());
+        PdfDocument pdfDoc = new PdfDocument(reader);
+        String text = PdfTextExtractor.getTextFromPage(pdfDoc.getPage(1), new SimpleTextExtractionStrategy());
+        reader.close();
+
+        String[] lines = text.split("\n");
+        String name = lines[0].replace("Tour Name: ", "").trim();
+        String tourFrom = lines[1].replace("From: ", "").trim();
+        String tourTo = lines[2].replace("To: ", "").trim();
+        String distance = lines[3].replace("Distance: ", "").replace(" km", "").trim();
+        String time = lines[4].replace("Time: ", "").trim();
+        String transportType = lines[5].replace("Transport Type: ", "").trim();
+        String description = lines[6].replace("Description: ", "").trim();
+        String routeInformation = lines[7].replace("Route Information: ", "").trim();
+
+        // Assumes distance is a double. Adjust as needed for your Tour constructor
+        return new Tour(name, tourFrom, tourTo, Double.parseDouble(distance), time, transportType, description, routeInformation);
     }
 }

@@ -37,4 +37,8 @@ public class TourService {
     public Tour findByName(String name) {
         return tourRepository.findByName(name);
     }
+
+    public void saveTour(Tour tour) {
+        tourRepository.save(tour);
+    }
 }
