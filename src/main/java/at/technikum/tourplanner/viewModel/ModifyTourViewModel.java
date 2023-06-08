@@ -57,7 +57,7 @@ public class ModifyTourViewModel {
         routeService.saveMap(route.getSessionId(), imagePath);
         time = route.getFormattedTime();
         distance = route.getDistance();
-        tourService.modify(selectedTourName, name, from, to, distance, time, description, transportType, routeInformation);
+        tourService.modify(selectedTourName, name, from, to, distance, time, description, transportType);
 //        tourService.modify(selectedTourName, name, from, to, 12.0, "12:32", description, transportType, routeInformation);
         setTourNameTextField("");
         setFromTextField("");

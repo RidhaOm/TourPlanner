@@ -117,7 +117,7 @@ public class AddTourViewModel {
 
         setInformationTextField(information);
         System.out.println(information);
-        tourService.save(name, from, to, distance, time, description, transportType, routeInformation);
+        tourService.save(name, from, to, distance, time, description, transportType);
         setTourNameTextField("");
         setFromTextField("");
         setToTextField("");

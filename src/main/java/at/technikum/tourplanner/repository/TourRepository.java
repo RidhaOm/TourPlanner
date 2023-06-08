@@ -57,6 +57,10 @@ public class TourRepository {
             Tour existingTour = findByName(tourName);
             if (existingTour != null) {
                 existingTour.setName(newTour.getName());
+                existingTour.setTourFrom(newTour.getTourFrom());
+                existingTour.setTourTo(newTour.getTourTo());
+                existingTour.setTime(newTour.getTime());
+                existingTour.setTransportType(newTour.getTransportType());
                 existingTour.setDescription(newTour.getDescription());
                 // Update other properties of the tour as needed
 

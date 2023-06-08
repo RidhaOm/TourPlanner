@@ -15,16 +15,16 @@ public class TourService {
         this.tourRepository = tourRepository;
     }
 
-    public void save(String name, String tourFrom, String tourTo, Double distance, String time, String description, String transportType, String routeInformation ) {
-        tourRepository.save(new Tour(name, tourFrom, tourTo, distance, time, description, transportType, routeInformation));
+    public void save(String name, String tourFrom, String tourTo, Double distance, String time, String description, String transportType ) {
+        tourRepository.save(new Tour(name, tourFrom, tourTo, distance, time, description, transportType));
     }
 
     public void delete(String tourName) {
         tourRepository.delete(tourName);
     }
 
-    public void modify(String existingTourName, String name, String tourFrom, String tourTo, Double distance, String time, String description, String transportType, String routeInformation ){
-        Tour newTour = new Tour(name, tourFrom, tourTo, distance, time, description, transportType, routeInformation);
+    public void modify(String existingTourName, String name, String tourFrom, String tourTo, Double distance, String time, String description, String transportType ){
+        Tour newTour = new Tour(name, tourFrom, tourTo, distance, time, description, transportType);
         tourRepository.modify(existingTourName, newTour);
     }
     public List<String> findAll() {

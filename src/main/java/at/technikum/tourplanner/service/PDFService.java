@@ -46,7 +46,6 @@ public class PDFService {
             pdf.add(new Paragraph("Time: " + tour.getTime()));
             pdf.add(new Paragraph("Transport Type: " + tour.getTransportType()));
             pdf.add(new Paragraph("Description: " + tour.getDescription()));
-            pdf.add(new Paragraph("Route Information: " + tour.getRouteInformation()));
             pdf.add(img);
 
             pdf.close();
@@ -74,9 +73,8 @@ public class PDFService {
         String time = lines[4].replace("Time: ", "").trim();
         String transportType = lines[5].replace("Transport Type: ", "").trim();
         String description = lines[6].replace("Description: ", "").trim();
-        String routeInformation = lines[7].replace("Route Information: ", "").trim();
 
         // Assumes distance is a double. Adjust as needed for your Tour constructor
-        return new Tour(name, tourFrom, tourTo, Double.parseDouble(distance), time, transportType, description, routeInformation);
+        return new Tour(name, tourFrom, tourTo, Double.parseDouble(distance), time, transportType, description);
     }
 }

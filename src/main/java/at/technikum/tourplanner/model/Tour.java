@@ -1,5 +1,6 @@
 package at.technikum.tourplanner.model;
 
+import com.opencsv.bean.CsvBindByPosition;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -12,29 +13,35 @@ public class Tour {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
+    @CsvBindByPosition(position = 0)
     private Long id;
     @Column
+    @CsvBindByPosition(position = 1)
     private String name;
     @Column
+    @CsvBindByPosition(position = 2)
     private String tourFrom;
     @Column
+    @CsvBindByPosition(position = 3)
     private String tourTo;
     @Column
+    @CsvBindByPosition(position = 4)
     private Double distance;
     @Column
+    @CsvBindByPosition(position = 5)
     private String time;
     @Column
+    @CsvBindByPosition(position = 6)
     private String transportType;
     @Column
+    @CsvBindByPosition(position = 7)
     private String description;
-    @Column
-    private String routeInformation;
 
 
     public Tour() {
     }
 
-    public Tour(String name, String tourFrom, String tourTo, Double distance, String time, String description, String transportType, String routeInformation) {
+    public Tour(String name, String tourFrom, String tourTo, Double distance, String time, String description, String transportType) {
         this.name = name;
         this.tourFrom = tourFrom;
         this.tourTo = tourTo;
@@ -42,7 +49,6 @@ public class Tour {
         this.time = time;
         this.description = description;
         this.transportType = transportType;
-        this.routeInformation = routeInformation;
     }
 
     public Tour(String name, String tourFrom, String tourTo) {
