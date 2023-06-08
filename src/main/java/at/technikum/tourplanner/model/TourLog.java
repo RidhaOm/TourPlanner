@@ -32,6 +32,9 @@ public class TourLog {
     @Column
     @CsvBindByPosition(position = 6)
     private String comment;
+    @Column
+    @CsvBindByPosition(position = 6)
+    private String name;
 
     public TourLog(String tourName, String date, double duration, int difficulty, int ranking, String comment){
         this.tourName = tourName;
@@ -40,6 +43,7 @@ public class TourLog {
         this.difficulty = difficulty;
         this.ranking = ranking;
         this.comment = comment;
+        this.name = tourName+": Date: " + date + " | Duration: " + duration + " | Difficulty: " + difficulty + " | Ranking: " + ranking + " | Comment: " + comment;
     }
 
     public TourLog() {
@@ -47,9 +51,9 @@ public class TourLog {
     }
 
     public String getTourLog(){
-        String tourLog = tourName+": Date: " + date + " | Duration: " + duration + " | Difficulty: " + difficulty + " | Ranking: " + ranking + " | Comment: " + comment;
-        return tourLog;
+        return name;
     }
+
     public Long getId() {
         return id;
     }

@@ -11,7 +11,7 @@
                   <Button id="tour-logs-button" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text=" Tour Logs" />
                   <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="540.0" visible="false" />
                   <Button id="add-tour-log-button" fx:id="addTourLogButton" onAction="#openAddTourLogWindow" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="+" />
-                  <Button id="delete-tour-log-button" fx:id="deleteTourLogButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="-" />
+                  <Button id="delete-tour-log-button" fx:id="deleteTourLogButton" onAction="#deleteTourLog" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="-" />
                   <Button id="modify-tour-log-button" fx:id="modifyTourLogButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="..." />
               </children>
           </HBox>

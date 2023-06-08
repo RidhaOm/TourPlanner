@@ -22,10 +22,16 @@ public class TourLogService {
 //        System.out.println("Create tour log for the tour: "+tourName + "\n"+ date +"\n"+ duration +"\n"+ difficulty +"\n" + ranking +"\n"+comment);
     }
 
+    public void delete(String name) {
+        tourLogRepository.delete(name);
+    }
     public List<String> findAll() {
         return tourLogRepository.findAll()
                 .stream()
                 .map(TourLog::getTourLog)
                 .collect(Collectors.toList());
+    }
+    public TourLog findByName(String name) {
+        return tourLogRepository.findByName(name);
     }
 }

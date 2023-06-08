@@ -27,6 +27,11 @@ public class AddTourLogViewModel {
         int ranking = Integer.parseInt(rankingChoiceBox.get());
         String comment = getCommentTextArea();
         tourLogService.saveTourLog(tourName, date, duration, difficulty, ranking, comment);
+        setDurationTextField("");
+        setCommentTextArea("");
+        setDifficultyChoiceBox("1");
+        setRankingChoiceBox("1");
+        setDatePicker(LocalDate.now());
     }
 
     public ObjectProperty<LocalDate> datePickerProperty() {

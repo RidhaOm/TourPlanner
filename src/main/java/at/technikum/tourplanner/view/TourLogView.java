@@ -34,6 +34,20 @@ public class TourLogView implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         tourLogListView.setItems(tourLogViewModel.getTourLogListView());
+        // Disable the modifyTourButton initially
+        modifyTourLogButton.setDisable(true);
+        deleteTourLogButton.setDisable(true);
+
+        // Listen to the selected tour name property and enable/disable the modifyTourButton accordingly
+        tourLogViewModel.selectedTourLogProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue != null) {
+                modifyTourLogButton.setDisable(false);
+                deleteTourLogButton.setDisable(false);
+            } else {
+                modifyTourLogButton.setDisable(true);
+                deleteTourLogButton.setDisable(true);
+            }
+        });
     }
 
     public void openAddTourLogWindow(ActionEvent event){
@@ -49,6 +63,13 @@ public class TourLogView implements Initializable {
         }
     }
 
-    public void selectTourLog(MouseEvent mouseEvent) {
+    public void deleteTourLog(ActionEvent event) {
+        String selectedTourName = tourLogListView.getSelectionModel().getSelectedItem();
+        tourLogViewModel.deleteTourLog(selectedTourName);
+    }
+
+    public void selectTourLog() {
+        String selectedTourLog = tourLogListView.getSelectionModel().getSelectedItem();
+        tourLogViewModel.selectTourLog(selectedTourLog);
     }
 }

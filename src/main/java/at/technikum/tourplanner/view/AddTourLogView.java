@@ -8,6 +8,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 import java.net.URL;
+import java.time.LocalDate;
 import java.util.ResourceBundle;
 
 public class AddTourLogView implements Initializable {
@@ -52,6 +53,9 @@ public class AddTourLogView implements Initializable {
         // Initialize rankingChoiceBox
         rankingChoiceBox.getItems().addAll("1", "2", "3", "4", "5");
         rankingChoiceBox.valueProperty().bindBidirectional(addTourLogViewModel.rankingChoiceBoxProperty());
+
+        // Set the DatePicker value to the current date
+        datePicker.setValue(LocalDate.now());
     }
 
     public void addTourLog(){
