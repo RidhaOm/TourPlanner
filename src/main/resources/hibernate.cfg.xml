@@ -15,5 +15,6 @@
         <property name="hibernate.show_sql">true</property>
 
         <mapping class="at.technikum.tourplanner.model.Tour"/>
+        <mapping class="at.technikum.tourplanner.model.TourLog"/>
     </session-factory>
 </hibernate-configuration>

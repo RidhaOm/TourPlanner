@@ -30,6 +30,9 @@ public class TourRepository {
             session.persist(name);
             session.getTransaction().commit();
         }
+        catch (Exception e) {
+        e.printStackTrace();
+        }
 
         eventAggregator.publish(Event.NEW_TOUR);
     }

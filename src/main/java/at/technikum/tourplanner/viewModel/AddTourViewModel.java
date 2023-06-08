@@ -100,7 +100,6 @@ public class AddTourViewModel {
         setFromTextField("");
         setToTextField("");
         setTourDescriptionTextArea("");
-        setTransportTypeChoiceBox("");
     }
 
 }

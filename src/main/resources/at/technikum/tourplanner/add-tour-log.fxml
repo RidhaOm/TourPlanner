@@ -1,14 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="at.technikum.tourplanner.AddTourLog"
-            prefHeight="400.0" prefWidth="600.0" >
-
-</AnchorPane>
+<BorderPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.technikum.tourplanner.view.AddTourLogView">
+   <top>
+      <Label fx:id="tourName" alignment="CENTER" prefHeight="48.0" prefWidth="184.0" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+   </top>
+   <bottom>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <top>
+            <AnchorPane prefHeight="98.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="44.0" layoutY="29.0" prefHeight="35.0" prefWidth="86.0" text="Comment" />
+                  <TextArea fx:id="commentTextArea" layoutX="130.0" layoutY="26.0" prefHeight="42.0" prefWidth="346.0" />
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <Button fx:id="addTourLogButton" mnemonicParsing="false" onAction="#addTourLog" prefHeight="51.0" prefWidth="105.0" text="Add Tour Log" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="167.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="38.0" layoutY="24.0" prefHeight="25.0" prefWidth="78.0" text="Date" />
+            <Label layoutX="38.0" layoutY="93.0" prefHeight="25.0" prefWidth="78.0" text="Duration" />
+            <DatePicker fx:id="datePicker" layoutX="98.0" layoutY="24.0" />
+            <TextField fx:id="durationTextField" layoutX="98.0" layoutY="93.0" prefHeight="25.0" prefWidth="174.0" />
+            <Label layoutX="321.0" layoutY="24.0" prefHeight="25.0" prefWidth="78.0" text="Difficulty" />
+            <Label layoutX="321.0" layoutY="93.0" prefHeight="25.0" prefWidth="78.0" text="Ranking" />
+            <ChoiceBox fx:id="difficultyChoiceBox" layoutX="380.0" layoutY="24.0" prefWidth="150.0" />
+            <ChoiceBox fx:id="rankingChoiceBox" layoutX="380.0" layoutY="93.0" prefWidth="150.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

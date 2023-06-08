@@ -1,9 +1,7 @@
 package at.technikum.tourplanner.view;
 
-import at.technikum.tourplanner.service.MapQuestRouteService;
-import at.technikum.tourplanner.service.RouteService;
-import at.technikum.tourplanner.service.SelectedTourService;
-import at.technikum.tourplanner.service.TourService;
+import at.technikum.tourplanner.repository.TourLogRepository;
+import at.technikum.tourplanner.service.*;
 import at.technikum.tourplanner.viewModel.*;
 import at.technikum.tourplanner.data.HibernateSessionFactory;
 import at.technikum.tourplanner.event.EventAggregator;
@@ -23,6 +21,10 @@ public class ViewFactory {
     private final SelectedTourService selectedTourService;
     private final HibernateSessionFactory sessionFactory;
     private final NavigationBarViewModel navigationBarViewModel;
+    private final TourLogViewModel tourLogViewModel;
+    private final AddTourLogViewModel addTourLogViewModel;
+    private final TourLogService tourLogService;
+    private final TourLogRepository tourLogRepository;
 
     private ViewFactory() {
         eventAggregator = new EventAggregator();
@@ -36,6 +38,10 @@ public class ViewFactory {
         tourListViewModel = new TourListViewModel(eventAggregator,tourService, selectedTourService);
         tourDetailsViewModel = new TourDetailsViewModel(eventAggregator,tourService, selectedTourService);
         navigationBarViewModel = new NavigationBarViewModel(tourService, selectedTourService);
+        tourLogRepository = new TourLogRepository(sessionFactory, eventAggregator);
+        tourLogService = new TourLogService(tourLogRepository);
+        tourLogViewModel = new TourLogViewModel(eventAggregator, tourLogService, selectedTourService);
+        addTourLogViewModel = new AddTourLogViewModel(tourLogService, selectedTourService);
     }
 
     public Object create(Class<?> viewClass) {
@@ -54,11 +60,14 @@ public class ViewFactory {
         if (viewClass == SearchBarView.class) {
             return new SearchBarView();
         }
-        if (viewClass == TourLogView.class) {
-            return new TourLogView();
+        if (viewClass == AddTourLogView.class) {
+            return new AddTourLogView(addTourLogViewModel);
         }
         if (viewClass == ModifyTourView.class) {
             return new ModifyTourView(editTourViewModel);
+        }
+        if (viewClass == TourLogView.class) {
+            return new TourLogView(tourLogViewModel);
         }
         if (viewClass == MainView.class) {
             return new MainView();
