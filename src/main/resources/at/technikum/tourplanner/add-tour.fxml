@@ -13,8 +13,6 @@
       <TextField id="to" fx:id="toTextField" layoutX="101.0" layoutY="150.0" AnchorPane.leftAnchor="101.0" />
 
       <Button id="save-tour-button" layoutX="209.0" layoutY="209.0" mnemonicParsing="false" onAction="#saveTour" prefHeight="37.0" prefWidth="82.0" text="Save Tour" AnchorPane.leftAnchor="209.0" AnchorPane.rightAnchor="309.0" />
-      <Label id="information" fx:id="information" layoutX="140.0" layoutY="246.0" prefHeight="23.0" prefWidth="446.0" />
-      <Label layoutX="51.0" layoutY="246.0" prefHeight="23.0" prefWidth="70.0" text="Last Tour: " />
       <ChoiceBox fx:id="transportTypeChoiceBox" layoutX="412.0" layoutY="59.0" prefHeight="25.0" prefWidth="149.0" AnchorPane.rightAnchor="38.66666666666666" AnchorPane.topAnchor="59.0" />
       <Label fx:id="transportTypeLabel" layoutX="281.0" layoutY="60.0" prefHeight="23.0" prefWidth="112.0" text="Transport Type" AnchorPane.rightAnchor="207.0" AnchorPane.topAnchor="60.0" />
       <Label fx:id="tourDescriptionLabel" layoutX="279.0" layoutY="103.0" prefHeight="23.0" prefWidth="168.0" text="Tour Description (optional):" AnchorPane.rightAnchor="155.0" />

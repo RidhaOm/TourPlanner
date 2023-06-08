@@ -29,13 +29,11 @@ public class AddTourView implements Initializable {
     @FXML
     private ChoiceBox<String> transportTypeChoiceBox;
 
-    private String[] transportTypes = {"Walking", "Running", "Bike", "Car"};
+    private String[] transportTypes = {"Car", "Walking","Bike"};
 
     @FXML
     private TextArea tourDescriptionTextArea;
 
-    @FXML
-    private Label information;
 
     private final AddTourViewModel addTourViewModel;
 
@@ -48,18 +46,10 @@ public class AddTourView implements Initializable {
         tourNameTextField.textProperty().bindBidirectional(addTourViewModel.tourNameTextFieldProperty());
         fromTextField.textProperty().bindBidirectional(addTourViewModel.fromTextFieldProperty());
         toTextField.textProperty().bindBidirectional(addTourViewModel.toTextFieldProperty());
-        information.textProperty().bind(addTourViewModel.informationTextFieldProperty());
         transportTypeChoiceBox.getItems().addAll(transportTypes);
         transportTypeChoiceBox.valueProperty().bindBidirectional(addTourViewModel.transportTypeChoiceBoxProperty());
         tourDescriptionTextArea.textProperty().bindBidirectional(addTourViewModel.tourDescriptionTextAreaProperty());
     }
-//    @FXML
-//    void initialize() {
-//        tourNameTextField.textProperty().bindBidirectional(addTourViewModel.tourNameTextFieldProperty());
-//        fromTextField.textProperty().bindBidirectional(addTourViewModel.fromTextFieldProperty());
-//        toTextField.textProperty().bindBidirectional(addTourViewModel.toTextFieldProperty());
-//        information.textProperty().bind(addTourViewModel.informationTextFieldProperty());
-//    }
 
     public void saveTour() {
         addTourViewModel.saveTour();

@@ -44,13 +44,16 @@ public class TourListView implements Initializable {
         tourListView.setItems(tourListViewModel.getTourListView());
         // Disable the modifyTourButton initially
         modifyTourButton.setDisable(true);
+        deleteTourButton.setDisable(true);
 
         // Listen to the selected tour name property and enable/disable the modifyTourButton accordingly
         tourListViewModel.selectedTourNameProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue != null) {
                 modifyTourButton.setDisable(false);
+                deleteTourButton.setDisable(false);
             } else {
                 modifyTourButton.setDisable(true);
+                deleteTourButton.setDisable(true);
             }
         });
     }

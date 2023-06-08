@@ -22,12 +22,13 @@ public class MapQuestRouteService implements RouteService{
     private static String API_KEY = "M9j8nWh6SKj8IsZuJbUX3eKTg5DAjx9x";
 
     @Override
-    public Route getRoute(String from, String to) {
+    public Route getRoute(String from, String to, String transportType) {
         String uri = "https://www.mapquestapi.com/directions/v2/route?";
         uri += "key=" + API_KEY;
         uri += "&from=" + from;
         uri += "&to=" + to;
         uri += "&unit=k";
+        uri += "&routeType=" + transformTransportType(transportType);
 
         String responseJson = "";
 
@@ -98,5 +99,14 @@ public class MapQuestRouteService implements RouteService{
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    private String transformTransportType(String transportType){
+        return switch (transportType) {
+            case "Car" -> "fastest";
+            case "Bike" -> "bicycle";
+            case "Walking" -> "pedestrian";
+            default -> "";
+        };
     }
 }

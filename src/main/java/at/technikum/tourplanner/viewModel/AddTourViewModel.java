@@ -11,8 +11,7 @@ public class AddTourViewModel {
     private final StringProperty tourNameTextField = new SimpleStringProperty("");
     private final StringProperty fromTextField = new SimpleStringProperty("");
     private final StringProperty toTextField = new SimpleStringProperty("");
-    private final StringProperty informationTextfield = new SimpleStringProperty("");
-    private final StringProperty transportTypeChoiceBox = new SimpleStringProperty("");
+    private final StringProperty transportTypeChoiceBox = new SimpleStringProperty("Car");
     private final StringProperty tourDescriptionTextArea = new SimpleStringProperty("");
     private final RouteService routeService;
     private final TourService tourService;
@@ -58,18 +57,6 @@ public class AddTourViewModel {
         return toTextField;
     }
 
-    public String getInformationTextField() {
-        return informationTextfield.get();
-    }
-
-    public void setInformationTextField(String from) {
-        informationTextfield.set(from);
-    }
-
-    public StringProperty informationTextFieldProperty() {
-        return informationTextfield;
-    }
-
     public String getTransportTypeChoiceBox() {
         return transportTypeChoiceBox.get();
     }
@@ -101,22 +88,13 @@ public class AddTourViewModel {
         Double distance;
         String time;
         String description = tourDescriptionTextArea.get();
+        if(description==""){description="No description yet";}
         String transportType = transportTypeChoiceBox.get();
-        String routeInformation = "No information yet";
-        System.out.println("Hier:::: \n name: -"+name+"- from -"+ from+"- to -"+ to + "- description -" + description+ "- transtype -"+ transportType+"-");
-        Route route = routeService.getRoute(from, to);
+        Route route = routeService.getRoute(from, to, transportType);
         String imagePath = "src/main/resources/at/technikum/tourplanner/maps/" + name + ".jpg";
         routeService.saveMap(route.getSessionId(), imagePath);
         time = route.getFormattedTime();
         distance = route.getDistance();
-        String information = "From "
-                + from + " to "
-                + to + " in "
-                + time
-                + " (" + distance + ")";
-
-        setInformationTextField(information);
-        System.out.println(information);
         tourService.save(name, from, to, distance, time, description, transportType);
         setTourNameTextField("");
         setFromTextField("");
@@ -124,4 +102,6 @@ public class AddTourViewModel {
         setTourDescriptionTextArea("");
         setTransportTypeChoiceBox("");
     }
+
 }
+

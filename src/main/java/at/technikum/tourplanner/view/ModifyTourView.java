@@ -31,7 +31,7 @@ public class ModifyTourView implements Initializable {
     @FXML
     private ChoiceBox<String> transportTypeChoiceBox;
 
-    private String[] transportTypes = {"Walking", "Running", "Bike", "Car"};
+    private String[] transportTypes = {"Car", "Walking","Bike"};
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

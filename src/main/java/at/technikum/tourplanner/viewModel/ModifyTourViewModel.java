@@ -50,21 +50,19 @@ public class ModifyTourViewModel {
         Double distance;
         String time;
         String description = tourDescriptionTextArea.get();
+        if(description==""){description="No description yet";}
         String transportType = transportTypeChoiceBox.get();
-        String routeInformation = "No information yet";
-        Route route = routeService.getRoute(from, to);
+        Route route = routeService.getRoute(from, to, transportType);
         String imagePath = "src/main/resources/at/technikum/tourplanner/maps/" + name + ".jpg";
         routeService.saveMap(route.getSessionId(), imagePath);
         time = route.getFormattedTime();
         distance = route.getDistance();
         tourService.modify(selectedTourName, name, from, to, distance, time, description, transportType);
-//        tourService.modify(selectedTourName, name, from, to, 12.0, "12:32", description, transportType, routeInformation);
         setTourNameTextField("");
         setFromTextField("");
         setToTextField("");
         setTourDescriptionTextArea("");
         setTransportTypeChoiceBox("");
-        //System.out.println("Modify Tour: " + selectedTourName + "To " + name);
     }
 
     public String getTourNameTextField() {
