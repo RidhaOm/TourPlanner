@@ -47,16 +47,22 @@ public class ModifyTourViewModel {
         String name = tourNameTextField.get();
         String from = fromTextField.get();
         String to = toTextField.get();
-        Double distance;
-        String time;
         String description = tourDescriptionTextArea.get();
-        if(description==""){description="No description yet";}
         String transportType = transportTypeChoiceBox.get();
+
+        // Validate input
+        if (name.isEmpty() || from.isEmpty() || to.isEmpty() || !isAlphabetOnly(from) || !isAlphabetOnly(to)) {
+            // ADD LOG
+            System.out.println("Invalid input!");
+            return;
+        }
+
+        // Input is valid, proceed with saving the tour
         Route route = routeService.getRoute(from, to, transportType);
         String imagePath = "src/main/resources/at/technikum/tourplanner/maps/" + name + ".jpg";
         routeService.saveMap(route.getSessionId(), imagePath);
-        time = route.getFormattedTime();
-        distance = route.getDistance();
+        String time = route.getFormattedTime();
+        Double distance = route.getDistance();
         tourService.modify(selectedTourName, name, from, to, distance, time, description, transportType);
         setTourNameTextField("");
         setFromTextField("");
@@ -64,6 +70,11 @@ public class ModifyTourViewModel {
         setTourDescriptionTextArea("");
         setTransportTypeChoiceBox("");
     }
+
+    private boolean isAlphabetOnly(String input) {
+        return input.matches("[a-zA-Z]+");
+    }
+
 
     public String getTourNameTextField() {
         return tourNameTextField.get();

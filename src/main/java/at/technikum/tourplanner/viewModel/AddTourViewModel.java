@@ -85,22 +85,38 @@ public class AddTourViewModel {
         String name = tourNameTextField.get();
         String from = fromTextField.get();
         String to = toTextField.get();
-        Double distance;
-        String time;
         String description = tourDescriptionTextArea.get();
-        if(description==""){description="No description yet";}
         String transportType = transportTypeChoiceBox.get();
+
+        // Validate inputs
+        if (name.isEmpty() || from.isEmpty() || to.isEmpty()) {
+            //ADD LOG
+            System.out.println("Please fill in all the required fields.");
+            return;
+        }
+
+        if (!from.matches("[a-zA-Z]+") || !to.matches("[a-zA-Z]+")) {
+            //ADD LOG
+            System.out.println("From and To fields should be place names and contain only alphabetic characters.");
+            return;
+        }
+
+        if (description.isEmpty()) {
+            description = "No description yet";
+        }
+
         Route route = routeService.getRoute(from, to, transportType);
         String imagePath = "src/main/resources/at/technikum/tourplanner/maps/" + name + ".jpg";
         routeService.saveMap(route.getSessionId(), imagePath);
-        time = route.getFormattedTime();
-        distance = route.getDistance();
+        String time = route.getFormattedTime();
+        Double distance = route.getDistance();
         tourService.save(name, from, to, distance, time, description, transportType);
-        setTourNameTextField("");
-        setFromTextField("");
-        setToTextField("");
-        setTourDescriptionTextArea("");
-    }
 
+        // Clear input fields
+        tourNameTextField.set("");
+        fromTextField.set("");
+        toTextField.set("");
+        tourDescriptionTextArea.set("");
+    }
 }
 
