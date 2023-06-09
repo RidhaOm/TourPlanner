@@ -41,7 +41,7 @@ public class ViewFactory {
         tourListViewModel = new TourListViewModel(eventAggregator,tourService, selectedTourService);
         tourDetailsViewModel = new TourDetailsViewModel(eventAggregator,tourService, selectedTourService);
         navigationBarViewModel = new NavigationBarViewModel(tourService, selectedTourService);
-        tourLogRepository = new TourLogRepository(sessionFactory, eventAggregator);
+        tourLogRepository = new TourLogRepository(sessionFactory, eventAggregator, tourRepository);
         tourLogService = new TourLogService(tourLogRepository);
         tourLogViewModel = new TourLogViewModel(eventAggregator, tourLogService, selectedTourService, selectedTourLogService);
         addTourLogViewModel = new AddTourLogViewModel(tourLogService, selectedTourService);

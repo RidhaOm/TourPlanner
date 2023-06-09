@@ -38,6 +38,8 @@
             <Label layoutX="321.0" layoutY="93.0" prefHeight="25.0" prefWidth="78.0" text="Ranking" />
             <ChoiceBox fx:id="difficultyChoiceBox" layoutX="380.0" layoutY="24.0" prefWidth="150.0" />
             <ChoiceBox fx:id="rankingChoiceBox" layoutX="380.0" layoutY="93.0" prefWidth="150.0" />
+            <Label layoutX="389.0" layoutY="5.0" prefHeight="17.0" prefWidth="131.0" text="1 = easiest - 5 = hardest" />
+            <Label layoutX="399.0" layoutY="76.0" prefHeight="17.0" prefWidth="109.0" text="1 = best -  5 = worst" />
          </children>
       </AnchorPane>
    </center>

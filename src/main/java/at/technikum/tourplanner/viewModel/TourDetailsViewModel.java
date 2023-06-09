@@ -42,6 +42,8 @@ public class TourDetailsViewModel {
         this.selectedTourService = selectedTourService;
         eventAggregator.addSubscriber(Event.TOUR_SELECTED, this::updateTourDetailsLabel);
         eventAggregator.addSubscriber(Event.TOUR_SELECTED, this::updateMapView);
+        eventAggregator.addSubscriber(Event.NEW_TOUR_LOG, this::updateTourDetailsLabel);
+        eventAggregator.addSubscriber(Event.TOUR_LOG_DELETED, this::updateTourDetailsLabel);
     }
 
     public void writeNotify(){

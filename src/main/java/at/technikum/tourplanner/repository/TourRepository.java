@@ -73,6 +73,8 @@ public class TourRepository {
                 existingTour.setTime(newTour.getTime());
                 existingTour.setTransportType(newTour.getTransportType());
                 existingTour.setDescription(newTour.getDescription());
+                existingTour.setPopularity(newTour.getPopularity());
+                existingTour.setChildFriendliness(newTour.getChildFriendliness());
                 // Update other properties of the tour as needed
 
                 session.merge(existingTour);

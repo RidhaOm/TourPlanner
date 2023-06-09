@@ -37,6 +37,12 @@ public class Tour {
     @CsvBindByPosition(position = 7)
     private String description;
 
+    @Column
+    @CsvBindByPosition(position = 8)
+    private int popularity;
+    @Column
+    @CsvBindByPosition(position = 9)
+    private double childFriendliness;
 
     public Tour() {
     }
@@ -49,6 +55,7 @@ public class Tour {
         this.time = time;
         this.description = description;
         this.transportType = transportType;
+        //this.popularity = 0;
     }
 
     public Tour(String name, String tourFrom, String tourTo) {
@@ -71,5 +78,21 @@ public class Tour {
 
     public void setName(String value) {
         this.name = value;
+    }
+
+    public int getPopularity() {
+        return popularity;
+    }
+
+    public void setPopularity(int popularity) {
+        this.popularity = popularity;
+    }
+
+    public double getChildFriendliness() {
+        return childFriendliness;
+    }
+
+    public void setChildFriendliness(double childFriendliness) {
+        this.childFriendliness = childFriendliness;
     }
 }

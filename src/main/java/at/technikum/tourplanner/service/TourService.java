@@ -52,6 +52,8 @@ public class TourService {
         tourDetails += "Time: " + tour.getTime()+"\n";
         tourDetails += "Distance: " + tour.getDistance()+"\n";
         tourDetails += "Description: " + tour.getDescription()+"\n";
+        tourDetails += "Popularity: " + tour.getPopularity() + "\n";
+        tourDetails += "Child Friend-liness: " + tour.getChildFriendliness() + "\n";
         return tourDetails;
     }
     public void saveTour(Tour tour) {
