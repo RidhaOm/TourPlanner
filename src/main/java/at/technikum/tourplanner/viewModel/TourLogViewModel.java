@@ -18,20 +18,28 @@ public class TourLogViewModel {
     private final EventAggregator eventAggregator;
     private final TourLogService tourLogService;
     private final SelectedTourService selectedTourService;
-
-
     private final StringProperty selectedTourLog = new SimpleStringProperty();
+    private final StringProperty selectedTour = new SimpleStringProperty();
     public TourLogViewModel(EventAggregator eventAggregator, TourLogService tourLogService, SelectedTourService selectedTourService){
         this.eventAggregator = eventAggregator;
         this.tourLogService = tourLogService;
         this.selectedTourService=selectedTourService;
-        tourLogListView.addAll(tourLogService.findAll());
+        tourLogListView.addAll(tourLogService.findByTourName(getSelectedTourName()));
+        eventAggregator.addSubscriber(Event.TOUR_SELECTED, this::enableButton);
+        eventAggregator.addSubscriber(Event.TOUR_SELECTED, this::updateTourLogList);
         eventAggregator.addSubscriber(Event.NEW_TOUR_LOG, this::onNewTourLog);
     }
 
+    private void enableButton(){
+        selectedTour.set("");
+    }
+    private void updateTourLogList(){
+        tourLogListView.clear();
+        tourLogListView.addAll(tourLogService.findByTourName(getSelectedTourName()));
+    }
     private void onNewTourLog() {
         tourLogListView.clear();
-        tourLogListView.addAll(tourLogService.findAll());
+        tourLogListView.addAll(tourLogService.findByTourName(getSelectedTourName()));
     }
 
     public void deleteTourLog(String tourLogName){
@@ -48,6 +56,9 @@ public class TourLogViewModel {
         eventAggregator.publish(Event.Tour_LOG_SELECTED);
         System.out.println(tourlog);
     }
+    public String getSelectedTourName(){
+        return selectedTourService.getTourName();
+    }
 
     public ObservableList<String> getTourLogListView() {
         return tourLogListView;
@@ -63,5 +74,17 @@ public class TourLogViewModel {
 
     public void setSelectedTourLog(String selectedTourLog) {
         this.selectedTourLog.set(selectedTourLog);
+    }
+
+    public String getSelectedTour() {
+        return selectedTour.get();
+    }
+
+    public StringProperty selectedTourProperty() {
+        return selectedTour;
+    }
+
+    public void setSelectedTour(String selectedTour) {
+        this.selectedTour.set(selectedTour);
     }
 }

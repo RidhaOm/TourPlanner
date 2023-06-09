@@ -25,6 +25,7 @@ public class ViewFactory {
     private final AddTourLogViewModel addTourLogViewModel;
     private final TourLogService tourLogService;
     private final TourLogRepository tourLogRepository;
+    private final ModifyTourLogViewModel modifyTourLogViewModel;
 
     private ViewFactory() {
         eventAggregator = new EventAggregator();
@@ -42,6 +43,7 @@ public class ViewFactory {
         tourLogService = new TourLogService(tourLogRepository);
         tourLogViewModel = new TourLogViewModel(eventAggregator, tourLogService, selectedTourService);
         addTourLogViewModel = new AddTourLogViewModel(tourLogService, selectedTourService);
+        modifyTourLogViewModel = new ModifyTourLogViewModel();
     }
 
     public Object create(Class<?> viewClass) {
@@ -68,6 +70,9 @@ public class ViewFactory {
         }
         if (viewClass == TourLogView.class) {
             return new TourLogView(tourLogViewModel);
+        }
+        if (viewClass == ModifyTourLogView.class) {
+            return new ModifyTourLogView(modifyTourLogViewModel);
         }
         if (viewClass == MainView.class) {
             return new MainView();

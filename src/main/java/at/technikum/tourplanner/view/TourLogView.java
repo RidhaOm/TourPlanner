@@ -37,6 +37,8 @@ public class TourLogView implements Initializable {
         // Disable the modifyTourButton initially
         modifyTourLogButton.setDisable(true);
         deleteTourLogButton.setDisable(true);
+        addTourLogButton.disableProperty().bind(tourLogViewModel.selectedTourProperty().isNull());
+
 
         // Listen to the selected tour name property and enable/disable the modifyTourButton accordingly
         tourLogViewModel.selectedTourLogProperty().addListener((observable, oldValue, newValue) -> {
@@ -56,6 +58,19 @@ public class TourLogView implements Initializable {
             Scene scene = new Scene(root, 600, 500);
             Stage stage = new Stage();
             stage.setTitle("Add Tour Log");
+            stage.setScene(scene);
+            stage.show();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+
+    public void openModifyTourLogWindow(ActionEvent event){
+        try {
+            Parent root = FXMLDependencyInjector.load("modify-tour-log.fxml", Locale.GERMAN);
+            Scene scene = new Scene(root, 600, 300);
+            Stage stage = new Stage();
+            stage.setTitle("Modify Tour Log");
             stage.setScene(scene);
             stage.show();
         } catch (Exception e) {

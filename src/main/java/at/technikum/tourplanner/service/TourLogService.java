@@ -31,6 +31,12 @@ public class TourLogService {
                 .map(TourLog::getTourLog)
                 .collect(Collectors.toList());
     }
+    public List<String> findByTourName(String tourName) {
+        return tourLogRepository.findByTourName(tourName)
+                .stream()
+                .map(TourLog::getTourLog)
+                .collect(Collectors.toList());
+    }
     public TourLog findByName(String name) {
         return tourLogRepository.findByName(name);
     }

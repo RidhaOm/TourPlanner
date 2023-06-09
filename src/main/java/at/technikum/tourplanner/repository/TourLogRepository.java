@@ -57,6 +57,16 @@ public class TourLogRepository {
             return session.createQuery(criteria).getResultList();
         }
     }
+    public List<TourLog> findByTourName(String tourName) {
+        try (Session session = sessionFactory.openSession()) {
+            CriteriaBuilder builder = session.getCriteriaBuilder();
+            CriteriaQuery<TourLog> criteria = builder.createQuery(TourLog.class);
+            Root<TourLog> root = criteria.from(TourLog.class);
+            criteria.where(builder.equal(root.get("tourName"), tourName));
+
+            return session.createQuery(criteria).getResultList();
+        }
+    }
     public TourLog findByName(String name) {
         try (Session session = sessionFactory.openSession()) {
             CriteriaBuilder builder = session.getCriteriaBuilder();
