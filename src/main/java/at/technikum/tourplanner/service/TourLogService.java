@@ -25,6 +25,11 @@ public class TourLogService {
     public void delete(String name) {
         tourLogRepository.delete(name);
     }
+
+    public void modify(String existingName, String tourName, String date, double duration, int difficulty, int ranking, String comment){
+        TourLog newTourLog = new TourLog(tourName, date, duration, difficulty, ranking, comment);
+        tourLogRepository.modify(existingName, newTourLog);
+    }
     public List<String> findAll() {
         return tourLogRepository.findAll()
                 .stream()

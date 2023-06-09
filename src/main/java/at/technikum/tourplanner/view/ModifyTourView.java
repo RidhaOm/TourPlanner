@@ -35,24 +35,24 @@ public class ModifyTourView implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        tourNameTextField.textProperty().bindBidirectional(editTourViewModel.tourNameTextFieldProperty());
-        fromTextField.textProperty().bindBidirectional(editTourViewModel.fromTextFieldProperty());
-        toTextField.textProperty().bindBidirectional(editTourViewModel.toTextFieldProperty());
+        tourNameTextField.textProperty().bindBidirectional(modifyTourViewModel.tourNameTextFieldProperty());
+        fromTextField.textProperty().bindBidirectional(modifyTourViewModel.fromTextFieldProperty());
+        toTextField.textProperty().bindBidirectional(modifyTourViewModel.toTextFieldProperty());
         transportTypeChoiceBox.getItems().addAll(transportTypes);
-        transportTypeChoiceBox.valueProperty().bindBidirectional(editTourViewModel.transportTypeChoiceBoxProperty());
-        tourDescriptionTextArea.textProperty().bindBidirectional(editTourViewModel.tourDescriptionTextAreaProperty());
+        transportTypeChoiceBox.valueProperty().bindBidirectional(modifyTourViewModel.transportTypeChoiceBoxProperty());
+        tourDescriptionTextArea.textProperty().bindBidirectional(modifyTourViewModel.tourDescriptionTextAreaProperty());
     }
 
     @FXML
     private TextArea tourDescriptionTextArea;
 
-    private final ModifyTourViewModel editTourViewModel;
+    private final ModifyTourViewModel modifyTourViewModel;
     public ModifyTourView(ModifyTourViewModel editTourViewModel) {
-        this.editTourViewModel = editTourViewModel;
+        this.modifyTourViewModel = editTourViewModel;
     }
     @FXML
     public void modifyTour(){
-        editTourViewModel.editTour();
+        modifyTourViewModel.editTour();
         Stage stage = (Stage) rootPane.getScene().getWindow();
         stage.close();
     }

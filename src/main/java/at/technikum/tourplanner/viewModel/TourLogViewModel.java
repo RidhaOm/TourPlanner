@@ -4,6 +4,7 @@ package at.technikum.tourplanner.viewModel;
 import at.technikum.tourplanner.event.Event;
 import at.technikum.tourplanner.event.EventAggregator;
 import at.technikum.tourplanner.model.TourLog;
+import at.technikum.tourplanner.service.SelectedTourLogService;
 import at.technikum.tourplanner.service.SelectedTourService;
 import at.technikum.tourplanner.service.TourLogService;
 import javafx.beans.property.SimpleStringProperty;
@@ -18,16 +19,19 @@ public class TourLogViewModel {
     private final EventAggregator eventAggregator;
     private final TourLogService tourLogService;
     private final SelectedTourService selectedTourService;
+    private final SelectedTourLogService selectedTourLogService;
     private final StringProperty selectedTourLog = new SimpleStringProperty();
     private final StringProperty selectedTour = new SimpleStringProperty();
-    public TourLogViewModel(EventAggregator eventAggregator, TourLogService tourLogService, SelectedTourService selectedTourService){
+    public TourLogViewModel(EventAggregator eventAggregator, TourLogService tourLogService, SelectedTourService selectedTourService, SelectedTourLogService selectedTourLogService){
         this.eventAggregator = eventAggregator;
         this.tourLogService = tourLogService;
         this.selectedTourService=selectedTourService;
+        this.selectedTourLogService = selectedTourLogService;
         tourLogListView.addAll(tourLogService.findByTourName(getSelectedTourName()));
         eventAggregator.addSubscriber(Event.TOUR_SELECTED, this::enableButton);
         eventAggregator.addSubscriber(Event.TOUR_SELECTED, this::updateTourLogList);
         eventAggregator.addSubscriber(Event.NEW_TOUR_LOG, this::onNewTourLog);
+        eventAggregator.addSubscriber(Event.TOUR_LOG_MODIFIED, this::updateTourLogList);
     }
 
     private void enableButton(){
@@ -52,8 +56,8 @@ public class TourLogViewModel {
 
     public void selectTourLog(String tourlog) {
         selectedTourLog.set(tourlog);
-        selectedTourService.setTourName(tourlog);
-        eventAggregator.publish(Event.Tour_LOG_SELECTED);
+        selectedTourLogService.setTourLogName(tourlog);
+        eventAggregator.publish(Event.TOUR_LOG_SELECTED);
         System.out.println(tourlog);
     }
     public String getSelectedTourName(){

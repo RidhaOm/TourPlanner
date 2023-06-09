@@ -47,6 +47,30 @@ public class TourLogRepository {
             }
         }
     }
+    public void modify(String tourLogName, TourLog newTourLog) {
+        try (Session session = sessionFactory.openSession()) {
+            session.getTransaction().begin();
+            TourLog existingTourLog = findByName(tourLogName);
+            if (existingTourLog != null) {
+                existingTourLog.setTourName(newTourLog.getTourName());
+                existingTourLog.setDate(newTourLog.getDate());
+                existingTourLog.setDuration(newTourLog.getDuration());
+                existingTourLog.setDifficulty(newTourLog.getDifficulty());
+                existingTourLog.setRanking(newTourLog.getRanking());
+                existingTourLog.setComment(newTourLog.getComment());
+                existingTourLog.setName(newTourLog.getName());
+
+
+                session.merge(existingTourLog);
+                session.getTransaction().commit();
+                eventAggregator.publish(Event.TOUR_LOG_MODIFIED);
+            } else {
+                session.getTransaction().rollback();
+                // Handle case when the tour with the given name doesn't exist
+                // You can throw an exception, log an error, or handle it in any way you prefer.
+            }
+        }
+    }
 
     public List<TourLog> findAll() {
         try (Session session = sessionFactory.openSession()) {

@@ -32,6 +32,7 @@ public class TourLog {
     @Column
     @CsvBindByPosition(position = 6)
     private String comment;
+
     @Column
     @CsvBindByPosition(position = 6)
     private String name;
@@ -108,5 +109,12 @@ public class TourLog {
 
     public void setComment(String comment) {
         this.comment = comment;
+    }
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

@@ -68,7 +68,7 @@ public class TourLogView implements Initializable {
     public void openModifyTourLogWindow(ActionEvent event){
         try {
             Parent root = FXMLDependencyInjector.load("modify-tour-log.fxml", Locale.GERMAN);
-            Scene scene = new Scene(root, 600, 300);
+            Scene scene = new Scene(root, 600, 500);
             Stage stage = new Stage();
             stage.setTitle("Modify Tour Log");
             stage.setScene(scene);
