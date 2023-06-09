@@ -5,6 +5,8 @@ import at.technikum.tourplanner.service.PDFService;
 import at.technikum.tourplanner.service.SelectedTourService;
 import at.technikum.tourplanner.service.TourService;
 import javafx.stage.FileChooser;
+import org.apache.log4j.Logger;
+
 
 import java.io.File;
 import java.io.IOException;
@@ -12,6 +14,8 @@ import java.io.IOException;
 public class NavigationBarViewModel {
     private final TourService tourService;
     private final SelectedTourService selectedTourService;
+    private static final Logger logger = Logger.getLogger(NavigationBarViewModel.class);
+
 
     public NavigationBarViewModel(TourService tourService, SelectedTourService selectedTourService) {
         this.tourService = tourService;
@@ -24,10 +28,13 @@ public class NavigationBarViewModel {
             Tour selectedTour = tourService.findByName(selectedTourName);
             if (selectedTour != null) {
                 PDFService.export(selectedTour);
+                logger.info("Tour exported successfully: " + selectedTourName);
             } else {
+                logger.error("Tour with name '" + selectedTourName + "' does not exist.");
                 System.out.println("Tour with name '" + selectedTourName + "' does not exist.");
             }
         } else {
+            logger.warn("No tour selected");
             System.out.println("No tour selected");
         }
     }
@@ -42,12 +49,15 @@ public class NavigationBarViewModel {
             try {
                 Tour importedTour = PDFService.importTour(selectedFile);
                 tourService.saveTour(importedTour);
+                logger.info("Tour imported successfully.");
                 System.out.println("Tour imported successfully.");
             } catch (IOException e) {
+                logger.error("Error occurred while importing tour.", e);
                 System.out.println("Error occurred while importing tour.");
                 e.printStackTrace();
             }
         } else {
+            logger.info("Tour import canceled.");
             System.out.println("Tour import canceled.");
         }
     }

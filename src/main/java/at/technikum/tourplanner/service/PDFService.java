@@ -6,15 +6,13 @@ import com.itextpdf.io.image.ImageDataFactory;
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfReader;
 import com.itextpdf.kernel.pdf.PdfWriter;
-import com.itextpdf.kernel.pdf.canvas.parser.PdfCanvasProcessor;
 import com.itextpdf.kernel.pdf.canvas.parser.PdfTextExtractor;
-import com.itextpdf.kernel.pdf.canvas.parser.listener.LocationTextExtractionStrategy;
 import com.itextpdf.kernel.pdf.canvas.parser.listener.SimpleTextExtractionStrategy;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Image;
 import com.itextpdf.layout.element.Paragraph;
+import org.apache.log4j.Logger;
 
-import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -23,12 +21,12 @@ import java.net.URL;
 public class PDFService {
     private static final String IMAGE_PATH = "/at/technikum/tourplanner/maps/";
     private static final String PDF_PATH = "src/main/resources/at/technikum/tourplanner/pdf/";
-
+    private static final Logger logger = Logger.getLogger(PDFService.class);
     public static void export(Tour tour) {
         try {
             URL imageUrl = PDFService.class.getResource(IMAGE_PATH + tour.getName() + ".jpg");
             if (imageUrl == null) {
-                System.out.println("Map image for tour '" + tour.getName() + "' not found.");
+                logger.error("Map image for tour '" + tour.getName() + "' not found.");
                 return;
             }
 
@@ -49,12 +47,12 @@ public class PDFService {
             pdf.add(img);
 
             pdf.close();
-            System.out.println("PDF exported successfully.");
+            logger.info("PDF exported successfully.");
         } catch (FileNotFoundException e) {
-            System.out.println("Error: PDF file not found.");
+            logger.error("Error: PDF file not found.", e);
             e.printStackTrace();
         } catch (Exception e) {
-            System.out.println("Error occurred while exporting PDF.");
+            logger.error("Error occurred while exporting PDF.", e);
             e.printStackTrace();
         }
     }
@@ -78,3 +76,4 @@ public class PDFService {
         return new Tour(name, tourFrom, tourTo, Double.parseDouble(distance), time, transportType, description);
     }
 }
+

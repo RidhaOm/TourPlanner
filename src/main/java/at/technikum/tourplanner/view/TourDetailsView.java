@@ -1,11 +1,11 @@
 package at.technikum.tourplanner.view;
 
 import at.technikum.tourplanner.viewModel.TourDetailsViewModel;
-import javafx.beans.binding.Bindings;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import org.apache.log4j.Logger;
+
 
 public class TourDetailsView {
 
@@ -15,6 +15,8 @@ public class TourDetailsView {
     @FXML
     private Label tourDetailsLabel;
     private final TourDetailsViewModel tourDetailsViewModel;
+    private static final Logger logger = Logger.getLogger(TourDetailsView.class);
+
 
     public TourDetailsView(TourDetailsViewModel tourDetailsViewModel) {
         this.tourDetailsViewModel = tourDetailsViewModel;
@@ -27,7 +29,7 @@ public class TourDetailsView {
     
     public void getSelectedTourName() {
         String name = tourDetailsViewModel.getSelectedTourName();
-        System.out.println("item "+name+" selected");
+        logger.info("Selected tour: " + name);
     }
     public ImageView getMapView() {
         return mapView;

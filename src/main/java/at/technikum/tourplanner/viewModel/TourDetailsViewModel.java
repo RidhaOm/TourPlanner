@@ -10,6 +10,8 @@ import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.scene.image.Image;
+import org.apache.log4j.Logger;
+
 
 public class TourDetailsViewModel {
 
@@ -19,6 +21,8 @@ public class TourDetailsViewModel {
 
     private final StringProperty tourDetailsLabel = new SimpleStringProperty("");
     private final ObjectProperty<Image> mapview = new SimpleObjectProperty();
+    private static final Logger logger = Logger.getLogger(TourDetailsViewModel.class);
+
 
     public String getTourDetailsLabel() {
         return tourDetailsLabel.get();
@@ -42,6 +46,7 @@ public class TourDetailsViewModel {
 
     public void writeNotify(){
         String tourName = selectedTourService.getTourName();
+        logger.info("Selected tour: " + tourName + " (From ViewModel)");
         System.out.println("item "+tourName+" selected From ViewModel");
     }
 
@@ -51,6 +56,7 @@ public class TourDetailsViewModel {
             String imagePath = "/at/technikum/tourplanner/maps/" + selectedTourName + ".jpg";
             Image image = new Image(getClass().getResourceAsStream(imagePath));
             mapview.set(image);
+            logger.info("MapView updated for tour: " + selectedTourName);
         }
     }
 
@@ -59,6 +65,7 @@ public class TourDetailsViewModel {
         String tourDetails = tourService.getTourDetailsByName(selectedTourName);
         if (tourDetails != null) {
             tourDetailsLabel.set(tourDetails);
+            logger.info("Tour details label updated for tour: " + selectedTourName);
         }
     }
 

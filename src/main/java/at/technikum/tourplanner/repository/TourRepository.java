@@ -8,6 +8,8 @@ import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Root;
 import org.hibernate.Session;
+import org.apache.log4j.Logger;
+
 
 import java.util.List;
 
@@ -15,6 +17,8 @@ public class TourRepository {
 
     private final HibernateSessionFactory sessionFactory;
     private final EventAggregator eventAggregator;
+    private static final Logger logger = Logger.getLogger(TourRepository.class);
+
 
     public TourRepository(
             HibernateSessionFactory sessionFactory,
@@ -29,8 +33,10 @@ public class TourRepository {
             session.getTransaction().begin();
             session.persist(name);
             session.getTransaction().commit();
+            logger.info("Tour saved successfully: " + name);
         }
         catch (Exception e) {
+            logger.error("Error occurred while saving tour", e);
         e.printStackTrace();
         }
 
@@ -42,12 +48,14 @@ public class TourRepository {
             session.getTransaction().begin();
             Tour tour = findByName(existingTourName);
             if (tour != null) {
-                System.out.println("comm");
                 session.delete(tour);
                 session.getTransaction().commit();
                 eventAggregator.publish(Event.TOUR_DELETED);
+                logger.info("Tour deleted successfully: " + existingTourName);
             } else {
                 session.getTransaction().rollback();
+                session.getTransaction().rollback();
+                logger.error("Tour not found for deletion: " + existingTourName);
                 // Handle case when the tour with the given name doesn't exist
                 // You can throw an exception, log an error, or handle it in any way you prefer.
             }
@@ -69,8 +77,10 @@ public class TourRepository {
 
                 session.merge(existingTour);
                 session.getTransaction().commit();
+                logger.info("Tour modified successfully: " + tourName);
             } else {
                 session.getTransaction().rollback();
+                logger.error("Tour not found for modification: " + tourName);
                 // Handle case when the tour with the given name doesn't exist
                 // You can throw an exception, log an error, or handle it in any way you prefer.
             }

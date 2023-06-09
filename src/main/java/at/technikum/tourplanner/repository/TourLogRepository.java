@@ -3,18 +3,21 @@ package at.technikum.tourplanner.repository;
 import at.technikum.tourplanner.data.HibernateSessionFactory;
 import at.technikum.tourplanner.event.Event;
 import at.technikum.tourplanner.event.EventAggregator;
-import at.technikum.tourplanner.model.Tour;
 import at.technikum.tourplanner.model.TourLog;
 import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Root;
 import org.hibernate.Session;
+import org.apache.log4j.Logger;
+
 
 import java.util.List;
 
 public class TourLogRepository {
     private final HibernateSessionFactory sessionFactory;
     private final EventAggregator eventAggregator;
+    private static final Logger logger = Logger.getLogger(TourLogRepository.class);
+
 
     public TourLogRepository(HibernateSessionFactory sessionFactory,EventAggregator eventAggregator) {
         this.sessionFactory = sessionFactory;
@@ -22,7 +25,7 @@ public class TourLogRepository {
     }
 
     public void save(TourLog tourLog) {
-        System.out.println("Create tour log for the tour: "+tourLog.getTourName() + "\n"+ tourLog.getDate() +"\n"+ tourLog.getDuration() +"\n"+ tourLog.getDifficulty() +"\n" + tourLog.getRanking() +"\n"+tourLog.getComment());
+        logger.info("Create tour log for the tour: " + tourLog.getTourName() + "\n" + tourLog.getDate() + "\n" + tourLog.getDuration() + "\n" + tourLog.getDifficulty() + "\n" + tourLog.getRanking() + "\n" + tourLog.getComment());
         try (Session session = sessionFactory.openSession()) {
             session.getTransaction().begin();
             session.persist(tourLog);
@@ -42,6 +45,7 @@ public class TourLogRepository {
                 eventAggregator.publish(Event.TOUR_LOG_DELETED);
             } else {
                 session.getTransaction().rollback();
+                logger.error("Tour log with name '" + existingTourLogName + "' not found.");
                 // Handle case when the tour with the given name doesn't exist
                 // You can throw an exception, log an error, or handle it in any way you prefer.
             }
@@ -66,6 +70,7 @@ public class TourLogRepository {
                 eventAggregator.publish(Event.TOUR_LOG_MODIFIED);
             } else {
                 session.getTransaction().rollback();
+                logger.error("Tour log with name '" + tourLogName + "' not found.");
                 // Handle case when the tour with the given name doesn't exist
                 // You can throw an exception, log an error, or handle it in any way you prefer.
             }

@@ -13,6 +13,7 @@ module com.example.tourplanner {
     requires io;
     requires kernel;
     requires layout;
+    requires log4j;
 
     opens at.technikum.tourplanner to javafx.fxml, org.hibernate.orm.core;
     opens at.technikum.tourplanner.view to javafx.fxml;
