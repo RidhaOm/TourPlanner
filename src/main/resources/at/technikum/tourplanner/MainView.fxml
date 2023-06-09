@@ -4,14 +4,17 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+<VBox fx:controller="at.technikum.tourplanner.view.MainView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+
     <children>
         <fx:include source="navigation-bar.fxml" />
         <fx:include source="search-bar.fxml"/>
-        <HBox prefHeight="600.0" prefWidth="1000.0">
+
+        <HBox VBox.vgrow="ALWAYS">
             <children>
                 <fx:include source="tour-list.fxml"/>
-                <VBox prefHeight="550.0" prefWidth="700.0">
+                <VBox HBox.hgrow="ALWAYS">
                     <children>
                         <fx:include source="tour-details.fxml"/>
                         <fx:include source="tour-log.fxml"/>
@@ -20,4 +23,6 @@
             </children>
         </HBox>
     </children>
+
+
 </VBox>

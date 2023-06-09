@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 
 <AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.technikum.tourplanner.view.NavigationBarView">
-    <HBox id="navbar" alignment="TOP_CENTER" prefHeight="25.0" prefWidth="1000.0">
+    <HBox id="navbar" alignment="TOP_CENTER" prefHeight="25.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
         <children>
             <MenuButton id="file-button" mnemonicParsing="false" prefHeight="25.0" prefWidth="167.0" text="File">
                 <opaqueInsets>
@@ -16,27 +16,27 @@
                     <MenuItem fx:id="importTour" text="Import Tour" onAction="#importTour"/>
                 </items>
             </MenuButton>
-            <Button id="recommended-tours-button" fx:id="recommendedToursButton" onAction="#openRecommendedToursWindow" layoutX="260.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="167.0" text="Recommended Tours">
+            <Button id="recommended-tours-button" fx:id="recommendedToursButton" onAction="#openRecommendedToursWindow" mnemonicParsing="false" prefHeight="25.0" prefWidth="167.0" text="Recommended Tours">
                 <opaqueInsets>
                     <Insets />
                 </opaqueInsets>
             </Button>
-            <Button id="options-button" layoutX="210.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="167.0" text="Options">
+            <Button id="options-button" mnemonicParsing="false" prefHeight="25.0" prefWidth="167.0" text="Options">
                 <opaqueInsets>
                     <Insets />
                 </opaqueInsets>
             </Button>
-            <Button disable="true" layoutX="360.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="166.0">
+            <Button disable="true" mnemonicParsing="false" prefHeight="25.0" prefWidth="166.0">
                 <opaqueInsets>
                     <Insets />
                 </opaqueInsets>
             </Button>
-            <Button disable="true" layoutX="310.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="166.0">
+            <Button disable="true" mnemonicParsing="false" prefHeight="25.0" prefWidth="166.0">
                 <opaqueInsets>
                     <Insets />
                 </opaqueInsets>
             </Button>
-            <Button id="help-button" layoutX="360.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="167.0" text="Help">
+            <Button id="help-button" mnemonicParsing="false" prefHeight="25.0" prefWidth="167.0" text="Help">
                 <opaqueInsets>
                     <Insets />
                 </opaqueInsets>
