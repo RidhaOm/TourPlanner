@@ -20,19 +20,48 @@ public class AddTourLogViewModel {
     }
 
     public void addTourLog() {
-        String tourName=selectedTourService.getTourName();
-        String date = getDatePicker().toString();
-        double duration = Double.parseDouble(durationTextField.get());
-        int difficulty = Integer.parseInt(difficultyChoiceBox.get());
-        int ranking = Integer.parseInt(rankingChoiceBox.get());
+        String tourName = selectedTourService.getTourName();
+
+        // Validate DatePicker input
+        LocalDate selectedDate = getDatePicker();
+        if (selectedDate == null) {
+            // Add Error Log
+            System.out.println("Please select a date");
+            return; // Abort adding tour log
+        }
+
+        String date = selectedDate.toString();
+
+        // Validate durationTextField input
+        if (getDurationTextField()==null) {
+            // ADD ERROR LOG
+            System.out.println("Please enter a duration");
+            return; // Abort adding tour log
+        }
+        double duration;
+        try {
+            duration = Double.parseDouble(getDurationTextField());
+        } catch (NumberFormatException e) {
+            // Add ERROR Log
+            System.out.println("Invalid duration input: " + getDurationTextField());
+            return; // Abort adding tour log
+        }
+
+        int difficulty = Integer.parseInt(getDifficultyChoiceBox());
+        int ranking = Integer.parseInt(getRankingChoiceBox());
         String comment = getCommentTextArea();
+        if (comment == "") {comment = "No comment";}
+
         tourLogService.saveTourLog(tourName, date, duration, difficulty, ranking, comment);
+
         setDurationTextField("");
         setCommentTextArea("");
         setDifficultyChoiceBox("1");
         setRankingChoiceBox("1");
         setDatePicker(LocalDate.now());
     }
+
+
 
     public ObjectProperty<LocalDate> datePickerProperty() {
         return datePicker;

@@ -6,32 +6,71 @@
 <?import javafx.scene.text.*?>
 
 <AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.technikum.tourplanner.view.TourDetailsView">
-    <VBox AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0">
-        <HBox VBox.vgrow="ALWAYS">
-            <VBox HBox.hgrow="ALWAYS">
-                <TitledPane prefHeight="200.0" VBox.vgrow="ALWAYS" text="Map">
-                    <content>
-                        <ImageView id="mapview" fx:id="mapView" fitHeight="244.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <!--<Image url="@maps/map.jpg" />-->
-                            </image>
-                        </ImageView>
-                    </content>
-                </TitledPane>
-                <TitledPane animated="false" VBox.vgrow="ALWAYS" text="Details">
-                    <content>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="295.0" prefWidth="454.0">
-                            <children>
-                                <Label fx:id="tourDetailsLabel" layoutX="20.0" layoutY="14.0" prefHeight="209.0" prefWidth="426.0">
-                                    <font>
-                                        <Font size="15.0" />
-                                    </font>
-                                </Label>
-                            </children>
-                        </AnchorPane>
-                    </content>
-                </TitledPane>
-            </VBox>
-        </HBox>
-    </VBox>
+    <GridPane AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0">
+        <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints vgrow="ALWAYS" />
+        </rowConstraints>
+        <TitledPane GridPane.columnIndex="0" prefHeight="200.0" VBox.vgrow="ALWAYS" text="Map">
+            <content>
+                <ImageView id="mapview" fx:id="mapView" fitHeight="244.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <!--<Image url="@maps/map.jpg" />-->
+                    </image>
+                </ImageView>
+            </content>
+        </TitledPane>
+        <TitledPane GridPane.columnIndex="1" animated="false" VBox.vgrow="ALWAYS" text="Details">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="295.0" prefWidth="454.0">
+                    <children>
+                        <Label fx:id="tourDetailsLabel" layoutX="20.0" layoutY="14.0" prefHeight="209.0" prefWidth="426.0">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </content>
+        </TitledPane>
+    </GridPane>
 </AnchorPane>
+
+<!--
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.technikum.tourplanner.view.TourDetailsView">
+    <GridPane AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0">
+        <columnConstraints>
+            <ColumnConstraints percentWidth="50" />
+            <ColumnConstraints percentWidth="50" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints vgrow="ALWAYS" />
+        </rowConstraints>
+        <TitledPane GridPane.columnIndex="0" prefHeight="200.0" VBox.vgrow="ALWAYS" text="Map">
+            <content>
+                <ImageView id="mapview" fx:id="mapView" fitHeight="244.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                    </image>
+                </ImageView>
+            </content>
+        </TitledPane>
+        <TitledPane GridPane.columnIndex="1" animated="false" VBox.vgrow="ALWAYS" text="Details">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="295.0" prefWidth="454.0">
+                    <children>
+                        <Label fx:id="tourDetailsLabel" layoutX="20.0" layoutY="14.0" prefHeight="209.0" prefWidth="426.0">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </content>
+        </TitledPane>
+    </GridPane>
+</AnchorPane>
+-->
