@@ -17,9 +17,11 @@ public class ViewFactory {
     private final ModifyTourViewModel editTourViewModel;
     private final TourListViewModel tourListViewModel;
     private final TourDetailsViewModel tourDetailsViewModel;
+    private final RecommendedToursViewModel recommendedTourViewModel;
     private final TourService tourService;
     private final SelectedTourService selectedTourService;
     private final SelectedTourLogService selectedTourLogService;
+    private final RecommendedTourService recommendedTourService;
     private final HibernateSessionFactory sessionFactory;
     private final NavigationBarViewModel navigationBarViewModel;
     private final TourLogViewModel tourLogViewModel;
@@ -32,20 +34,22 @@ public class ViewFactory {
         eventAggregator = new EventAggregator();
         sessionFactory = new HibernateSessionFactory();
         tourRepository = new TourRepository(sessionFactory, eventAggregator);
-        tourService = new TourService(tourRepository);
+        tourLogRepository = new TourLogRepository(sessionFactory, eventAggregator, tourRepository);
+        tourService = new TourService(tourRepository, tourLogRepository);
         selectedTourService = new SelectedTourService();
         selectedTourLogService = new SelectedTourLogService();
         routeService = new MapQuestRouteService();
+        recommendedTourService = new RecommendedTourService(tourRepository, tourLogRepository);
         addTourViewModel = new AddTourViewModel(routeService, tourService);
         editTourViewModel = new ModifyTourViewModel(eventAggregator, tourService, routeService, selectedTourService);
         tourListViewModel = new TourListViewModel(eventAggregator,tourService, selectedTourService);
         tourDetailsViewModel = new TourDetailsViewModel(eventAggregator,tourService, selectedTourService);
         navigationBarViewModel = new NavigationBarViewModel(tourService, selectedTourService);
-        tourLogRepository = new TourLogRepository(sessionFactory, eventAggregator, tourRepository);
         tourLogService = new TourLogService(tourLogRepository);
         tourLogViewModel = new TourLogViewModel(eventAggregator, tourLogService, selectedTourService, selectedTourLogService);
         addTourLogViewModel = new AddTourLogViewModel(tourLogService, selectedTourService);
         modifyTourLogViewModel = new ModifyTourLogViewModel(eventAggregator, tourLogService, selectedTourLogService, selectedTourService);
+        recommendedTourViewModel = new RecommendedToursViewModel(eventAggregator, recommendedTourService);
     }
 
     public Object create(Class<?> viewClass) {
@@ -75,6 +79,9 @@ public class ViewFactory {
         }
         if (viewClass == ModifyTourLogView.class) {
             return new ModifyTourLogView(modifyTourLogViewModel);
+        }
+        if (viewClass == RecommendedToursView.class) {
+            return new RecommendedToursView(recommendedTourViewModel);
         }
         if (viewClass == MainView.class) {
             return new MainView();

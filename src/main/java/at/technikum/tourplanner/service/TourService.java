@@ -1,6 +1,7 @@
 package at.technikum.tourplanner.service;
 
 import at.technikum.tourplanner.model.Tour;
+import at.technikum.tourplanner.repository.TourLogRepository;
 import at.technikum.tourplanner.repository.TourRepository;
 import org.hibernate.Session;
 //import at.technikum.tourplanner.Model.TourRepository;
@@ -10,9 +11,12 @@ import java.util.stream.Collectors;
 
 public class TourService {
     private final TourRepository tourRepository;
+    private final TourLogRepository tourLogRepository;
 
-    public TourService(TourRepository tourRepository) {
+    public TourService(TourRepository tourRepository, TourLogRepository tourLogRepository) {
+
         this.tourRepository = tourRepository;
+        this.tourLogRepository = tourLogRepository;
     }
 
     public void save(String name, String tourFrom, String tourTo, Double distance, String time, String description, String transportType ) {
@@ -21,6 +25,7 @@ public class TourService {
 
     public void delete(String tourName) {
         tourRepository.delete(tourName);
+        tourLogRepository.deleteAllByTourName(tourName);
     }
 
     public void modify(String existingTourName, String name, String tourFrom, String tourTo, Double distance, String time, String description, String transportType ){

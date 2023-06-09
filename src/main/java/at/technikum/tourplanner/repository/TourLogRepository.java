@@ -125,6 +125,26 @@ public class TourLogRepository {
             return session.createQuery(criteria).uniqueResult();
         }
     }
+    public void deleteAllByTourName(String tourName) {
+        try (Session session = sessionFactory.openSession()) {
+            session.getTransaction().begin();
+            List<TourLog> tourLogs = findByTourName(tourName);
+            if (!tourLogs.isEmpty()) {
+                for (TourLog tourLog : tourLogs) {
+                    session.delete(tourLog);
+                }
+                session.getTransaction().commit();
+                eventAggregator.publish(Event.TOUR_LOG_MODIFIED);
+                logger.info("Deleted all tour logs for tour name: " + tourName);
+            } else {
+                session.getTransaction().rollback();
+                logger.error("No tour logs found for tour name: " + tourName);
+                // Handle case when no tour logs exist for the given tour name
+                // You can throw an exception, log an error, or handle it in any way you prefer.
+            }
+        }
+    }
+
     public double findDifficultyByTourName(String tourName){
         try (Session session = sessionFactory.openSession()) {
             CriteriaBuilder builder = session.getCriteriaBuilder();

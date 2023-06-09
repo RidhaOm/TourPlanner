@@ -230,3 +230,227 @@ null
 null
 2023-06-09 19:15:47.040 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:82)ogger{36} - Tour modified successfully: tour1
 2023-06-09 19:15:47.048 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-09 20:17:16.560 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-09 20:17:18.428 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-09 20:17:26.045 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-09 20:17:26.071 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-09 20:17:46.364 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.save(TourLogRepository.java:31)ogger{36} - Create tour log for the tour: tour1
+2023-06-09
+21.0
+1
+1
+null
+2023-06-09 20:17:46.570 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:82)ogger{36} - Tour modified successfully: tour1
+2023-06-09 20:17:46.579 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-09 20:17:57.908 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.save(TourLogRepository.java:31)ogger{36} - Create tour log for the tour: tour1
+2023-06-09
+12.0
+1
+1
+
+2023-06-09 20:17:57.960 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:82)ogger{36} - Tour modified successfully: tour1
+2023-06-09 20:17:57.967 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-09 20:18:05.952 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-09 20:18:05.960 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-09 20:18:07.136 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-09 20:18:07.144 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-09 20:18:16.866 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.save(TourLogRepository.java:31)ogger{36} - Create tour log for the tour: tour1
+2023-06-09
+21.0
+5
+1
+
+2023-06-09 20:18:16.896 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:82)ogger{36} - Tour modified successfully: tour1
+2023-06-09 20:18:16.902 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-09 20:18:35.084 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-09 20:18:35.090 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-09 20:18:36.527 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.delete(TourRepository.java:54)ogger{36} - Tour deleted successfully: tour1
+2023-06-09 20:18:36.542 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.deleteAllByTourName(TourLogRepository.java:137)ogger{36} - Deleted all tour logs for tour name: tour1
+2023-06-09 20:19:49.966 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-09 20:19:51.743 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-09 20:20:12.150 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.save(TourRepository.java:36)ogger{36} - Tour saved successfully: at.technikum.tourplanner.model.Tour@2cb3db2b
+2023-06-09 20:20:24.992 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.save(TourRepository.java:36)ogger{36} - Tour saved successfully: at.technikum.tourplanner.model.Tour@66726f33
+2023-06-09 20:20:41.964 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.save(TourRepository.java:36)ogger{36} - Tour saved successfully: at.technikum.tourplanner.model.Tour@77625bc6
+2023-06-09 20:20:44.280 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-09 20:20:44.310 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-09 20:20:52.127 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.save(TourLogRepository.java:31)ogger{36} - Create tour log for the tour: tour1
+2023-06-09
+12.0
+1
+1
+null
+2023-06-09 20:20:52.298 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:82)ogger{36} - Tour modified successfully: tour1
+2023-06-09 20:20:52.307 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-09 20:21:10.587 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.save(TourRepository.java:36)ogger{36} - Tour saved successfully: at.technikum.tourplanner.model.Tour@2df30419
+2023-06-09 20:21:12.562 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: toest
+2023-06-09 20:21:20.944 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.delete(TourRepository.java:54)ogger{36} - Tour deleted successfully: toest
+2023-06-09 20:21:20.952 [JavaFX Application Thread] ERROR com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.deleteAllByTourName(TourLogRepository.java:141)ogger{36} - No tour logs found for tour name: toest
+2023-06-09 20:21:24.458 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-09 20:21:24.466 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-09 20:21:26.874 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour3
+2023-06-09 20:21:26.882 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour3
+2023-06-09 20:21:27.985 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-09 20:21:27.992 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour2
+2023-06-09 20:21:29.146 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-09 20:21:29.154 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-09 20:21:32.022 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.delete(TourRepository.java:54)ogger{36} - Tour deleted successfully: tour1
+2023-06-09 20:21:32.035 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.deleteAllByTourName(TourLogRepository.java:138)ogger{36} - Deleted all tour logs for tour name: tour1
+2023-06-09 20:21:33.622 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-09 20:21:33.629 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour2
+2023-06-09 20:21:35.694 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.delete(TourRepository.java:54)ogger{36} - Tour deleted successfully: tour2
+2023-06-09 20:21:35.700 [JavaFX Application Thread] ERROR com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.deleteAllByTourName(TourLogRepository.java:141)ogger{36} - No tour logs found for tour name: tour2
+2023-06-09 20:21:37.111 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour3
+2023-06-09 20:21:37.120 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour3
+2023-06-09 20:21:38.071 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.delete(TourRepository.java:54)ogger{36} - Tour deleted successfully: tour3
+2023-06-09 20:21:38.076 [JavaFX Application Thread] ERROR com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.deleteAllByTourName(TourLogRepository.java:141)ogger{36} - No tour logs found for tour name: tour3
+2023-06-09 20:27:03.401 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-09 20:27:05.379 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-09 20:30:37.514 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-09 20:30:39.351 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-09 20:40:18.332 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-09 20:40:20.099 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-09 20:42:49.080 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-09 20:42:50.958 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-09 20:58:53.119 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-09 20:58:55.060 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-09 21:12:15.788 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-09 21:12:17.550 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-09 21:13:52.667 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-09 21:13:54.656 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-09 21:14:46.144 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-09 21:14:47.970 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-09 21:15:46.704 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-09 21:15:48.407 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-09 21:23:45.731 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-09 21:23:47.643 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-09 21:27:29.553 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-09 21:27:31.291 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-09 21:33:49.039 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-09 21:33:50.835 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-09 21:49:02.097 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-09 21:49:03.917 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-09 21:49:36.648 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-09 21:49:38.510 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-09 21:50:00.089 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.save(TourRepository.java:36)ogger{36} - Tour saved successfully: at.technikum.tourplanner.model.Tour@5119f173
+2023-06-09 21:50:22.978 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-09 21:50:24.869 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-09 21:58:53.721 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-09 21:58:55.542 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-09 21:59:22.679 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.save(TourRepository.java:36)ogger{36} - Tour saved successfully: at.technikum.tourplanner.model.Tour@6941398c
+2023-06-09 22:00:55.991 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-09 22:00:56.054 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour2
+2023-06-09 22:09:16.975 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-09 22:09:18.763 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-09 22:09:28.321 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-09 22:09:28.359 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-09 22:09:34.305 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.save(TourLogRepository.java:31)ogger{36} - Create tour log for the tour: tour1
+2023-06-09
+12.0
+1
+1
+null
+2023-06-09 22:09:34.519 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:82)ogger{36} - Tour modified successfully: tour1
+2023-06-09 22:09:34.530 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-09 22:28:04.445 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-09 22:28:06.203 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-09 22:28:15.478 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-09 22:28:15.507 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-09 22:28:29.426 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.save(TourLogRepository.java:31)ogger{36} - Create tour log for the tour: tour1
+2023-06-09
+12.0
+1
+5
+null
+2023-06-09 22:28:29.646 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:82)ogger{36} - Tour modified successfully: tour1
+2023-06-09 22:28:29.657 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-09 22:39:28.727 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-09 22:39:30.689 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-09 22:39:36.928 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-09 22:39:36.970 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour2
+2023-06-09 22:39:38.215 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-09 22:39:38.230 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-09 22:39:55.802 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.save(TourLogRepository.java:31)ogger{36} - Create tour log for the tour: tour1
+2023-06-09
+1.0
+1
+1
+null
+2023-06-09 22:39:56.118 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:82)ogger{36} - Tour modified successfully: tour1
+2023-06-09 22:39:56.125 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-09 22:40:05.375 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-09 22:40:05.383 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour2
+2023-06-09 22:40:20.809 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.save(TourLogRepository.java:31)ogger{36} - Create tour log for the tour: tour2
+2023-06-09
+1.0
+1
+2
+
+2023-06-09 22:40:20.860 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:82)ogger{36} - Tour modified successfully: tour2
+2023-06-09 22:40:20.867 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-09 22:40:29.188 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-09 22:40:29.195 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-09 22:40:38.534 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-09 22:40:38.541 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour2
+2023-06-09 22:41:02.692 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.save(TourLogRepository.java:31)ogger{36} - Create tour log for the tour: tour2
+2023-06-09
+12.0
+1
+5
+
+2023-06-09 22:41:02.733 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:82)ogger{36} - Tour modified successfully: tour2
+2023-06-09 22:41:02.739 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-09 22:41:51.676 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.save(TourLogRepository.java:31)ogger{36} - Create tour log for the tour: tour2
+2023-06-09
+21.0
+1
+2
+
+2023-06-09 22:41:51.709 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:82)ogger{36} - Tour modified successfully: tour2
+2023-06-09 22:41:51.714 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-09 22:42:30.602 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-09 22:42:30.610 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-09 22:42:31.504 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-09 22:42:31.511 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour2
+2023-06-09 22:42:47.432 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.save(TourLogRepository.java:31)ogger{36} - Create tour log for the tour: tour2
+2023-06-09
+12.0
+1
+2
+
+2023-06-09 22:42:47.469 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:82)ogger{36} - Tour modified successfully: tour2
+2023-06-09 22:42:47.474 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-09 22:43:14.327 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-09 22:43:14.337 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-09 22:43:27.005 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.save(TourLogRepository.java:31)ogger{36} - Create tour log for the tour: tour1
+2023-06-09
+12.0
+1
+1
+
+2023-06-09 22:43:27.037 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:82)ogger{36} - Tour modified successfully: tour1
+2023-06-09 22:43:27.042 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-09 22:48:26.596 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-09 22:48:28.273 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-09 22:48:56.298 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.save(TourRepository.java:36)ogger{36} - Tour saved successfully: at.technikum.tourplanner.model.Tour@22b90911
+2023-06-09 22:49:01.471 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-09 22:49:01.503 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour2
+2023-06-09 22:49:02.588 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour3
+2023-06-09 22:49:02.608 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour3
+2023-06-09 22:49:19.202 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.save(TourLogRepository.java:31)ogger{36} - Create tour log for the tour: tour3
+2023-06-09
+12.0
+1
+1
+null
+2023-06-09 22:49:19.502 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:82)ogger{36} - Tour modified successfully: tour3
+2023-06-09 22:49:19.512 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour3
+2023-06-09 22:49:47.369 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-09 22:49:47.377 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-09 22:49:47.595 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-09 22:49:47.603 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-09 22:49:51.685 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-09 22:49:51.692 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour2
+2023-06-09 22:49:51.911 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-09 22:49:51.920 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour2
+2023-06-09 22:49:56.120 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:82)ogger{36} - Tour modified successfully: tour2
+2023-06-09 22:49:56.126 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
