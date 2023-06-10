@@ -6,11 +6,13 @@ import at.technikum.tourplanner.event.Event;
 import at.technikum.tourplanner.event.EventAggregator;
 import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
+import jakarta.persistence.criteria.Predicate;
 import jakarta.persistence.criteria.Root;
 import org.hibernate.Session;
 import org.apache.log4j.Logger;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class TourRepository {
@@ -118,4 +120,44 @@ public class TourRepository {
         }
     }
 
+    public List<Tour> search(String text) {
+        try (Session session = sessionFactory.openSession()) {
+            CriteriaBuilder builder = session.getCriteriaBuilder();
+            CriteriaQuery<Tour> criteria = builder.createQuery(Tour.class);
+            Root<Tour> root = criteria.from(Tour.class);
+
+            // Create predicates for each attribute that you want to search
+            List<Predicate> predicates = new ArrayList<>();
+            predicates.add(builder.like(root.get("name"), "%" + text + "%"));
+            predicates.add(builder.like(root.get("tourFrom"), "%" + text + "%"));
+            predicates.add(builder.like(root.get("tourTo"), "%" + text + "%"));
+//            predicates.add(builder.like(root.get("distance"), "%" + text + "%"));
+            predicates.add(builder.like(root.get("time"), "%" + text + "%"));
+            predicates.add(builder.like(root.get("description"), "%" + text + "%"));
+            // Add predicates for numeric attributes using comparison operators
+            try {
+                predicates.add(builder.equal(root.get("distance"), Double.parseDouble(text)));
+            } catch (NumberFormatException ignored) {
+                // Ignore the distance predicate if parsing fails
+            }
+            try {
+                predicates.add(builder.equal(root.get("popularity"), Integer.parseInt(text)));
+            } catch (NumberFormatException ignored) {
+                // Ignore the popularity predicate if parsing fails
+            }
+            try {
+                predicates.add(builder.equal(root.get("childFriendliness"), Double.parseDouble(text)));
+            } catch (NumberFormatException ignored) {
+                // Ignore the childFriendliness predicate if parsing fails
+            }
+
+
+            // Combine the predicates using OR
+            Predicate searchPredicate = builder.or(predicates.toArray(new Predicate[0]));
+
+            criteria.where(searchPredicate);
+
+            return session.createQuery(criteria).getResultList();
+        }
+    }
 }

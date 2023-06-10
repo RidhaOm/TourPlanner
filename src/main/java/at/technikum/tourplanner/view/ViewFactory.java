@@ -18,10 +18,12 @@ public class ViewFactory {
     private final TourListViewModel tourListViewModel;
     private final TourDetailsViewModel tourDetailsViewModel;
     private final RecommendedToursViewModel recommendedTourViewModel;
+    private final SearchBarViewModel searchBarViewModel;
     private final TourService tourService;
     private final SelectedTourService selectedTourService;
     private final SelectedTourLogService selectedTourLogService;
     private final RecommendedTourService recommendedTourService;
+    private final SearchService searchService;
     private final HibernateSessionFactory sessionFactory;
     private final NavigationBarViewModel navigationBarViewModel;
     private final TourLogViewModel tourLogViewModel;
@@ -40,11 +42,13 @@ public class ViewFactory {
         selectedTourLogService = new SelectedTourLogService();
         routeService = new MapQuestRouteService();
         recommendedTourService = new RecommendedTourService(tourRepository, tourLogRepository);
+        searchService = new SearchService(tourRepository, tourLogRepository);
         addTourViewModel = new AddTourViewModel(routeService, tourService);
         editTourViewModel = new ModifyTourViewModel(eventAggregator, tourService, routeService, selectedTourService);
         tourListViewModel = new TourListViewModel(eventAggregator,tourService, selectedTourService);
         tourDetailsViewModel = new TourDetailsViewModel(eventAggregator,tourService, selectedTourService);
         navigationBarViewModel = new NavigationBarViewModel(tourService, selectedTourService);
+        searchBarViewModel = new SearchBarViewModel(searchService);
         tourLogService = new TourLogService(tourLogRepository);
         tourLogViewModel = new TourLogViewModel(eventAggregator, tourLogService, selectedTourService, selectedTourLogService);
         addTourLogViewModel = new AddTourLogViewModel(tourLogService, selectedTourService);
@@ -66,7 +70,7 @@ public class ViewFactory {
             return new TourDetailsView(tourDetailsViewModel);
         }
         if (viewClass == SearchBarView.class) {
-            return new SearchBarView();
+            return new SearchBarView(searchBarViewModel);
         }
         if (viewClass == AddTourLogView.class) {
             return new AddTourLogView(addTourLogViewModel);

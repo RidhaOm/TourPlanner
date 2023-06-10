@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
 <AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.technikum.tourplanner.view.SearchBarView">
-    <TextField id="search-field" prefHeight="25.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" promptText="Search" />
+    <HBox spacing="5" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <TextField id="search-field" fx:id="SearchTextField" HBox.hgrow="ALWAYS" prefHeight="25.0" promptText="Search" />
+        <Button text="Search" fx:id="searchButton" onAction="#search"/>
+    </HBox>
 </AnchorPane>

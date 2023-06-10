@@ -7,11 +7,13 @@ import at.technikum.tourplanner.model.Tour;
 import at.technikum.tourplanner.model.TourLog;
 import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
+import jakarta.persistence.criteria.Predicate;
 import jakarta.persistence.criteria.Root;
 import org.hibernate.Session;
 import org.apache.log4j.Logger;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class TourLogRepository {
@@ -195,4 +197,25 @@ public class TourLogRepository {
         return childFriendliness;
     }
 
+    public List<TourLog> search(String text) {
+        try (Session session = sessionFactory.openSession()) {
+            CriteriaBuilder builder = session.getCriteriaBuilder();
+            CriteriaQuery<TourLog> criteria = builder.createQuery(TourLog.class);
+            Root<TourLog> root = criteria.from(TourLog.class);
+
+            // Create predicates for each attribute that you want to search
+            List<Predicate> predicates = new ArrayList<>();
+            predicates.add(builder.like(root.get("tourName"), "%" + text + "%"));
+            predicates.add(builder.like(root.get("date"), "%" + text + "%"));
+            predicates.add(builder.like(root.get("comment"), "%" + text + "%"));
+            predicates.add(builder.like(root.get("name"), "%" + text + "%"));
+
+            // Combine the predicates using OR
+            Predicate searchPredicate = builder.or(predicates.toArray(new Predicate[0]));
+
+            criteria.where(searchPredicate);
+
+            return session.createQuery(criteria).getResultList();
+        }
+    }
 }
