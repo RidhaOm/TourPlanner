@@ -4,7 +4,7 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.technikum.tourplanner.view.SearchBarView">
     <HBox spacing="5" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-        <TextField id="search-field" fx:id="SearchTextField" HBox.hgrow="ALWAYS" prefHeight="25.0" promptText="Search" />
+        <TextField id="search-field" fx:id="SearchTextField" HBox.hgrow="ALWAYS" prefHeight="25.0" promptText="Search" onKeyPressed="#handleKeyPress"/>
         <Button text="Search" fx:id="searchButton" onAction="#search"/>
     </HBox>
 </AnchorPane>

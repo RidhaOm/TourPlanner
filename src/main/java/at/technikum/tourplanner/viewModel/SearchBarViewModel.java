@@ -1,5 +1,6 @@
 package at.technikum.tourplanner.viewModel;
 
+import at.technikum.tourplanner.event.Event;
 import at.technikum.tourplanner.service.SearchService;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;

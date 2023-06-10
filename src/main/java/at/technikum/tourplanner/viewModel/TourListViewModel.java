@@ -2,6 +2,7 @@ package at.technikum.tourplanner.viewModel;
 
 //import at.technikum.tourplanner.Model.TourRepository;
 import at.technikum.tourplanner.model.Tour;
+import at.technikum.tourplanner.service.SearchService;
 import at.technikum.tourplanner.service.SelectedTourService;
 import at.technikum.tourplanner.service.TourService;
 import at.technikum.tourplanner.event.Event;
@@ -18,25 +19,32 @@ public class TourListViewModel {
     private final EventAggregator eventAggregator;
     private final TourService tourService;
     private final SelectedTourService selectedTourService;
+    private final SearchService searchService;
 
     private final StringProperty selectedTourName = new SimpleStringProperty();
 
 
-    public TourListViewModel(EventAggregator eventAggregator, TourService tourService, SelectedTourService selectedTourService) {
+    public TourListViewModel(EventAggregator eventAggregator, TourService tourService, SelectedTourService selectedTourService, SearchService searchService) {
         this.eventAggregator = eventAggregator;
         this.tourService = tourService;
         this.selectedTourService=selectedTourService;
+        this.searchService = searchService;
 
         tourListView.addAll(tourService.findAll());
 
         eventAggregator.addSubscriber(Event.NEW_TOUR, this::onNewTour);
+        eventAggregator.addSubscriber(Event.SEARCH_ON, this::onSearch);
+        eventAggregator.addSubscriber(Event.SEARCH_OFF, this::onNewTour);
     }
 
     private void onNewTour() {
         tourListView.clear();
         tourListView.addAll(tourService.findAll());
     }
-
+    private void onSearch() {
+        tourListView.clear();
+        tourListView.addAll(searchService.searchInTours(searchService.getTextToSearch()));
+    }
     public void deleteTour(String tourName){
         Tour tour = tourService.findByName(tourName);
         if (tour != null) {

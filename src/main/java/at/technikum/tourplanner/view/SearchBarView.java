@@ -5,6 +5,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -28,5 +30,10 @@ public class SearchBarView implements Initializable {
     }
     public void search(){
         searchBarViewModel.search();
+    }
+    public void handleKeyPress(KeyEvent event) {
+        if (event.getCode() == KeyCode.ENTER) {
+            searchBarViewModel.search();
+        }
     }
 }
