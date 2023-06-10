@@ -14,6 +14,8 @@
                 <items>
                     <MenuItem fx:id="exportTour" text="Export Tour" onAction="#exportTour"/>
                     <MenuItem fx:id="importTour" text="Import Tour" onAction="#importTour"/>
+                    <MenuItem fx:id="reportTour" text="Report Tour" onAction="#reportTour"/>
+                    <MenuItem fx:id="summaryReport" text="Summary Report" onAction="#summaryReport"/>
                 </items>
             </MenuButton>
             <Button id="recommended-tours-button" fx:id="recommendedToursButton" onAction="#openRecommendedToursWindow" mnemonicParsing="false" prefHeight="25.0" prefWidth="167.0" text="Recommended Tours">

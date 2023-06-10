@@ -1,6 +1,7 @@
 package at.technikum.tourplanner.service;
 
 import at.technikum.tourplanner.model.Tour;
+import at.technikum.tourplanner.model.TourLog;
 import at.technikum.tourplanner.repository.TourLogRepository;
 import at.technikum.tourplanner.repository.TourRepository;
 import org.hibernate.Session;
@@ -64,4 +65,12 @@ public class TourService {
     public void saveTour(Tour tour) {
         tourRepository.save(tour);
     }
+
+    public List<TourLog> getTourLogs(Long tourId) {
+        return tourLogRepository.findByTourName(tourRepository.findById(tourId).getName());
+    }
+    public List<Tour> getAllTours() {
+        return tourRepository.findAll();
+    }
+
 }

@@ -1,6 +1,7 @@
 package at.technikum.tourplanner.viewModel;
 
 import at.technikum.tourplanner.model.Tour;
+import at.technikum.tourplanner.model.TourLog;
 import at.technikum.tourplanner.service.PDFService;
 import at.technikum.tourplanner.service.SelectedTourService;
 import at.technikum.tourplanner.service.TourService;
@@ -10,6 +11,8 @@ import org.apache.log4j.Logger;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class NavigationBarViewModel {
     private final TourService tourService;
@@ -62,5 +65,31 @@ public class NavigationBarViewModel {
         }
     }
 
+    public void generateTourReport() {
+        String selectedTourName = selectedTourService.getTourName();
+        if (selectedTourName != null) {
+            Tour selectedTour = tourService.findByName(selectedTourName);
+            if (selectedTour != null) {
+                List<TourLog> tourLogs = tourService.getTourLogs(selectedTour.getId());
+                PDFService.generateTourReport(selectedTour, tourLogs);
+                logger.info("Tour report generated successfully: " + selectedTourName);
+            } else {
+                logger.error("Tour with name '" + selectedTourName + "' does not exist.");
+                System.out.println("Tour with name '" + selectedTourName + "' does not exist.");
+            }
+        } else {
+            logger.warn("No tour selected");
+            System.out.println("No tour selected");
+        }
+    }
+
+    public void summaryReport() {
+        List<Tour> allTours = tourService.getAllTours();
+        List<TourLog> allLogs = new ArrayList<>();
+        for (Tour tour : allTours) {
+            allLogs.addAll(tourService.getTourLogs(tour.getId()));
+        }
+        PDFService.generateSummaryReport(allTours, allLogs);
+    }
 
 }

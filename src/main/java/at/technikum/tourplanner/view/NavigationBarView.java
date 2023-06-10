@@ -16,7 +16,10 @@ public class NavigationBarView {
     private MenuItem exportTour;
     @FXML
     private MenuItem importTour;
-
+    @FXML
+    private MenuItem reportTour;
+    @FXML
+    private MenuItem summaryReport;
     private final NavigationBarViewModel navigationBarViewModel;
 
     public NavigationBarView(NavigationBarViewModel navigationBarViewModel) {
@@ -28,6 +31,13 @@ public class NavigationBarView {
     }
     public void importTour(ActionEvent event) {
         navigationBarViewModel.importTour();
+    }
+    public void reportTour(ActionEvent event) {
+        navigationBarViewModel.generateTourReport();
+    }
+
+    public void summaryReport(ActionEvent event) {
+        navigationBarViewModel.summaryReport();
     }
 
     public void openRecommendedToursWindow(ActionEvent event) {

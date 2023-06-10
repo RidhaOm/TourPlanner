@@ -12,7 +12,7 @@ C:/Users/maja1/OneDrive/Desktop/Maja/Uni/SEM 4/swen 2/src/main/resources/hiberna
       <jdbc-url>jdbc:postgresql://localhost:5432/tourplanner</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="tourplanner@localhost" uuid="f0571955-6017-42e8-b6cc-c589e9c81614">
+    <data-source source="LOCAL" name="tourplanner@localhost" uuid="ff0894ad-390a-4d3d-9cc4-aeef2cf78757">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
