@@ -23,8 +23,8 @@ import java.util.stream.Collectors;
 
 public class PDFService {
     private static final String IMAGE_PATH = "/at/technikum/tourplanner/maps/";
-    private static final String PDF_PATH = "src/main/Tours PDF/";
-    private static final String TOUR_REPORTS_PATH = "src/main/Tour Reports/";
+    private static final String PDF_PATH = "Tours PDF/";
+    private static final String TOUR_REPORTS_PATH = "Tour Reports/";
     private static final Logger logger = Logger.getLogger(PDFService.class);
     public static void export(Tour tour) {
         try {
@@ -110,6 +110,8 @@ public class PDFService {
             pdf.add(new Paragraph("Time: " + tour.getTime()));
             pdf.add(new Paragraph("Transport Type: " + tour.getTransportType()));
             pdf.add(new Paragraph("Description: " + tour.getDescription()));
+            pdf.add(new Paragraph("Popularity: " + tour.getPopularity()));
+            pdf.add(new Paragraph("Child Friendliness: " + tour.getChildFriendliness()));
 
             // Add tour logs
             pdf.add(new Paragraph("Tour Logs:"));
