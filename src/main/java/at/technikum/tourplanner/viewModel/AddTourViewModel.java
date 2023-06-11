@@ -107,10 +107,10 @@ public class AddTourViewModel {
         }
 
         // Validate route
-//        if (!validateRoute(from, to, transportType)) {
-//            logger.error("Invalid route. Please check the From and To fields.");
-//            return;
-//        }
+        /*if (!validateRoute(from, to, transportType)) {
+            logger.error("Invalid route. Please check the From and To fields.");
+            return;
+        }*/
 
         // Route is valid, continue saving the tour
         Route route = routeService.getRoute(from, to, transportType);

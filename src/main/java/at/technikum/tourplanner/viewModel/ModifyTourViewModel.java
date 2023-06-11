@@ -10,6 +10,8 @@ import at.technikum.tourplanner.service.TourService;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
+import java.util.logging.Logger;
+
 public class ModifyTourViewModel {
 
     private final StringProperty tourNameTextField = new SimpleStringProperty("");
@@ -22,6 +24,7 @@ public class ModifyTourViewModel {
     private final EventAggregator eventAggregator;
     private final TourService tourService;
     private final RouteService routeService;
+    private static Logger logger;
 
 
     public ModifyTourViewModel(EventAggregator eventAggregator, TourService tourService, RouteService routeService, SelectedTourService selectedTourService){

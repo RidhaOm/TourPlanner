@@ -6,11 +6,14 @@ import at.technikum.tourplanner.service.RecommendedTourService;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
+import java.util.logging.Logger;
+
 public class RecommendedToursViewModel {
 
     private final ObservableList<String> recommendedToursListView = FXCollections.observableArrayList();
     private final EventAggregator eventAggregator;
     private final RecommendedTourService recommendedTourService;
+    private static Logger logger;
     public RecommendedToursViewModel(EventAggregator eventAggregator, RecommendedTourService recommendedTourService){
         this.eventAggregator = eventAggregator;
         this.recommendedTourService = recommendedTourService;
@@ -27,6 +30,7 @@ public class RecommendedToursViewModel {
     private void updateRecommendedToursListView() {
         recommendedToursListView.clear();
         recommendedToursListView.addAll(recommendedTourService.findRecommendedTours());
+
     }
 
     public ObservableList<String> getRecommendedToursListView() {

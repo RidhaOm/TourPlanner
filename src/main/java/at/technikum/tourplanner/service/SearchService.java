@@ -9,6 +9,7 @@ import at.technikum.tourplanner.repository.TourRepository;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 public class SearchService {
     private final TourRepository tourRepository;
@@ -30,35 +31,20 @@ public class SearchService {
         }
     }
 
-//    public List<Tour> searchInTours() {
-//        List<Tour> tours = tourRepository.search(textToSearch);
-//        for (Tour tour : tours) {
-//            System.out.println("------Tour: " + tour.getName() + "\n");
-//        }
-//        return tours;
-//    }
 public List<String> searchInTours(String textToSearch) {
     List<Tour> tours = tourRepository.search(textToSearch);
     List<String> tourNames = new ArrayList<>();
     for (Tour tour : tours) {
         tourNames.add(tour.getName());
-        System.out.println("------Tour: " + tour.getName() + "\n");
     }
     return tourNames;
 }
-//    public List<TourLog> searchInTourLogs() {
-//        List<TourLog> tourLogs = tourLogRepository.search(textToSearch);
-//        for (TourLog tourLog : tourLogs) {
-//            System.out.println("------TourLog: " + tourLog.getName() + "\n");
-//        }
-//        return tourLogs;
-//    }
+
 public List<String> searchInTourLogs(String textToSearch) {
     List<TourLog> tourLogs = tourLogRepository.search(textToSearch);
     List<String> tourLogNames = new ArrayList<>();
     for (TourLog tourLog : tourLogs) {
         tourLogNames.add(tourLog.getName());
-        System.out.println("------TourLog: " + tourLog.getName() + "\n");
     }
     return tourLogNames;
 }

@@ -1,8 +1,10 @@
 package at.technikum.tourplanner.viewModel;
 
+import at.technikum.tourplanner.repository.TourRepository;
 import at.technikum.tourplanner.service.SelectedTourService;
 import at.technikum.tourplanner.service.TourLogService;
 import javafx.beans.property.*;
+import org.apache.log4j.Logger;
 
 import java.time.LocalDate;
 
@@ -13,7 +15,7 @@ public class AddTourLogViewModel {
     private final StringProperty rankingChoiceBox = new SimpleStringProperty("1");
     private final StringProperty commentTextArea = new SimpleStringProperty("");
     private final TourLogService tourLogService;
-    private final SelectedTourService selectedTourService;
+    private static final org.apache.log4j.Logger logger = Logger.getLogger(AddTourLogViewModel.class);    private final SelectedTourService selectedTourService;
     public AddTourLogViewModel(TourLogService tourLogService, SelectedTourService selectedTourService) {
         this.tourLogService=tourLogService;
         this.selectedTourService=selectedTourService;
@@ -25,8 +27,7 @@ public class AddTourLogViewModel {
         // Validate DatePicker input
         LocalDate selectedDate = getDatePicker();
         if (selectedDate == null) {
-            // Add Error Log
-            System.out.println("Please select a date");
+            logger.error("Date is null");
             return; // Abort adding tour log
         }
 
@@ -34,16 +35,14 @@ public class AddTourLogViewModel {
 
         // Validate durationTextField input
         if (getDurationTextField()==null) {
-            // ADD ERROR LOG
-            System.out.println("Please enter a duration");
+            logger.error("Duration field is null");
             return; // Abort adding tour log
         }
         double duration;
         try {
             duration = Double.parseDouble(getDurationTextField());
         } catch (NumberFormatException e) {
-            // Add ERROR Log
-            System.out.println("Invalid duration input: " + getDurationTextField());
+            logger.error("Invalid duration input: " + getDurationTextField());
             return; // Abort adding tour log
         }
 

@@ -30,7 +30,6 @@ public class TourLogRepository {
     }
 
     public void save(TourLog tourLog) {
-        logger.info("Create tour log for the tour: " + tourLog.getTourName() + "\n" + tourLog.getDate() + "\n" + tourLog.getDuration() + "\n" + tourLog.getDifficulty() + "\n" + tourLog.getRanking() + "\n" + tourLog.getComment());
         try (Session session = sessionFactory.openSession()) {
             session.getTransaction().begin();
             session.persist(tourLog);
@@ -42,7 +41,7 @@ public class TourLogRepository {
             double childFriendliness = findChildFriendliness(tourName);
             newTour.setChildFriendliness(childFriendliness);
             tourRepository.modify(tourName,newTour);
-
+            logger.info("Create tour log for the tour: " + tourLog.getTourName() + "\n" + tourLog.getDate() + "\n" + tourLog.getDuration() + "\n" + tourLog.getDifficulty() + "\n" + tourLog.getRanking() + "\n" + tourLog.getComment());
         }
 
         eventAggregator.publish(Event.NEW_TOUR_LOG);
@@ -64,11 +63,11 @@ public class TourLogRepository {
                 tourRepository.modify(tourName,newTour);
 
                 eventAggregator.publish(Event.TOUR_LOG_DELETED);
+                logger.info("Delete tour log for the tour: " + tourLog.getTourName() + "\n" + tourLog.getDate() + "\n" + tourLog.getDuration() + "\n" + tourLog.getDifficulty() + "\n" + tourLog.getRanking() + "\n" + tourLog.getComment());
+
             } else {
                 session.getTransaction().rollback();
                 logger.error("Tour log with name '" + existingTourLogName + "' not found.");
-                // Handle case when the tour with the given name doesn't exist
-                // You can throw an exception, log an error, or handle it in any way you prefer.
             }
         }
     }
@@ -89,11 +88,10 @@ public class TourLogRepository {
                 session.merge(existingTourLog);
                 session.getTransaction().commit();
                 eventAggregator.publish(Event.TOUR_LOG_MODIFIED);
+                logger.info("Modify tour log for the tour: " + existingTourLog.getTourName() + "\n" + existingTourLog.getDate() + "\n" + existingTourLog.getDuration() + "\n" + existingTourLog.getDifficulty() + "\n" + existingTourLog.getRanking() + "\n" + existingTourLog.getComment());
             } else {
                 session.getTransaction().rollback();
                 logger.error("Tour log with name '" + tourLogName + "' not found.");
-                // Handle case when the tour with the given name doesn't exist
-                // You can throw an exception, log an error, or handle it in any way you prefer.
             }
         }
     }
@@ -141,8 +139,6 @@ public class TourLogRepository {
             } else {
                 session.getTransaction().rollback();
                 logger.error("No tour logs found for tour name: " + tourName);
-                // Handle case when no tour logs exist for the given tour name
-                // You can throw an exception, log an error, or handle it in any way you prefer.
             }
         }
     }
@@ -214,7 +210,7 @@ public class TourLogRepository {
             Predicate searchPredicate = builder.or(predicates.toArray(new Predicate[0]));
 
             criteria.where(searchPredicate);
-
+            logger.info("Search in tour logs for the text: " + text);
             return session.createQuery(criteria).getResultList();
         }
     }

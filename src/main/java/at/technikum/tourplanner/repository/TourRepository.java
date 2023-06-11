@@ -58,8 +58,6 @@ public class TourRepository {
                 session.getTransaction().rollback();
                 session.getTransaction().rollback();
                 logger.error("Tour not found for deletion: " + existingTourName);
-                // Handle case when the tour with the given name doesn't exist
-                // You can throw an exception, log an error, or handle it in any way you prefer.
             }
         }
     }
@@ -68,7 +66,6 @@ public class TourRepository {
         try (Session session = sessionFactory.openSession()) {
             session.getTransaction().begin();
             Tour existingTour = findByName(tourName);
-//            newTour.setPopularity(existingTour.getPopularity());
             if (existingTour != null) {
                 existingTour.setName(newTour.getName());
                 existingTour.setTourFrom(newTour.getTourFrom());
@@ -78,7 +75,6 @@ public class TourRepository {
                 existingTour.setDescription(newTour.getDescription());
                 existingTour.setPopularity(newTour.getPopularity());
                 existingTour.setChildFriendliness(newTour.getChildFriendliness());
-                // Update other properties of the tour as needed
 
                 session.merge(existingTour);
                 session.getTransaction().commit();
@@ -87,8 +83,6 @@ public class TourRepository {
             } else {
                 session.getTransaction().rollback();
                 logger.error("Tour not found for modification: " + tourName);
-                // Handle case when the tour with the given name doesn't exist
-                // You can throw an exception, log an error, or handle it in any way you prefer.
             }
         }
     }
@@ -133,24 +127,21 @@ public class TourRepository {
             predicates.add(builder.like(root.get("name"), "%" + text + "%"));
             predicates.add(builder.like(root.get("tourFrom"), "%" + text + "%"));
             predicates.add(builder.like(root.get("tourTo"), "%" + text + "%"));
-//            predicates.add(builder.like(root.get("distance"), "%" + text + "%"));
             predicates.add(builder.like(root.get("time"), "%" + text + "%"));
             predicates.add(builder.like(root.get("description"), "%" + text + "%"));
             // Add predicates for numeric attributes using comparison operators
             try {
                 predicates.add(builder.equal(root.get("distance"), Double.parseDouble(text)));
             } catch (NumberFormatException ignored) {
-                // Ignore the distance predicate if parsing fails
+
             }
             try {
                 predicates.add(builder.equal(root.get("popularity"), Integer.parseInt(text)));
             } catch (NumberFormatException ignored) {
-                // Ignore the popularity predicate if parsing fails
             }
             try {
                 predicates.add(builder.equal(root.get("childFriendliness"), Double.parseDouble(text)));
             } catch (NumberFormatException ignored) {
-                // Ignore the childFriendliness predicate if parsing fails
             }
 
 
@@ -159,6 +150,7 @@ public class TourRepository {
 
             criteria.where(searchPredicate);
 
+            logger.info("Search in tours for the text: " + text);
             return session.createQuery(criteria).getResultList();
         }
     }

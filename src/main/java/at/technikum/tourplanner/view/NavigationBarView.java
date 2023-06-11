@@ -48,6 +48,7 @@ public class NavigationBarView {
             stage.setTitle("Recommended Tours");
             stage.setScene(scene);
             stage.show();
+
         } catch (Exception e) {
             System.out.println(e);
         }

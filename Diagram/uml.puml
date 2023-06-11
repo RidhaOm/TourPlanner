@@ -1,0 +1,729 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class AddTourLogView {
+  - addTourLogButton: Button
+  - rootPane: BorderPane
+  - commentTextArea: TextArea
+  - datePicker: DatePicker
+  - rankingChoiceBox: ChoiceBox<String>
+  - durationTextField: TextField
+  - difficultyChoiceBox: ChoiceBox<String>
+  - addTourLogViewModel: AddTourLogViewModel
+  + addTourLog(): void
+  + initialize(URL, ResourceBundle): void
+}
+class AddTourLogViewModel {
+  - difficultyChoiceBox: StringProperty
+  - tourLogService: TourLogService
+  - rankingChoiceBox: StringProperty
+  - datePicker: ObjectProperty<LocalDate>
+  - durationTextField: StringProperty
+  - commentTextArea: StringProperty
+  - selectedTourService: SelectedTourService
+  + difficultyChoiceBoxProperty(): StringProperty
+  + rankingChoiceBoxProperty(): StringProperty
+  + commentTextAreaProperty(): StringProperty
+  + durationTextFieldProperty(): StringProperty
+  + addTourLog(): void
+  + setRankingChoiceBox(String): void
+  + setDatePicker(LocalDate): void
+  + setCommentTextArea(String): void
+  + getDurationTextField(): String
+  + getCommentTextArea(): String
+  + setDurationTextField(String): void
+  + setDifficultyChoiceBox(String): void
+  + getRankingChoiceBox(): String
+  + getDifficultyChoiceBox(): String
+  + getDatePicker(): LocalDate
+  + datePickerProperty(): ObjectProperty<LocalDate>
+}
+class AddTourLogViewModelTest {
+  - tourLogService: TourLogService
+  - addTourLogViewModel: AddTourLogViewModel
+  - selectedTourService: SelectedTourService
+  ~ setUp(): void
+  ~ addTourLog_MissingDate_Error(): void
+  ~ addTourLog_ValidInput_Success(): void
+  ~ addTourLog_InvalidDuration_Error(): void
+  ~ addTourLog_MissingComment_Success(): void
+  + inputFieldsInitializedTest(): void
+}
+class AddTourView {
+  - toTextField: TextField
+  - transportTypes: String[]
+  - rootPane: AnchorPane
+  - tourDescriptionTextArea: TextArea
+  - addTourViewModel: AddTourViewModel
+  - fromTextField: TextField
+  - transportTypeChoiceBox: ChoiceBox<String>
+  - tourNameTextField: TextField
+  + initialize(URL, ResourceBundle): void
+  + saveTour(): void
+}
+class AddTourViewModel {
+  - routeService: RouteService
+  - tourService: TourService
+  - tourNameTextField: StringProperty
+  - fromTextField: StringProperty
+  - toTextField: StringProperty
+  - transportTypeChoiceBox: StringProperty
+  - logger: Logger
+  - tourDescriptionTextArea: StringProperty
+  + tourNameTextFieldProperty(): StringProperty
+  + getFromTextField(): String
+  + getTourDescriptionTextArea(): String
+  + setTourNameTextField(String): void
+  + setTourDescriptionTextArea(String): void
+  + getToTextField(): String
+  + saveTour(): void
+  + getTransportTypeChoiceBox(): String
+  + tourDescriptionTextAreaProperty(): StringProperty
+  + setFromTextField(String): void
+  + setToTextField(String): void
+  + transportTypeChoiceBoxProperty(): StringProperty
+  + getTourNameTextField(): String
+  + fromTextFieldProperty(): StringProperty
+  - validateRoute(String, String, String): boolean
+  + toTextFieldProperty(): StringProperty
+  + setTransportTypeChoiceBox(String): void
+}
+class AddTourViewModelTest {
+  - tourService: TourService
+  - routeService: RouteService
+  - addTourViewModel: AddTourViewModel
+  + saveTour_ValidInputs_Success(): void
+  + saveTour_InvalidPlaceNames_InvalidInputs(): void
+  + inputFieldsInitializedTest(): void
+  + saveTour_MissingRequiredFields_InvalidInputs(): void
+  + setup(): void
+  + saveTour_DefaultDescription_Success(): void
+}
+class ConfigurationManager {
+  - logger: Logger
+  - properties: Properties
+  + getApiKey(): String
+  + getPdfPath(): String
+  + getTourReportsPath(): String
+  + getImagePath(): String
+  - loadProperties(): void
+}
+enum Event << enumeration >> {
+  + NEW_TOUR: 
+  + TOUR_SELECTED: 
+  + TOUR_LOG_MODIFIED: 
+  + SEARCH_ON: 
+  + TOUR_LOG_DELETED: 
+  + SEARCH_OFF: 
+  + NEW_TOUR_LOG: 
+  + TOUR_MODIFIED: 
+  + TOUR_DELETED: 
+  + TOUR_LOG_SELECTED: 
+  + values(): Event[]
+  + valueOf(String): Event
+}
+class EventAggregator {
+  - eventListMap: Map<Event, List<Subscriber>>
+  + addSubscriber(Event, Subscriber): void
+  + publish(Event): void
+}
+class FXMLDependencyInjector {
+  + load(String, Locale): Parent
+  + getLoader(String, Locale): FXMLLoader
+}
+class HelloApplication {
+  + start(Stage): void
+  + main(String[]): void
+}
+class HibernateSessionFactory {
+  ~ sessionFactory: SessionFactory
+  - init(): void
+  + openSession(): Session
+}
+class MainView {
+  - tourListView: TourListView
+  - navigationBarView: NavigationBarView
+  - tourLogView: TourLogView
+  - addTourView: AddTourView
+  - searchBarView: SearchBarView
+  - tourDetailsView: TourDetailsView
+}
+class MainViewModel
+class MapQuestApiResponse {
+  - route: Route
+  + getRoute(): Route
+  + setRoute(Route): void
+}
+class MapQuestRouteService {
+  - API_KEY: String
+  - logger: Logger
+  + getRoute(String, String, String): Route
+  + saveMap(String, String): void
+  - transformTransportType(String): String
+}
+class ModifyTourLogView {
+  - modifyTourLogButton: Button
+  - commentTextArea: TextArea
+  - modifyTourLogViewModel: ModifyTourLogViewModel
+  - difficultyChoiceBox: ChoiceBox<String>
+  - rankingChoiceBox: ChoiceBox<String>
+  - durationTextField: TextField
+  - datePicker: DatePicker
+  - rootPane: BorderPane
+  + initialize(URL, ResourceBundle): void
+  + modifyTourLog(): void
+}
+class ModifyTourLogViewModel {
+  - rankingChoiceBox: StringProperty
+  - difficultyChoiceBox: StringProperty
+  - selectedTourLogService: SelectedTourLogService
+  - tourLogService: TourLogService
+  - selectedTourService: SelectedTourService
+  - commentTextArea: StringProperty
+  - durationTextField: StringProperty
+  - datePicker: ObjectProperty<LocalDate>
+  - eventAggregator: EventAggregator
+  + setDifficultyChoiceBox(String): void
+  + setDurationTextField(String): void
+  + setDatePicker(LocalDate): void
+  + getRankingChoiceBox(): String
+  + getCommentTextArea(): String
+  + modifyTourLog(): void
+  + getDifficultyChoiceBox(): String
+  + rankingChoiceBoxProperty(): StringProperty
+  + getDurationTextField(): String
+  + setRankingChoiceBox(String): void
+  + difficultyChoiceBoxProperty(): StringProperty
+  + getTourLogService(): TourLogService
+  + updateValues(): void
+  + durationTextFieldProperty(): StringProperty
+  + commentTextAreaProperty(): StringProperty
+  + datePickerProperty(): ObjectProperty<LocalDate>
+  + setCommentTextArea(String): void
+  + getSelectedTourLogService(): SelectedTourLogService
+  + getDatePicker(): LocalDate
+}
+class ModifyTourLogViewModelTest {
+  - selectedTourLogService: SelectedTourLogService
+  - eventAggregator: EventAggregator
+  - tourLogService: TourLogService
+  - modifyTourLogViewModel: ModifyTourLogViewModel
+  - selectedTourService: SelectedTourService
+  ~ addTourLog_InvalidDuration_Error(): void
+  ~ setUp(): void
+  ~ modifyTourLog_ValidInput_Success(): void
+  ~ modifyTourLog_MissingDate_Error(): void
+}
+class ModifyTourView {
+  - transportTypeChoiceBox: ChoiceBox<String>
+  - rootPane: AnchorPane
+  - modifyTourButton: Button
+  - fromTextField: TextField
+  - transportTypes: String[]
+  - modifyTourViewModel: ModifyTourViewModel
+  - tourNameTextField: TextField
+  - toTextField: TextField
+  - tourDescriptionTextArea: TextArea
+  + initialize(URL, ResourceBundle): void
+  + modifyTour(): void
+}
+class ModifyTourViewModel {
+  - fromTextField: StringProperty
+  - tourDescriptionTextArea: StringProperty
+  - tourNameTextField: StringProperty
+  - eventAggregator: EventAggregator
+  - transportTypeChoiceBox: StringProperty
+  - routeService: RouteService
+  - tourService: TourService
+  - selectedTourService: SelectedTourService
+  - toTextField: StringProperty
+  + editTour(): void
+  + tourDescriptionTextAreaProperty(): StringProperty
+  + fromTextFieldProperty(): StringProperty
+  + getFromTextField(): String
+  + getToTextField(): String
+  + getTourDescriptionTextArea(): String
+  + setTourNameTextField(String): void
+  + getTransportTypeChoiceBox(): String
+  - isAlphabetOnly(String): boolean
+  + setTransportTypeChoiceBox(String): void
+  + setFromTextField(String): void
+  + setTourDescriptionTextArea(String): void
+  + toTextFieldProperty(): StringProperty
+  + updateValues(): void
+  + setToTextField(String): void
+  + transportTypeChoiceBoxProperty(): StringProperty
+  + getTourNameTextField(): String
+  + tourNameTextFieldProperty(): StringProperty
+}
+class ModifyTourViewModelTest {
+  - eventAggregator: EventAggregator
+  - tourService: TourService
+  - routeService: RouteService
+  - selectedTourService: SelectedTourService
+  - modifyTourViewModel: ModifyTourViewModel
+  + setup(): void
+  + inputFieldsInitializedTest(): void
+  + editTour_MissingRequiredFields_InvalidInputs(): void
+  + editTour_InvalidPlaceNames_InvalidInputs(): void
+}
+class NavigationBarView {
+  - navigationBarViewModel: NavigationBarViewModel
+  - reportTour: MenuItem
+  - exportTour: MenuItem
+  - importTour: MenuItem
+  - summaryReport: MenuItem
+  + summaryReport(ActionEvent): void
+  + openRecommendedToursWindow(ActionEvent): void
+  + reportTour(ActionEvent): void
+  + importTour(ActionEvent): void
+  + exportTour(ActionEvent): void
+}
+class NavigationBarViewModel {
+  - selectedTourService: SelectedTourService
+  - tourService: TourService
+  - logger: Logger
+  + importTour(): void
+  + summaryReport(): void
+  + generateTourReport(): void
+  + exportTour(): void
+}
+interface NewTourEvent << interface >> {
+  + newTour(String): void
+}
+class PDFService {
+  - TOUR_REPORTS_PATH: String
+  - IMAGE_PATH: String
+  - PDF_PATH: String
+  - logger: Logger
+  + generateSummaryReport(List<Tour>, List<TourLog>): void
+  + importTour(File): Tour
+  + export(Tour): void
+  + generateTourReport(Tour, List<TourLog>): void
+}
+class RecommendedTourService {
+  - tourRepository: TourRepository
+  - tourLogRepository: TourLogRepository
+  + findRecommendedTours(): List<String>
+  - calculateAverageRanking(Tour): double
+}
+class RecommendedToursView {
+  - recommendedToursListView: ListView<String>
+  - recommendedToursViewModel: RecommendedToursViewModel
+  + initialize(URL, ResourceBundle): void
+}
+class RecommendedToursViewModel {
+  - eventAggregator: EventAggregator
+  - recommendedTourService: RecommendedTourService
+  - recommendedToursListView: ObservableList<String>
+  - updateRecommendedToursListView(): void
+  + getRecommendedToursListView(): ObservableList<String>
+}
+class Route {
+  - distance: double
+  - sessionId: String
+  - formattedTime: String
+  + setSessionId(String): void
+  + getSessionId(): String
+  + setDistance(double): void
+  + getDistance(): double
+  + setFormattedTime(String): void
+  + getFormattedTime(): String
+}
+interface RouteService << interface >> {
+  + getRoute(String, String, String): Route
+  + saveMap(String, String): void
+}
+class SearchBarView {
+  - SearchTextField: TextField
+  - searchButton: Button
+  - searchBarViewModel: SearchBarViewModel
+  + initialize(URL, ResourceBundle): void
+  + search(): void
+  + handleKeyPress(KeyEvent): void
+}
+class SearchBarViewModel {
+  - searchService: SearchService
+  - searchTextField: StringProperty
+  + searchTextFieldProperty(): StringProperty
+  + getSearchTextField(): String
+  + setSearchTextField(String): void
+  + search(): void
+}
+class SearchService {
+  - tourLogRepository: TourLogRepository
+  - eventAggregator: EventAggregator
+  - tourRepository: TourRepository
+  - textToSearch: String
+  + searchInTours(String): List<String>
+  + setTextToSearch(String): void
+  + search(String): void
+  + searchInTourLogs(String): List<String>
+  + getTextToSearch(): String
+}
+class SelectedTourLogService {
+  - name: String
+  + setTourLogName(String): void
+  + getTourLogName(): String
+}
+class SelectedTourService {
+  - tourName: String
+  + getTourName(): String
+  + setTourName(String): void
+}
+interface Subscriber << interface >> {
+  + update(): void
+}
+class Tour {
+  - tourTo: String
+  - childFriendliness: double
+  - description: String
+  - transportType: String
+  - id: Long
+  - time: String
+  - tourFrom: String
+  - popularity: int
+  - distance: Double
+  - name: String
+  + setPopularity(int): void
+  + setDescription(String): void
+  + getName(): String
+  + getChildFriendliness(): double
+  + getDescription(): String
+  + setId(Long): void
+  + getPopularity(): int
+  + setChildFriendliness(double): void
+  + setTransportType(String): void
+  + getId(): Long
+  + setName(String): void
+  + getTourTo(): String
+  + getTransportType(): String
+  + setTourTo(String): void
+  + setTourFrom(String): void
+  + setTime(String): void
+  + getTourFrom(): String
+  + getDistance(): Double
+  + getTime(): String
+  + setDistance(Double): void
+}
+class TourDetailsView {
+  - tourDetailsLabel: Label
+  - tourDetailsViewModel: TourDetailsViewModel
+  - logger: Logger
+  - mapView: ImageView
+  + getMapView(): ImageView
+  + setMapView(ImageView): void
+  + initialize(): void
+  + getSelectedTourName(): void
+}
+class TourDetailsViewModel {
+  - tourService: TourService
+  - tourDetailsLabel: StringProperty
+  - selectedTourService: SelectedTourService
+  - eventAggregator: EventAggregator
+  - logger: Logger
+  - mapview: ObjectProperty<Image>
+  + setTourDetailsLabel(String): void
+  + getSelectedTourName(): String
+  + getTourDetailsLabel(): String
+  + mapviewProperty(): ObjectProperty
+  + writeNotify(): void
+  + updateTourDetailsLabel(): void
+  + updateMapView(): void
+  + tourDetailsLabelProperty(): StringProperty
+}
+class TourListView {
+  - toursButton: Button
+  - addTourButton: Button
+  - tourListViewModel: TourListViewModel
+  - modifyTourButton: Button
+  - deleteTourButton: Button
+  - tourListView: ListView<String>
+  + selectTourName(): void
+  + deleteTour(ActionEvent): void
+  + initialize(URL, ResourceBundle): void
+  + openModifyTourWindow(ActionEvent): void
+  + openAddTourWindow(ActionEvent): void
+}
+class TourListViewModel {
+  - tourListView: ObservableList<String>
+  - searchService: SearchService
+  - selectedTourService: SelectedTourService
+  - eventAggregator: EventAggregator
+  - tourService: TourService
+  - selectedTourName: StringProperty
+  + getSelectedTourName(): String
+  + setTourListView(ObservableList<String>): void
+  + selectTourName(String): void
+  + getTourRepository(): TourRepository
+  + setSelectedTourName(String): void
+  + deleteTour(String): void
+  + getTourListView(): ObservableList<String>
+  - onNewTour(): void
+  + getEventAggregator(): EventAggregator
+  + selectedTourNameProperty(): StringProperty
+  - onSearch(): void
+}
+class TourListViewModelTest {
+  ~ tourService: TourService
+  ~ selectedTourService: SelectedTourService
+  ~ eventAggregator: EventAggregator
+  ~ tourListViewModel: TourListViewModel
+  ~ searchService: SearchService
+  + initialWTourListTest(): void
+  + onNewTourEventTest(): void
+  + selectTourNameTest(): void
+  + deleteTourTest(): void
+  + deleteTourNonExistingTest(): void
+}
+class TourLog {
+  - difficulty: int
+  - name: String
+  - date: String
+  - id: Long
+  - duration: double
+  - comment: String
+  - ranking: int
+  - tourName: String
+  + setId(Long): void
+  + getId(): Long
+  + setDifficulty(int): void
+  + setName(String): void
+  + getDate(): String
+  + getDuration(): double
+  + getName(): String
+  + getRanking(): int
+  + getComment(): String
+  + setRanking(int): void
+  + setTourName(String): void
+  + getDifficulty(): int
+  + setComment(String): void
+  + setDate(String): void
+  + getTourName(): String
+  + getTourLog(): String
+  + setDuration(double): void
+}
+class TourLogRepository {
+  - logger: Logger
+  - tourRepository: TourRepository
+  - eventAggregator: EventAggregator
+  - sessionFactory: HibernateSessionFactory
+  + save(TourLog): void
+  + findByName(String): TourLog
+  + deleteAllByTourName(String): void
+  + findChildFriendliness(String): double
+  + delete(String): void
+  + findByTourName(String): List<TourLog>
+  + findDifficultyByTourName(String): double
+  + findAll(): List<TourLog>
+  + search(String): List<TourLog>
+  + modify(String, TourLog): void
+  + findDurationByTourName(String): double
+}
+class TourLogService {
+  - tourLogRepository: TourLogRepository
+  + saveTourLog(String, String, double, int, int, String): void
+  + findAll(): List<String>
+  + findByName(String): TourLog
+  + delete(String): void
+  + findByTourName(String): List<String>
+  + modify(String, String, String, double, int, int, String): void
+}
+class TourLogView {
+  - addTourLogButton: Button
+  - deleteTourLogButton: Button
+  - modifyTourLogButton: Button
+  - tourLogViewModel: TourLogViewModel
+  - tourLogListView: ListView<String>
+  + openAddTourLogWindow(ActionEvent): void
+  + deleteTourLog(ActionEvent): void
+  + selectTourLog(): void
+  + openModifyTourLogWindow(ActionEvent): void
+  + initialize(URL, ResourceBundle): void
+}
+class TourLogViewModel {
+  - selectedTourService: SelectedTourService
+  - tourLogListView: ObservableList<String>
+  - selectedTourLogService: SelectedTourLogService
+  - selectedTourLog: StringProperty
+  - searchService: SearchService
+  - eventAggregator: EventAggregator
+  - tourLogService: TourLogService
+  - selectedTour: StringProperty
+  + deleteTourLog(String): void
+  - updateTourLogList(): void
+  + getTourLogListView(): ObservableList<String>
+  + setSelectedTour(String): void
+  - onSearch(): void
+  + setSelectedTourLog(String): void
+  - enableButton(): void
+  - onNewTourLog(): void
+  + getSelectedTourLog(): String
+  + selectTourLog(String): void
+  + selectedTourProperty(): StringProperty
+  + selectedTourLogProperty(): StringProperty
+  + getSelectedTour(): String
+  + getSelectedTourName(): String
+}
+class TourRepository {
+  - sessionFactory: HibernateSessionFactory
+  - eventAggregator: EventAggregator
+  - logger: Logger
+  + save(Tour): void
+  + findById(Long): Tour
+  + findAll(): List<Tour>
+  + delete(String): void
+  + selectTourName(String): void
+  + modify(String, Tour): void
+  + search(String): List<Tour>
+  + findByName(String): Tour
+}
+class TourService {
+  - tourRepository: TourRepository
+  - tourLogRepository: TourLogRepository
+  + getAllTours(): List<Tour>
+  + findByName(String): Tour
+  + save(String, String, String, Double, String, String, String): void
+  + saveTour(Tour): void
+  + delete(String): void
+  + findAll(): List<String>
+  + findById(Long): Tour
+  + getTourDetailsByName(String): String
+  + selectTourName(String): void
+  + getTourLogs(Long): List<TourLog>
+  + modify(String, String, String, String, Double, String, String, String): void
+}
+class ViewFactory {
+  - sessionFactory: HibernateSessionFactory
+  - recommendedTourViewModel: RecommendedToursViewModel
+  - navigationBarViewModel: NavigationBarViewModel
+  - selectedTourService: SelectedTourService
+  - selectedTourLogService: SelectedTourLogService
+  - modifyTourLogViewModel: ModifyTourLogViewModel
+  - tourLogRepository: TourLogRepository
+  - tourListViewModel: TourListViewModel
+  - searchService: SearchService
+  - tourDetailsViewModel: TourDetailsViewModel
+  - eventAggregator: EventAggregator
+  - tourService: TourService
+  - instance: ViewFactory
+  - tourRepository: TourRepository
+  - routeService: RouteService
+  - tourLogService: TourLogService
+  - recommendedTourService: RecommendedTourService
+  - addTourLogViewModel: AddTourLogViewModel
+  - addTourViewModel: AddTourViewModel
+  - searchBarViewModel: SearchBarViewModel
+  - tourLogViewModel: TourLogViewModel
+  - editTourViewModel: ModifyTourViewModel
+  + create(Class<?>): Object
+  + getInstance(): ViewFactory
+}
+
+AddTourLogView             "1" *-[#595959,plain]-> "addTourLogViewModel\n1" AddTourLogViewModel        
+AddTourLogViewModel        "1" *-[#595959,plain]-> "selectedTourService\n1" SelectedTourService        
+AddTourLogViewModel        "1" *-[#595959,plain]-> "tourLogService\n1" TourLogService             
+AddTourLogViewModelTest    "1" *-[#595959,plain]-> "addTourLogViewModel\n1" AddTourLogViewModel        
+AddTourLogViewModelTest    "1" *-[#595959,plain]-> "selectedTourService\n1" SelectedTourService        
+AddTourLogViewModelTest    "1" *-[#595959,plain]-> "tourLogService\n1" TourLogService             
+AddTourView                "1" *-[#595959,plain]-> "addTourViewModel\n1" AddTourViewModel           
+AddTourViewModel           "1" *-[#595959,plain]-> "routeService\n1" RouteService               
+AddTourViewModel           "1" *-[#595959,plain]-> "tourService\n1" TourService                
+AddTourViewModelTest       "1" *-[#595959,plain]-> "addTourViewModel\n1" AddTourViewModel           
+AddTourViewModelTest       "1" *-[#595959,plain]-> "routeService\n1" RouteService               
+AddTourViewModelTest       "1" *-[#595959,plain]-> "tourService\n1" TourService                
+EventAggregator            "1" *-[#595959,plain]-> "eventListMap\n*" Event                      
+MainView                   "1" *-[#595959,plain]-> "addTourView\n1" AddTourView                
+MainView                   "1" *-[#595959,plain]-> "navigationBarView\n1" NavigationBarView          
+MainView                   "1" *-[#595959,plain]-> "searchBarView\n1" SearchBarView              
+MainView                   "1" *-[#595959,plain]-> "tourDetailsView\n1" TourDetailsView            
+MainView                   "1" *-[#595959,plain]-> "tourListView\n1" TourListView               
+MainView                   "1" *-[#595959,plain]-> "tourLogView\n1" TourLogView                
+MapQuestApiResponse        "1" *-[#595959,plain]-> "route\n1" Route                      
+MapQuestRouteService        -[#008200,dashed]-^  RouteService               
+ModifyTourLogView          "1" *-[#595959,plain]-> "modifyTourLogViewModel\n1" ModifyTourLogViewModel     
+ModifyTourLogViewModel     "1" *-[#595959,plain]-> "eventAggregator\n1" EventAggregator            
+ModifyTourLogViewModel     "1" *-[#595959,plain]-> "selectedTourLogService\n1" SelectedTourLogService     
+ModifyTourLogViewModel     "1" *-[#595959,plain]-> "selectedTourService\n1" SelectedTourService        
+ModifyTourLogViewModel     "1" *-[#595959,plain]-> "tourLogService\n1" TourLogService             
+ModifyTourLogViewModelTest "1" *-[#595959,plain]-> "eventAggregator\n1" EventAggregator            
+ModifyTourLogViewModelTest "1" *-[#595959,plain]-> "modifyTourLogViewModel\n1" ModifyTourLogViewModel     
+ModifyTourLogViewModelTest "1" *-[#595959,plain]-> "selectedTourLogService\n1" SelectedTourLogService     
+ModifyTourLogViewModelTest "1" *-[#595959,plain]-> "selectedTourService\n1" SelectedTourService        
+ModifyTourLogViewModelTest "1" *-[#595959,plain]-> "tourLogService\n1" TourLogService             
+ModifyTourView             "1" *-[#595959,plain]-> "modifyTourViewModel\n1" ModifyTourViewModel        
+ModifyTourViewModel        "1" *-[#595959,plain]-> "eventAggregator\n1" EventAggregator            
+ModifyTourViewModel        "1" *-[#595959,plain]-> "routeService\n1" RouteService               
+ModifyTourViewModel        "1" *-[#595959,plain]-> "selectedTourService\n1" SelectedTourService        
+ModifyTourViewModel        "1" *-[#595959,plain]-> "tourService\n1" TourService                
+ModifyTourViewModelTest    "1" *-[#595959,plain]-> "eventAggregator\n1" EventAggregator            
+ModifyTourViewModelTest    "1" *-[#595959,plain]-> "modifyTourViewModel\n1" ModifyTourViewModel        
+ModifyTourViewModelTest    "1" *-[#595959,plain]-> "routeService\n1" RouteService               
+ModifyTourViewModelTest    "1" *-[#595959,plain]-> "selectedTourService\n1" SelectedTourService        
+ModifyTourViewModelTest    "1" *-[#595959,plain]-> "tourService\n1" TourService                
+NavigationBarView          "1" *-[#595959,plain]-> "navigationBarViewModel\n1" NavigationBarViewModel     
+NavigationBarViewModel     "1" *-[#595959,plain]-> "selectedTourService\n1" SelectedTourService        
+NavigationBarViewModel     "1" *-[#595959,plain]-> "tourService\n1" TourService                
+RecommendedTourService     "1" *-[#595959,plain]-> "tourLogRepository\n1" TourLogRepository          
+RecommendedTourService     "1" *-[#595959,plain]-> "tourRepository\n1" TourRepository             
+RecommendedToursView       "1" *-[#595959,plain]-> "recommendedToursViewModel\n1" RecommendedToursViewModel  
+RecommendedToursViewModel  "1" *-[#595959,plain]-> "eventAggregator\n1" EventAggregator            
+RecommendedToursViewModel  "1" *-[#595959,plain]-> "recommendedTourService\n1" RecommendedTourService     
+SearchBarView              "1" *-[#595959,plain]-> "searchBarViewModel\n1" SearchBarViewModel         
+SearchBarViewModel         "1" *-[#595959,plain]-> "searchService\n1" SearchService              
+SearchService              "1" *-[#595959,plain]-> "eventAggregator\n1" EventAggregator            
+SearchService              "1" *-[#595959,plain]-> "tourLogRepository\n1" TourLogRepository          
+SearchService              "1" *-[#595959,plain]-> "tourRepository\n1" TourRepository             
+TourDetailsView            "1" *-[#595959,plain]-> "tourDetailsViewModel\n1" TourDetailsViewModel       
+TourDetailsViewModel       "1" *-[#595959,plain]-> "eventAggregator\n1" EventAggregator            
+TourDetailsViewModel       "1" *-[#595959,plain]-> "selectedTourService\n1" SelectedTourService        
+TourDetailsViewModel       "1" *-[#595959,plain]-> "tourService\n1" TourService                
+TourListView               "1" *-[#595959,plain]-> "tourListViewModel\n1" TourListViewModel          
+TourListViewModel          "1" *-[#595959,plain]-> "eventAggregator\n1" EventAggregator            
+TourListViewModel          "1" *-[#595959,plain]-> "searchService\n1" SearchService              
+TourListViewModel          "1" *-[#595959,plain]-> "selectedTourService\n1" SelectedTourService        
+TourListViewModel          "1" *-[#595959,plain]-> "tourService\n1" TourService                
+TourListViewModelTest      "1" *-[#595959,plain]-> "eventAggregator\n1" EventAggregator            
+TourListViewModelTest      "1" *-[#595959,plain]-> "searchService\n1" SearchService              
+TourListViewModelTest      "1" *-[#595959,plain]-> "selectedTourService\n1" SelectedTourService        
+TourListViewModelTest      "1" *-[#595959,plain]-> "tourListViewModel\n1" TourListViewModel          
+TourListViewModelTest      "1" *-[#595959,plain]-> "tourService\n1" TourService                
+TourLogRepository          "1" *-[#595959,plain]-> "eventAggregator\n1" EventAggregator            
+TourLogRepository          "1" *-[#595959,plain]-> "sessionFactory\n1" HibernateSessionFactory    
+TourLogRepository          "1" *-[#595959,plain]-> "tourRepository\n1" TourRepository             
+TourLogService             "1" *-[#595959,plain]-> "tourLogRepository\n1" TourLogRepository          
+TourLogView                "1" *-[#595959,plain]-> "tourLogViewModel\n1" TourLogViewModel           
+TourLogViewModel           "1" *-[#595959,plain]-> "eventAggregator\n1" EventAggregator            
+TourLogViewModel           "1" *-[#595959,plain]-> "searchService\n1" SearchService              
+TourLogViewModel           "1" *-[#595959,plain]-> "selectedTourLogService\n1" SelectedTourLogService     
+TourLogViewModel           "1" *-[#595959,plain]-> "selectedTourService\n1" SelectedTourService        
+TourLogViewModel           "1" *-[#595959,plain]-> "tourLogService\n1" TourLogService             
+TourRepository             "1" *-[#595959,plain]-> "eventAggregator\n1" EventAggregator            
+TourRepository             "1" *-[#595959,plain]-> "sessionFactory\n1" HibernateSessionFactory    
+TourService                "1" *-[#595959,plain]-> "tourLogRepository\n1" TourLogRepository          
+TourService                "1" *-[#595959,plain]-> "tourRepository\n1" TourRepository             
+ViewFactory                "1" *-[#595959,plain]-> "addTourLogViewModel\n1" AddTourLogViewModel        
+ViewFactory                "1" *-[#595959,plain]-> "addTourViewModel\n1" AddTourViewModel           
+ViewFactory                "1" *-[#595959,plain]-> "eventAggregator\n1" EventAggregator            
+ViewFactory                "1" *-[#595959,plain]-> "sessionFactory\n1" HibernateSessionFactory    
+ViewFactory                "1" *-[#595959,plain]-> "modifyTourLogViewModel\n1" ModifyTourLogViewModel     
+ViewFactory                "1" *-[#595959,plain]-> "editTourViewModel\n1" ModifyTourViewModel        
+ViewFactory                "1" *-[#595959,plain]-> "navigationBarViewModel\n1" NavigationBarViewModel     
+ViewFactory                "1" *-[#595959,plain]-> "recommendedTourService\n1" RecommendedTourService     
+ViewFactory                "1" *-[#595959,plain]-> "recommendedTourViewModel\n1" RecommendedToursViewModel  
+ViewFactory                "1" *-[#595959,plain]-> "routeService\n1" RouteService               
+ViewFactory                "1" *-[#595959,plain]-> "searchBarViewModel\n1" SearchBarViewModel         
+ViewFactory                "1" *-[#595959,plain]-> "searchService\n1" SearchService              
+ViewFactory                "1" *-[#595959,plain]-> "selectedTourLogService\n1" SelectedTourLogService     
+ViewFactory                "1" *-[#595959,plain]-> "selectedTourService\n1" SelectedTourService        
+ViewFactory                "1" *-[#595959,plain]-> "tourDetailsViewModel\n1" TourDetailsViewModel       
+ViewFactory                "1" *-[#595959,plain]-> "tourListViewModel\n1" TourListViewModel          
+ViewFactory                "1" *-[#595959,plain]-> "tourLogRepository\n1" TourLogRepository          
+ViewFactory                "1" *-[#595959,plain]-> "tourLogService\n1" TourLogService             
+ViewFactory                "1" *-[#595959,plain]-> "tourLogViewModel\n1" TourLogViewModel           
+ViewFactory                "1" *-[#595959,plain]-> "tourRepository\n1" TourRepository             
+ViewFactory                "1" *-[#595959,plain]-> "tourService\n1" TourService                
+@enduml
