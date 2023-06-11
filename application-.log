@@ -1990,3 +1990,22 @@ null
 2023-06-11 18:10:35.651 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
 2023-06-11 18:11:03.156 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.save(TourRepository.java:38)ogger{36} - Tour saved successfully: at.technikum.tourplanner.model.Tour@775dada0
 2023-06-11 18:11:05.247 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 18:20:33.077 [main] ERROR com.example.tourplanner/at.technikum.tourplanner.viewModel.AddTourViewModel.saveTour(AddTourViewModel.java:101)ogger{36} - From and To fields should be place names and contain only alphabetic characters.
+2023-06-11 18:20:33.110 [main] ERROR com.example.tourplanner/at.technikum.tourplanner.viewModel.AddTourViewModel.saveTour(AddTourViewModel.java:96)ogger{36} - Please fill in all the required fields.
+2023-06-11 18:21:15.947 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 18:21:16.917 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 18:21:25.665 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 18:21:25.689 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 18:21:32.972 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.save(TourLogRepository.java:33)ogger{36} - Create tour log for the tour: tour1
+2023-06-11
+1.0
+1
+1
+No comment
+2023-06-11 18:21:33.071 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:85)ogger{36} - Tour modified successfully: tour1
+2023-06-11 18:21:33.075 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 18:21:33.078 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 18:21:44.355 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 18:21:44.358 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 18:21:58.139 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:85)ogger{36} - Tour modified successfully: tour1
+2023-06-11 18:21:58.143 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
