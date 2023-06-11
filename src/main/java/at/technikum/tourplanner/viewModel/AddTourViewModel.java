@@ -1,13 +1,16 @@
 package at.technikum.tourplanner.viewModel;
 
 import at.technikum.tourplanner.dto.Route;
+import at.technikum.tourplanner.repository.TourRepository;
 import at.technikum.tourplanner.service.RouteService;
 import at.technikum.tourplanner.service.TourService;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
+import org.apache.log4j.Logger;
 
 
 public class AddTourViewModel {
+    private static final Logger logger = Logger.getLogger(TourRepository.class);
     private final StringProperty tourNameTextField = new SimpleStringProperty("");
     private final StringProperty fromTextField = new SimpleStringProperty("");
     private final StringProperty toTextField = new SimpleStringProperty("");
@@ -90,14 +93,12 @@ public class AddTourViewModel {
 
         // Validate inputs
         if (name.isEmpty() || from.isEmpty() || to.isEmpty()) {
-            //ADD LOG
-            System.out.println("Please fill in all the required fields.");
+            logger.error("Please fill in all the required fields.");
             return;
         }
 
         if (!from.matches("[a-zA-Z]+") || !to.matches("[a-zA-Z]+")) {
-            //ADD LOG
-            System.out.println("From and To fields should be place names and contain only alphabetic characters.");
+            logger.error("From and To fields should be place names and contain only alphabetic characters.");
             return;
         }
 
@@ -105,6 +106,13 @@ public class AddTourViewModel {
             description = "No description yet";
         }
 
+        // Validate route
+//        if (!validateRoute(from, to, transportType)) {
+//            logger.error("Invalid route. Please check the From and To fields.");
+//            return;
+//        }
+
+        // Route is valid, continue saving the tour
         Route route = routeService.getRoute(from, to, transportType);
         String imagePath = "src/main/resources/at/technikum/tourplanner/maps/" + name + ".jpg";
         routeService.saveMap(route.getSessionId(), imagePath);
@@ -118,5 +126,18 @@ public class AddTourViewModel {
         toTextField.set("");
         tourDescriptionTextArea.set("");
     }
+
+    private boolean validateRoute(String from, String to, String transportType) {
+        try {
+            // Attempt to get the route without saving it
+            Route route = routeService.getRoute(from, to, transportType);
+            return route != null;
+        } catch (Exception e) {
+            logger.error("Error validating the route: " + e.getMessage());
+            return false;
+        }
+    }
+
+
 }
 

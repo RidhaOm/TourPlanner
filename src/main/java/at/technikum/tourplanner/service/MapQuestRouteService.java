@@ -1,10 +1,13 @@
 package at.technikum.tourplanner.service;
 
+import at.technikum.tourplanner.configuration.ConfigurationManager;
 import at.technikum.tourplanner.dto.MapQuestApiResponse;
 import at.technikum.tourplanner.dto.Route;
+import at.technikum.tourplanner.repository.TourRepository;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.log4j.Logger;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -19,7 +22,9 @@ import java.nio.channels.FileChannel;
 import java.nio.channels.ReadableByteChannel;
 
 public class MapQuestRouteService implements RouteService{
-    private static String API_KEY = "M9j8nWh6SKj8IsZuJbUX3eKTg5DAjx9x";
+//    private static String API_KEY = "M9j8nWh6SKj8IsZuJbUX3eKTg5DAjx9x";
+    private static String API_KEY = new ConfigurationManager().getApiKey();
+    private static final Logger logger = Logger.getLogger(TourRepository.class);
 
     @Override
     public Route getRoute(String from, String to, String transportType) {
@@ -48,7 +53,9 @@ public class MapQuestRouteService implements RouteService{
             responseJson = response.body();
 
             if (response.statusCode() >= 400) {
-                // handle error
+                // Handle error
+                logger.error("Error retrieving route: " + responseJson);
+                return null; // Return null on error
             }
 
         } catch (URISyntaxException e) {
@@ -75,6 +82,7 @@ public class MapQuestRouteService implements RouteService{
 
         return apiResponse.getRoute();
     }
+
 
     @Override
     public void saveMap(String sessionId, String filename) {

@@ -30,7 +30,8 @@ public class TourService {
     }
 
     public void modify(String existingTourName, String name, String tourFrom, String tourTo, Double distance, String time, String description, String transportType ){
-        Tour newTour = new Tour(name, tourFrom, tourTo, distance, time, description, transportType);
+        Tour existingTour = findByName(existingTourName);
+        Tour newTour = new Tour(name, tourFrom, tourTo, distance, time, description, transportType, existingTour.getPopularity(), existingTour.getChildFriendliness());
         tourRepository.modify(existingTourName, newTour);
     }
     public List<String> findAll() {

@@ -68,6 +68,7 @@ public class TourRepository {
         try (Session session = sessionFactory.openSession()) {
             session.getTransaction().begin();
             Tour existingTour = findByName(tourName);
+//            newTour.setPopularity(existingTour.getPopularity());
             if (existingTour != null) {
                 existingTour.setName(newTour.getName());
                 existingTour.setTourFrom(newTour.getTourFrom());
@@ -82,6 +83,7 @@ public class TourRepository {
                 session.merge(existingTour);
                 session.getTransaction().commit();
                 logger.info("Tour modified successfully: " + tourName);
+                eventAggregator.publish(Event.TOUR_MODIFIED);
             } else {
                 session.getTransaction().rollback();
                 logger.error("Tour not found for modification: " + tourName);

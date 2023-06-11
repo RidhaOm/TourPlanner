@@ -7,11 +7,11 @@ import javafx.beans.property.*;
 import java.time.LocalDate;
 
 public class AddTourLogViewModel {
-    private final ObjectProperty<LocalDate> datePicker = new SimpleObjectProperty<>();
-    private final StringProperty durationTextField = new SimpleStringProperty();
+    private final ObjectProperty<LocalDate> datePicker = new SimpleObjectProperty<>(LocalDate.now());
+    private final StringProperty durationTextField = new SimpleStringProperty("");
     private final StringProperty difficultyChoiceBox = new SimpleStringProperty("1");
     private final StringProperty rankingChoiceBox = new SimpleStringProperty("1");
-    private final StringProperty commentTextArea = new SimpleStringProperty();
+    private final StringProperty commentTextArea = new SimpleStringProperty("");
     private final TourLogService tourLogService;
     private final SelectedTourService selectedTourService;
     public AddTourLogViewModel(TourLogService tourLogService, SelectedTourService selectedTourService) {

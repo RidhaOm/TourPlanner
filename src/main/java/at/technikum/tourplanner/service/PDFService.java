@@ -1,5 +1,6 @@
 package at.technikum.tourplanner.service;
 
+import at.technikum.tourplanner.configuration.ConfigurationManager;
 import at.technikum.tourplanner.model.Tour;
 import at.technikum.tourplanner.model.TourLog;
 import com.itextpdf.io.image.ImageData;
@@ -22,9 +23,13 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class PDFService {
-    private static final String IMAGE_PATH = "/at/technikum/tourplanner/maps/";
-    private static final String PDF_PATH = "Tours PDF/";
-    private static final String TOUR_REPORTS_PATH = "Tour Reports/";
+
+    //private static final String IMAGE_PATH = "/at/technikum/tourplanner/maps/";
+    //private static final String PDF_PATH = "Tours PDF/";
+    //private static final String TOUR_REPORTS_PATH = "Tour Reports/";
+    private static final String IMAGE_PATH = new ConfigurationManager().getImagePath();
+    private static final String PDF_PATH = new ConfigurationManager().getPdfPath();
+    private static final String TOUR_REPORTS_PATH = new ConfigurationManager().getTourReportsPath();
     private static final Logger logger = Logger.getLogger(PDFService.class);
     public static void export(Tour tour) {
         try {
@@ -143,7 +148,7 @@ public class PDFService {
 
     public static void generateSummaryReport(List<Tour> allTours, List<TourLog> allLogs) {
         try {
-            PdfWriter writer = new PdfWriter(PDF_PATH + "SummaryReport.pdf");
+            PdfWriter writer = new PdfWriter(TOUR_REPORTS_PATH + "SummaryReport.pdf");
             PdfDocument pdfDoc = new PdfDocument(writer);
             Document pdf = new Document(pdfDoc);
 

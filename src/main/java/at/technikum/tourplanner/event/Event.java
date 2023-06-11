@@ -5,6 +5,7 @@ public enum Event {
     NEW_TOUR,
     TOUR_DELETED,
     TOUR_SELECTED,
+    TOUR_MODIFIED,
     NEW_TOUR_LOG,
     TOUR_LOG_SELECTED,
     TOUR_LOG_DELETED,

@@ -57,6 +57,17 @@ public class Tour {
         this.transportType = transportType;
         //this.popularity = 0;
     }
+    public Tour(String name, String tourFrom, String tourTo, Double distance, String time, String description, String transportType, int popularity, double childFriendliness) {
+        this.name = name;
+        this.tourFrom = tourFrom;
+        this.tourTo = tourTo;
+        this.distance = distance;
+        this.time = time;
+        this.description = description;
+        this.transportType = transportType;
+        this.popularity = popularity;
+        this.childFriendliness = childFriendliness;
+    }
 
     public Tour(String name, String tourFrom, String tourTo) {
         this.name = name;

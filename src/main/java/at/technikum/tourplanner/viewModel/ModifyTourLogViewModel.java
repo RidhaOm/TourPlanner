@@ -76,6 +76,11 @@ public class ModifyTourLogViewModel {
         String comment = getCommentTextArea();
         if (comment == "") {comment = "No comment";}
         tourLogService.modify(selectedTourLogName, tourName, date, duration, difficulty, ranking, comment);
+        setDurationTextField("");
+        setCommentTextArea("");
+        setDifficultyChoiceBox("1");
+        setRankingChoiceBox("1");
+        setDatePicker(LocalDate.now());
     }
 
     public LocalDate getDatePicker() {

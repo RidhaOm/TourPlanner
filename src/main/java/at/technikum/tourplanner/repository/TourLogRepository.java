@@ -39,7 +39,7 @@ public class TourLogRepository {
             String tourName = tourLog.getTourName();
             Tour newTour = tourRepository.findByName(tourName);
             newTour.setPopularity(newTour.getPopularity()+1);
-            double childFriendliness = setChildFriendliness(tourName);
+            double childFriendliness = findChildFriendliness(tourName);
             newTour.setChildFriendliness(childFriendliness);
             tourRepository.modify(tourName,newTour);
 
@@ -59,7 +59,7 @@ public class TourLogRepository {
                 String tourName = tourLog.getTourName();
                 Tour newTour = tourRepository.findByName(tourName);
                 newTour.setPopularity(newTour.getPopularity()-1);
-                double childFriendliness = setChildFriendliness(tourName);
+                double childFriendliness = findChildFriendliness(tourName);
                 newTour.setChildFriendliness(childFriendliness);
                 tourRepository.modify(tourName,newTour);
 
@@ -173,7 +173,7 @@ public class TourLogRepository {
             return averageDuration != null ? averageDuration : 0.0;
         }
     }
-    public double setChildFriendliness(String tourName){
+    public double findChildFriendliness(String tourName){
         //Distance note:
         double distance = tourRepository.findByName(tourName).getDistance();
         int distanceNote ;

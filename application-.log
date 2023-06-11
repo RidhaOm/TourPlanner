@@ -944,3 +944,1049 @@ java.io.FileNotFoundException: src\main\resources\at\technikum\tourplanner\repor
 2023-06-10 23:57:04.025 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: test2
 2023-06-10 23:57:07.529 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.service.PDFService.generateTourReport(PDFService.java:132)ogger{36} - Tour report generated successfully.
 2023-06-10 23:57:07.530 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.NavigationBarViewModel.generateTourReport(NavigationBarViewModel.java:75)ogger{36} - Tour report generated successfully: test2
+2023-06-11 00:03:24.954 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 00:03:26.253 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 00:03:36.311 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:03:36.331 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour2
+2023-06-11 00:03:46.080 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:84)ogger{36} - Tour modified successfully: tour2
+2023-06-11 00:03:46.084 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:03:48.630 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:84)ogger{36} - Tour modified successfully: tour2
+2023-06-11 00:03:48.634 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:03:51.362 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:84)ogger{36} - Tour modified successfully: tour2
+2023-06-11 00:03:51.366 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:03:54.295 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:84)ogger{36} - Tour modified successfully: tour2
+2023-06-11 00:03:54.298 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:03:57.408 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:03:57.412 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour2
+2023-06-11 00:03:58.558 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.delete(TourRepository.java:56)ogger{36} - Tour deleted successfully: tour2
+2023-06-11 00:03:58.561 [JavaFX Application Thread] ERROR com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.deleteAllByTourName(TourLogRepository.java:143)ogger{36} - No tour logs found for tour name: tour2
+2023-06-11 00:04:00.506 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:04:00.510 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-11 00:04:01.771 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: testtour
+2023-06-11 00:04:01.775 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: testtour
+2023-06-11 00:04:02.829 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour3
+2023-06-11 00:04:02.833 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour3
+2023-06-11 00:04:11.247 [JavaFX Application Thread] ERROR com.example.tourplanner/at.technikum.tourplanner.service.PDFService.generateTourReport(PDFService.java:136)ogger{36} - Error: PDF file not found.
+java.io.FileNotFoundException: Tour Reports\tour3.pdf (Das System kann den angegebenen Pfad nicht finden)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:123)
+	at com.itextpdf.commons.utils.FileUtil.getBufferedOutputStream(FileUtil.java:201)
+	at kernel@7.2.2/com.itextpdf.kernel.pdf.PdfWriter.<init>(PdfWriter.java:138)
+	at kernel@7.2.2/com.itextpdf.kernel.pdf.PdfWriter.<init>(PdfWriter.java:125)
+	at com.example.tourplanner/at.technikum.tourplanner.service.PDFService.generateTourReport(PDFService.java:101)
+	at com.example.tourplanner/at.technikum.tourplanner.viewModel.NavigationBarViewModel.generateTourReport(NavigationBarViewModel.java:74)
+	at com.example.tourplanner/at.technikum.tourplanner.view.NavigationBarView.reportTour(NavigationBarView.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at javafx.base@19.0.2.1/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml@19.0.2.1/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+	at javafx.fxml@19.0.2.1/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1852)
+	at javafx.fxml@19.0.2.1/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base@19.0.2.1/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.controls@19.0.2.1/javafx.scene.control.MenuItem.fire(MenuItem.java:459)
+	at javafx.controls@19.0.2.1/com.sun.javafx.scene.control.ContextMenuContent$MenuItemContainer.doSelect(ContextMenuContent.java:1385)
+	at javafx.controls@19.0.2.1/com.sun.javafx.scene.control.ContextMenuContent$MenuItemContainer.lambda$createChildren$12(ContextMenuContent.java:1338)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@19.0.2.1/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene$MouseHandler.process(Scene.java:3894)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene.processMouseEvent(Scene.java:1887)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2620)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-06-11 00:04:11.251 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.NavigationBarViewModel.generateTourReport(NavigationBarViewModel.java:75)ogger{36} - Tour report generated successfully: tour3
+2023-06-11 00:05:06.533 [JavaFX Application Thread] ERROR com.example.tourplanner/at.technikum.tourplanner.service.PDFService.export(PDFService.java:58)ogger{36} - Error: PDF file not found.
+java.io.FileNotFoundException: Tours PDF\tour3.pdf (Das System kann den angegebenen Pfad nicht finden)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:123)
+	at com.itextpdf.commons.utils.FileUtil.getBufferedOutputStream(FileUtil.java:201)
+	at kernel@7.2.2/com.itextpdf.kernel.pdf.PdfWriter.<init>(PdfWriter.java:138)
+	at kernel@7.2.2/com.itextpdf.kernel.pdf.PdfWriter.<init>(PdfWriter.java:125)
+	at com.example.tourplanner/at.technikum.tourplanner.service.PDFService.export(PDFService.java:40)
+	at com.example.tourplanner/at.technikum.tourplanner.viewModel.NavigationBarViewModel.exportTour(NavigationBarViewModel.java:33)
+	at com.example.tourplanner/at.technikum.tourplanner.view.NavigationBarView.exportTour(NavigationBarView.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at javafx.base@19.0.2.1/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml@19.0.2.1/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+	at javafx.fxml@19.0.2.1/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1852)
+	at javafx.fxml@19.0.2.1/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base@19.0.2.1/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.controls@19.0.2.1/javafx.scene.control.MenuItem.fire(MenuItem.java:459)
+	at javafx.controls@19.0.2.1/com.sun.javafx.scene.control.ContextMenuContent$MenuItemContainer.doSelect(ContextMenuContent.java:1385)
+	at javafx.controls@19.0.2.1/com.sun.javafx.scene.control.ContextMenuContent$MenuItemContainer.lambda$createChildren$12(ContextMenuContent.java:1338)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@19.0.2.1/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene$MouseHandler.process(Scene.java:3894)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene.processMouseEvent(Scene.java:1887)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2620)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-06-11 00:05:06.534 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.NavigationBarViewModel.exportTour(NavigationBarViewModel.java:34)ogger{36} - Tour exported successfully: tour3
+2023-06-11 00:05:18.054 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour3
+2023-06-11 00:05:18.059 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour3
+2023-06-11 00:05:21.039 [JavaFX Application Thread] ERROR com.example.tourplanner/at.technikum.tourplanner.service.PDFService.export(PDFService.java:58)ogger{36} - Error: PDF file not found.
+java.io.FileNotFoundException: Tours PDF\tour3.pdf (Das System kann den angegebenen Pfad nicht finden)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:123)
+	at com.itextpdf.commons.utils.FileUtil.getBufferedOutputStream(FileUtil.java:201)
+	at kernel@7.2.2/com.itextpdf.kernel.pdf.PdfWriter.<init>(PdfWriter.java:138)
+	at kernel@7.2.2/com.itextpdf.kernel.pdf.PdfWriter.<init>(PdfWriter.java:125)
+	at com.example.tourplanner/at.technikum.tourplanner.service.PDFService.export(PDFService.java:40)
+	at com.example.tourplanner/at.technikum.tourplanner.viewModel.NavigationBarViewModel.exportTour(NavigationBarViewModel.java:33)
+	at com.example.tourplanner/at.technikum.tourplanner.view.NavigationBarView.exportTour(NavigationBarView.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at javafx.base@19.0.2.1/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml@19.0.2.1/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+	at javafx.fxml@19.0.2.1/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1852)
+	at javafx.fxml@19.0.2.1/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base@19.0.2.1/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.controls@19.0.2.1/javafx.scene.control.MenuItem.fire(MenuItem.java:459)
+	at javafx.controls@19.0.2.1/com.sun.javafx.scene.control.ContextMenuContent$MenuItemContainer.doSelect(ContextMenuContent.java:1385)
+	at javafx.controls@19.0.2.1/com.sun.javafx.scene.control.ContextMenuContent$MenuItemContainer.lambda$createChildren$12(ContextMenuContent.java:1338)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@19.0.2.1/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene$MouseHandler.process(Scene.java:3894)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene.processMouseEvent(Scene.java:1887)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2620)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-06-11 00:05:21.041 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.NavigationBarViewModel.exportTour(NavigationBarViewModel.java:34)ogger{36} - Tour exported successfully: tour3
+2023-06-11 00:05:39.386 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour3
+2023-06-11 00:05:39.389 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour3
+2023-06-11 00:05:41.935 [JavaFX Application Thread] ERROR com.example.tourplanner/at.technikum.tourplanner.service.PDFService.generateSummaryReport(PDFService.java:170)ogger{36} - Error: PDF file not found.
+java.io.FileNotFoundException: Tours PDF\SummaryReport.pdf (Das System kann den angegebenen Pfad nicht finden)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:123)
+	at com.itextpdf.commons.utils.FileUtil.getBufferedOutputStream(FileUtil.java:201)
+	at kernel@7.2.2/com.itextpdf.kernel.pdf.PdfWriter.<init>(PdfWriter.java:138)
+	at kernel@7.2.2/com.itextpdf.kernel.pdf.PdfWriter.<init>(PdfWriter.java:125)
+	at com.example.tourplanner/at.technikum.tourplanner.service.PDFService.generateSummaryReport(PDFService.java:146)
+	at com.example.tourplanner/at.technikum.tourplanner.viewModel.NavigationBarViewModel.summaryReport(NavigationBarViewModel.java:92)
+	at com.example.tourplanner/at.technikum.tourplanner.view.NavigationBarView.summaryReport(NavigationBarView.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at javafx.base@19.0.2.1/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml@19.0.2.1/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+	at javafx.fxml@19.0.2.1/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1852)
+	at javafx.fxml@19.0.2.1/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base@19.0.2.1/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.controls@19.0.2.1/javafx.scene.control.MenuItem.fire(MenuItem.java:459)
+	at javafx.controls@19.0.2.1/com.sun.javafx.scene.control.ContextMenuContent$MenuItemContainer.doSelect(ContextMenuContent.java:1385)
+	at javafx.controls@19.0.2.1/com.sun.javafx.scene.control.ContextMenuContent$MenuItemContainer.lambda$createChildren$12(ContextMenuContent.java:1338)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@19.0.2.1/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene$MouseHandler.process(Scene.java:3894)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene.processMouseEvent(Scene.java:1887)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2620)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-06-11 00:05:58.682 [JavaFX Application Thread] ERROR com.example.tourplanner/at.technikum.tourplanner.service.PDFService.generateSummaryReport(PDFService.java:170)ogger{36} - Error: PDF file not found.
+java.io.FileNotFoundException: Tours PDF\SummaryReport.pdf (Das System kann den angegebenen Pfad nicht finden)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:123)
+	at com.itextpdf.commons.utils.FileUtil.getBufferedOutputStream(FileUtil.java:201)
+	at kernel@7.2.2/com.itextpdf.kernel.pdf.PdfWriter.<init>(PdfWriter.java:138)
+	at kernel@7.2.2/com.itextpdf.kernel.pdf.PdfWriter.<init>(PdfWriter.java:125)
+	at com.example.tourplanner/at.technikum.tourplanner.service.PDFService.generateSummaryReport(PDFService.java:146)
+	at com.example.tourplanner/at.technikum.tourplanner.viewModel.NavigationBarViewModel.summaryReport(NavigationBarViewModel.java:92)
+	at com.example.tourplanner/at.technikum.tourplanner.view.NavigationBarView.summaryReport(NavigationBarView.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at javafx.base@19.0.2.1/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml@19.0.2.1/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+	at javafx.fxml@19.0.2.1/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1852)
+	at javafx.fxml@19.0.2.1/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base@19.0.2.1/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.controls@19.0.2.1/javafx.scene.control.MenuItem.fire(MenuItem.java:459)
+	at javafx.controls@19.0.2.1/com.sun.javafx.scene.control.ContextMenuContent$MenuItemContainer.doSelect(ContextMenuContent.java:1385)
+	at javafx.controls@19.0.2.1/com.sun.javafx.scene.control.ContextMenuContent$MenuItemContainer.lambda$createChildren$12(ContextMenuContent.java:1338)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@19.0.2.1/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene$MouseHandler.process(Scene.java:3894)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene.processMouseEvent(Scene.java:1887)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2620)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-06-11 00:08:41.134 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 00:08:42.097 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 00:08:50.254 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour3
+2023-06-11 00:08:50.268 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour3
+2023-06-11 00:08:53.186 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.service.PDFService.export(PDFService.java:56)ogger{36} - PDF exported successfully.
+2023-06-11 00:08:53.187 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.NavigationBarViewModel.exportTour(NavigationBarViewModel.java:34)ogger{36} - Tour exported successfully: tour3
+2023-06-11 00:09:17.606 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.NavigationBarViewModel.importTour(NavigationBarViewModel.java:63)ogger{36} - Tour import canceled.
+2023-06-11 00:09:22.285 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour3
+2023-06-11 00:09:22.289 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour3
+2023-06-11 00:09:24.844 [JavaFX Application Thread] ERROR com.example.tourplanner/at.technikum.tourplanner.service.PDFService.generateTourReport(PDFService.java:136)ogger{36} - Error: PDF file not found.
+java.io.FileNotFoundException: Tour Reports\tour3.pdf (Das System kann den angegebenen Pfad nicht finden)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:123)
+	at com.itextpdf.commons.utils.FileUtil.getBufferedOutputStream(FileUtil.java:201)
+	at kernel@7.2.2/com.itextpdf.kernel.pdf.PdfWriter.<init>(PdfWriter.java:138)
+	at kernel@7.2.2/com.itextpdf.kernel.pdf.PdfWriter.<init>(PdfWriter.java:125)
+	at com.example.tourplanner/at.technikum.tourplanner.service.PDFService.generateTourReport(PDFService.java:101)
+	at com.example.tourplanner/at.technikum.tourplanner.viewModel.NavigationBarViewModel.generateTourReport(NavigationBarViewModel.java:74)
+	at com.example.tourplanner/at.technikum.tourplanner.view.NavigationBarView.reportTour(NavigationBarView.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at javafx.base@19.0.2.1/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml@19.0.2.1/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+	at javafx.fxml@19.0.2.1/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1852)
+	at javafx.fxml@19.0.2.1/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base@19.0.2.1/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.controls@19.0.2.1/javafx.scene.control.MenuItem.fire(MenuItem.java:459)
+	at javafx.controls@19.0.2.1/com.sun.javafx.scene.control.ContextMenuContent$MenuItemContainer.doSelect(ContextMenuContent.java:1385)
+	at javafx.controls@19.0.2.1/com.sun.javafx.scene.control.ContextMenuContent$MenuItemContainer.lambda$createChildren$12(ContextMenuContent.java:1338)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@19.0.2.1/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene$MouseHandler.process(Scene.java:3894)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene.processMouseEvent(Scene.java:1887)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2620)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-06-11 00:09:24.848 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.NavigationBarViewModel.generateTourReport(NavigationBarViewModel.java:75)ogger{36} - Tour report generated successfully: tour3
+2023-06-11 00:09:54.623 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.service.PDFService.generateTourReport(PDFService.java:134)ogger{36} - Tour report generated successfully.
+2023-06-11 00:09:54.623 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.NavigationBarViewModel.generateTourReport(NavigationBarViewModel.java:75)ogger{36} - Tour report generated successfully: tour3
+2023-06-11 00:10:23.487 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour3
+2023-06-11 00:10:23.491 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour3
+2023-06-11 00:10:25.486 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.service.PDFService.generateSummaryReport(PDFService.java:168)ogger{36} - Summary report generated successfully.
+2023-06-11 00:19:36.688 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 00:19:37.758 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 00:20:03.593 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.save(TourRepository.java:38)ogger{36} - Tour saved successfully: at.technikum.tourplanner.model.Tour@f21257c
+2023-06-11 00:20:05.205 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: test
+2023-06-11 00:20:05.225 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: test
+2023-06-11 00:20:35.669 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.save(TourRepository.java:38)ogger{36} - Tour saved successfully: at.technikum.tourplanner.model.Tour@639d1a03
+2023-06-11 00:20:37.450 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:20:44.450 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: test
+2023-06-11 00:20:44.454 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: test
+2023-06-11 00:20:45.883 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:21:01.921 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.save(TourRepository.java:38)ogger{36} - Tour saved successfully: at.technikum.tourplanner.model.Tour@505dcb4e
+2023-06-11 00:21:05.267 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:21:06.593 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:21:07.684 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: test
+2023-06-11 00:21:07.687 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: test
+2023-06-11 00:21:09.909 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:21:41.906 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:21:51.683 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:21:52.895 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:22:25.944 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 00:22:26.956 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 00:22:30.912 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:22:30.930 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour2
+2023-06-11 00:22:32.641 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:22:32.650 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-11 00:22:34.045 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: test
+2023-06-11 00:22:34.053 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: test
+2023-06-11 00:22:36.842 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.delete(TourRepository.java:56)ogger{36} - Tour deleted successfully: test
+2023-06-11 00:22:36.847 [JavaFX Application Thread] ERROR com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.deleteAllByTourName(TourLogRepository.java:143)ogger{36} - No tour logs found for tour name: test
+2023-06-11 00:22:38.081 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:22:38.085 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-11 00:22:43.081 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:22:43.084 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-11 00:22:45.652 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:22:45.655 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-11 00:22:48.606 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.service.PDFService.export(PDFService.java:56)ogger{36} - PDF exported successfully.
+2023-06-11 00:22:48.606 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.NavigationBarViewModel.exportTour(NavigationBarViewModel.java:34)ogger{36} - Tour exported successfully: tour1
+2023-06-11 00:22:51.657 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:22:51.661 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-11 00:22:52.566 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.delete(TourRepository.java:56)ogger{36} - Tour deleted successfully: tour1
+2023-06-11 00:22:52.569 [JavaFX Application Thread] ERROR com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.deleteAllByTourName(TourLogRepository.java:143)ogger{36} - No tour logs found for tour name: tour1
+2023-06-11 00:23:08.059 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.save(TourRepository.java:38)ogger{36} - Tour saved successfully: at.technikum.tourplanner.model.Tour@6c417957
+2023-06-11 00:23:08.067 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.NavigationBarViewModel.importTour(NavigationBarViewModel.java:55)ogger{36} - Tour imported successfully.
+2023-06-11 00:23:10.259 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:23:10.262 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-11 00:23:16.339 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:23:16.343 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour2
+2023-06-11 00:23:17.580 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:23:17.582 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-11 00:23:41.904 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:23:41.906 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-11 00:23:43.635 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:23:43.642 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-11 00:23:46.695 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.delete(TourRepository.java:56)ogger{36} - Tour deleted successfully: tour1
+2023-06-11 00:23:46.698 [JavaFX Application Thread] ERROR com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.deleteAllByTourName(TourLogRepository.java:143)ogger{36} - No tour logs found for tour name: tour1
+2023-06-11 00:23:49.153 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:23:49.156 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour2
+2023-06-11 00:24:11.616 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.save(TourRepository.java:38)ogger{36} - Tour saved successfully: at.technikum.tourplanner.model.Tour@1461b911
+2023-06-11 00:24:11.625 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.NavigationBarViewModel.importTour(NavigationBarViewModel.java:55)ogger{36} - Tour imported successfully.
+2023-06-11 00:24:13.442 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:24:13.445 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-11 00:24:32.261 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:24:32.264 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour2
+2023-06-11 00:24:33.294 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:24:33.297 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-11 00:24:40.678 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 00:24:41.719 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 00:24:45.206 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:27:05.100 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 00:27:06.137 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 00:27:09.827 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:27:09.843 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour2
+2023-06-11 00:27:10.769 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:27:12.511 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:27:12.515 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour2
+2023-06-11 00:27:19.872 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.service.PDFService.export(PDFService.java:56)ogger{36} - PDF exported successfully.
+2023-06-11 00:27:19.873 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.NavigationBarViewModel.exportTour(NavigationBarViewModel.java:34)ogger{36} - Tour exported successfully: tour2
+2023-06-11 00:27:23.193 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.delete(TourRepository.java:56)ogger{36} - Tour deleted successfully: tour2
+2023-06-11 00:27:23.198 [JavaFX Application Thread] ERROR com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.deleteAllByTourName(TourLogRepository.java:143)ogger{36} - No tour logs found for tour name: tour2
+2023-06-11 00:27:24.333 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:27:25.162 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.delete(TourRepository.java:56)ogger{36} - Tour deleted successfully: tour1
+2023-06-11 00:27:25.165 [JavaFX Application Thread] ERROR com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.deleteAllByTourName(TourLogRepository.java:143)ogger{36} - No tour logs found for tour name: tour1
+2023-06-11 00:27:35.669 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 00:27:36.712 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 00:28:08.109 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.save(TourRepository.java:38)ogger{36} - Tour saved successfully: at.technikum.tourplanner.model.Tour@1917f27d
+2023-06-11 00:28:08.126 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.NavigationBarViewModel.importTour(NavigationBarViewModel.java:55)ogger{36} - Tour imported successfully.
+2023-06-11 00:28:09.348 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:29:32.251 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 00:29:33.305 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 00:29:37.612 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:29:41.196 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.delete(TourRepository.java:56)ogger{36} - Tour deleted successfully: tour2
+2023-06-11 00:29:41.201 [JavaFX Application Thread] ERROR com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.deleteAllByTourName(TourLogRepository.java:143)ogger{36} - No tour logs found for tour name: tour2
+2023-06-11 00:29:56.485 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.save(TourRepository.java:38)ogger{36} - Tour saved successfully: at.technikum.tourplanner.model.Tour@3a6da526
+2023-06-11 00:30:10.393 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.save(TourRepository.java:38)ogger{36} - Tour saved successfully: at.technikum.tourplanner.model.Tour@1461b911
+2023-06-11 00:30:16.113 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 00:30:17.155 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 00:30:20.873 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:30:20.888 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-11 00:30:22.138 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:30:22.142 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour2
+2023-06-11 00:30:26.750 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:30:26.753 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-11 00:30:43.123 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:30:43.127 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-11 00:30:52.455 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.save(TourLogRepository.java:33)ogger{36} - Create tour log for the tour: tour1
+2023-06-11
+2.8
+1
+1
+null
+2023-06-11 00:30:52.568 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:84)ogger{36} - Tour modified successfully: tour1
+2023-06-11 00:30:52.574 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:31:20.100 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:31:20.103 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour2
+2023-06-11 00:31:21.127 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:31:21.131 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-11 00:32:08.569 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:32:08.572 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour2
+2023-06-11 00:32:09.393 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:32:09.396 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-11 00:32:32.944 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:32:32.947 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour2
+2023-06-11 00:32:42.078 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:32:42.081 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour2
+2023-06-11 00:32:53.813 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.save(TourLogRepository.java:33)ogger{36} - Create tour log for the tour: tour2
+2023-06-11
+21.0
+1
+3
+No comment
+2023-06-11 00:32:53.844 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:84)ogger{36} - Tour modified successfully: tour2
+2023-06-11 00:32:53.846 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:51:29.998 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 00:51:30.996 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 00:51:34.423 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:51:34.436 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour2
+2023-06-11 00:51:51.518 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:84)ogger{36} - Tour modified successfully: tour2
+2023-06-11 00:51:57.080 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:51:57.083 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour1
+2023-06-11 00:51:57.953 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:70)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:51:57.956 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:61)ogger{36} - MapView updated for tour: tour2
+2023-06-11 00:54:03.861 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 00:54:04.829 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 00:55:20.971 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:55:20.986 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour2
+2023-06-11 00:55:31.257 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:84)ogger{36} - Tour modified successfully: tour2
+2023-06-11 00:55:31.261 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:55:40.789 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:55:40.793 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 00:55:42.192 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:55:42.195 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour2
+2023-06-11 00:55:44.926 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:55:44.930 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 00:55:46.980 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:55:46.983 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour2
+2023-06-11 00:56:34.812 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:56:34.816 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 00:56:38.372 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:56:38.375 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour2
+2023-06-11 00:56:42.907 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:56:42.912 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 00:57:04.760 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:57:04.763 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour2
+2023-06-11 00:57:27.018 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 00:57:27.993 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 00:57:31.731 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:57:31.748 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour2
+2023-06-11 00:57:43.889 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.delete(TourRepository.java:56)ogger{36} - Tour deleted successfully: tour2
+2023-06-11 00:57:43.908 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.deleteAllByTourName(TourLogRepository.java:140)ogger{36} - Deleted all tour logs for tour name: tour2
+2023-06-11 00:58:01.393 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.save(TourRepository.java:38)ogger{36} - Tour saved successfully: at.technikum.tourplanner.model.Tour@71aa6976
+2023-06-11 00:58:03.876 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:58:03.879 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour2
+2023-06-11 00:58:07.249 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:58:07.252 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 00:58:08.734 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:58:08.737 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour2
+2023-06-11 00:58:15.019 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 00:58:15.962 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 00:58:19.573 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:58:19.591 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour2
+2023-06-11 00:58:22.200 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:58:22.204 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 00:58:45.412 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 00:58:46.398 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 00:58:50.091 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:58:50.104 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour2
+2023-06-11 00:58:59.402 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 00:58:59.406 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 00:59:02.888 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.delete(TourRepository.java:56)ogger{36} - Tour deleted successfully: tour1
+2023-06-11 00:59:02.899 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.deleteAllByTourName(TourLogRepository.java:140)ogger{36} - Deleted all tour logs for tour name: tour1
+2023-06-11 00:59:26.125 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:59:26.130 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour2
+2023-06-11 00:59:37.758 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.save(TourLogRepository.java:33)ogger{36} - Create tour log for the tour: tour2
+2023-06-11
+2.0
+1
+1
+null
+2023-06-11 00:59:37.806 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:84)ogger{36} - Tour modified successfully: tour2
+2023-06-11 00:59:37.809 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:59:37.813 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:59:40.862 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 00:59:40.867 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour2
+2023-06-11 00:59:58.394 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:84)ogger{36} - Tour modified successfully: tour2
+2023-06-11 00:59:58.398 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 01:05:00.401 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 01:05:01.369 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 01:05:04.911 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 01:05:04.926 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour2
+2023-06-11 01:05:08.149 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.delete(TourRepository.java:56)ogger{36} - Tour deleted successfully: tour2
+2023-06-11 01:05:08.159 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.deleteAllByTourName(TourLogRepository.java:140)ogger{36} - Deleted all tour logs for tour name: tour2
+2023-06-11 01:05:25.271 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.save(TourRepository.java:38)ogger{36} - Tour saved successfully: at.technikum.tourplanner.model.Tour@62b87dd4
+2023-06-11 01:05:30.566 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 01:05:30.570 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 01:06:16.497 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.save(TourLogRepository.java:33)ogger{36} - Create tour log for the tour: tour1
+2023-06-11
+2.0
+1
+1
+null
+2023-06-11 01:06:16.535 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:84)ogger{36} - Tour modified successfully: tour1
+2023-06-11 01:06:16.539 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 01:06:16.543 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 01:06:25.250 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 01:06:25.254 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 01:06:33.984 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 01:06:33.988 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 01:06:46.412 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 01:06:47.402 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 01:06:51.341 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 01:06:51.358 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 01:07:29.124 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.save(TourLogRepository.java:33)ogger{36} - Create tour log for the tour: tour1
+2023-06-11
+1.0
+1
+1
+null
+2023-06-11 01:07:29.219 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:84)ogger{36} - Tour modified successfully: tour1
+2023-06-11 01:07:29.224 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 01:07:29.227 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 01:12:05.218 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 01:12:06.213 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 01:12:11.367 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 01:12:11.382 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 01:12:17.930 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 01:12:18.913 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 01:12:22.602 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 01:12:22.616 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 01:12:27.309 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.delete(TourRepository.java:56)ogger{36} - Tour deleted successfully: tour1
+2023-06-11 01:12:27.323 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.deleteAllByTourName(TourLogRepository.java:140)ogger{36} - Deleted all tour logs for tour name: tour1
+2023-06-11 01:12:45.741 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.save(TourRepository.java:38)ogger{36} - Tour saved successfully: at.technikum.tourplanner.model.Tour@553535d3
+2023-06-11 01:12:49.553 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 01:12:49.557 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 01:12:56.543 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.save(TourLogRepository.java:33)ogger{36} - Create tour log for the tour: tour1
+2023-06-11
+2.0
+1
+1
+null
+2023-06-11 01:12:56.579 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:85)ogger{36} - Tour modified successfully: tour1
+2023-06-11 01:12:56.583 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 01:12:56.586 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 01:13:12.841 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 01:13:12.845 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 01:13:32.100 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.save(TourLogRepository.java:33)ogger{36} - Create tour log for the tour: tour1
+2023-06-11
+1.0
+1
+1
+No comment
+2023-06-11 01:13:32.123 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:85)ogger{36} - Tour modified successfully: tour1
+2023-06-11 01:13:32.127 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 01:13:32.130 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 01:15:44.281 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 01:15:45.267 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 01:15:53.209 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 01:15:53.225 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 01:15:54.472 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.delete(TourRepository.java:56)ogger{36} - Tour deleted successfully: tour1
+2023-06-11 01:15:54.485 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.deleteAllByTourName(TourLogRepository.java:141)ogger{36} - Deleted all tour logs for tour name: tour1
+2023-06-11 01:16:12.748 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.save(TourRepository.java:38)ogger{36} - Tour saved successfully: at.technikum.tourplanner.model.Tour@458b882b
+2023-06-11 01:16:17.486 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 01:16:17.491 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 01:16:33.761 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.save(TourLogRepository.java:33)ogger{36} - Create tour log for the tour: tour1
+2023-06-11
+1.0
+1
+1
+null
+2023-06-11 01:16:33.789 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 01:16:33.792 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 01:16:39.520 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 01:16:39.523 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 01:16:40.491 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 01:16:40.495 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 01:16:41.512 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 01:16:41.516 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 01:23:30.032 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 01:23:31.012 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 01:23:34.698 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 01:23:34.714 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 01:23:36.471 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.delete(TourRepository.java:56)ogger{36} - Tour deleted successfully: tour1
+2023-06-11 01:23:36.481 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.deleteAllByTourName(TourLogRepository.java:140)ogger{36} - Deleted all tour logs for tour name: tour1
+2023-06-11 01:23:51.340 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.save(TourRepository.java:38)ogger{36} - Tour saved successfully: at.technikum.tourplanner.model.Tour@7e858ee8
+2023-06-11 01:23:53.470 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 01:23:53.474 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 01:24:02.740 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.save(TourLogRepository.java:33)ogger{36} - Create tour log for the tour: tour1
+2023-06-11
+2.0
+1
+1
+null
+2023-06-11 01:24:02.779 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:85)ogger{36} - Tour modified successfully: tour1
+2023-06-11 01:24:02.783 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 01:24:02.787 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 01:24:07.330 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 01:24:07.334 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 01:24:21.214 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:85)ogger{36} - Tour modified successfully: tour1
+2023-06-11 01:24:21.218 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 01:53:22.909 [main] ERROR com.example.tourplanner/at.technikum.tourplanner.viewModel.AddTourViewModel.saveTour(AddTourViewModel.java:96)ogger{36} - Please fill in all the required fields.
+2023-06-11 01:55:33.097 [main] ERROR com.example.tourplanner/at.technikum.tourplanner.viewModel.AddTourViewModel.saveTour(AddTourViewModel.java:96)ogger{36} - Please fill in all the required fields.
+2023-06-11 02:05:52.811 [main] ERROR com.example.tourplanner/at.technikum.tourplanner.viewModel.AddTourViewModel.saveTour(AddTourViewModel.java:102)ogger{36} - From and To fields should be place names and contain only alphabetic characters.
+2023-06-11 02:05:53.012 [main] ERROR com.example.tourplanner/at.technikum.tourplanner.viewModel.AddTourViewModel.saveTour(AddTourViewModel.java:96)ogger{36} - Please fill in all the required fields.
+2023-06-11 02:15:40.023 [main] ERROR com.example.tourplanner/at.technikum.tourplanner.viewModel.AddTourViewModel.saveTour(AddTourViewModel.java:102)ogger{36} - From and To fields should be place names and contain only alphabetic characters.
+2023-06-11 02:15:40.301 [main] ERROR com.example.tourplanner/at.technikum.tourplanner.viewModel.AddTourViewModel.saveTour(AddTourViewModel.java:96)ogger{36} - Please fill in all the required fields.
+2023-06-11 02:15:48.225 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 02:15:49.231 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 02:17:38.113 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 02:17:39.229 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 02:17:54.446 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.save(TourRepository.java:38)ogger{36} - Tour saved successfully: at.technikum.tourplanner.model.Tour@1ab42da6
+2023-06-11 02:18:01.389 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: dsdsc
+2023-06-11 02:19:00.665 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 02:19:01.637 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 02:19:05.135 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: dsdsc
+2023-06-11 02:19:05.150 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: dsdsc
+2023-06-11 02:19:30.718 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.save(TourRepository.java:38)ogger{36} - Tour saved successfully: at.technikum.tourplanner.model.Tour@54c487c1
+2023-06-11 02:20:07.311 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 02:20:08.267 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 02:20:48.768 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 02:20:49.733 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 02:27:52.842 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 02:27:53.817 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 02:29:49.789 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 02:29:50.758 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 02:31:13.422 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 02:31:14.484 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 02:34:19.856 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 02:34:20.954 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 02:34:31.108 [JavaFX Application Thread] ERROR com.example.tourplanner/at.technikum.tourplanner.viewModel.AddTourViewModel.saveTour(AddTourViewModel.java:101)ogger{36} - From and To fields should be place names and contain only alphabetic characters.
+2023-06-11 02:35:54.432 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 02:35:55.400 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 02:36:05.571 [JavaFX Application Thread] ERROR com.example.tourplanner/at.technikum.tourplanner.viewModel.AddTourViewModel.saveTour(AddTourViewModel.java:101)ogger{36} - From and To fields should be place names and contain only alphabetic characters.
+2023-06-11 14:36:17.408 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 14:36:18.736 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 14:36:25.117 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 14:36:25.138 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 14:36:53.434 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.save(TourLogRepository.java:33)ogger{36} - Create tour log for the tour: tour1
+2023-06-11
+2.0
+1
+1
+null
+2023-06-11 14:36:53.550 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:85)ogger{36} - Tour modified successfully: tour1
+2023-06-11 14:36:53.555 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 14:36:53.560 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 14:37:17.867 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 14:37:17.871 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 14:37:18.228 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 14:37:18.232 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 14:37:28.603 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:85)ogger{36} - Tour modified successfully: tour1
+2023-06-11 14:37:28.607 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 14:45:56.793 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 14:45:57.805 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 14:46:27.672 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.save(TourRepository.java:38)ogger{36} - Tour saved successfully: at.technikum.tourplanner.model.Tour@2dead043
+2023-06-11 15:23:32.707 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 15:23:33.709 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 15:23:49.747 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.save(TourRepository.java:38)ogger{36} - Tour saved successfully: at.technikum.tourplanner.model.Tour@6d529815
+2023-06-11 15:23:52.331 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tourtes
+2023-06-11 15:23:52.560 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tourtes
+2023-06-11 15:28:27.755 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 15:28:28.743 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 15:29:15.412 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tourtes
+2023-06-11 15:29:15.432 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tourtes
+2023-06-11 15:29:51.519 [JavaFX Application Thread] ERROR com.example.tourplanner/at.technikum.tourplanner.service.PDFService.export(PDFService.java:38)ogger{36} - Map image for tour 'tourtes' not found.
+2023-06-11 15:29:51.520 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.NavigationBarViewModel.exportTour(NavigationBarViewModel.java:34)ogger{36} - Tour exported successfully: tourtes
+2023-06-11 15:30:59.004 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 15:30:59.992 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 15:31:03.918 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 15:31:03.938 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 15:31:07.478 [JavaFX Application Thread] ERROR com.example.tourplanner/at.technikum.tourplanner.service.PDFService.export(PDFService.java:38)ogger{36} - Map image for tour 'tour1' not found.
+2023-06-11 15:31:07.479 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.NavigationBarViewModel.exportTour(NavigationBarViewModel.java:34)ogger{36} - Tour exported successfully: tour1
+2023-06-11 15:33:09.867 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 15:33:10.839 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 15:33:17.227 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 15:33:17.242 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 15:33:20.646 [JavaFX Application Thread] ERROR com.example.tourplanner/at.technikum.tourplanner.service.PDFService.export(PDFService.java:66)ogger{36} - Error occurred while exporting PDF.
+java.nio.file.InvalidPathException: Illegal char <"> at index 33: at\technikum\tourplanner\service\"\at\technikum\tourplanner\maps\";tour1.jpg
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at java.base/sun.nio.fs.WindowsPath.parse(WindowsPath.java:92)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:232)
+	at java.base/jdk.internal.module.Resources.toSafeFilePath(Resources.java:143)
+	at java.base/jdk.internal.module.Resources.toFilePath(Resources.java:97)
+	at java.base/jdk.internal.module.ModuleReferences$ExplodedModuleReader.find(ModuleReferences.java:382)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findResource(BuiltinClassLoader.java:497)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findResource(BuiltinClassLoader.java:277)
+	at java.base/java.lang.Class.getResource(Class.java:2927)
+	at com.example.tourplanner/at.technikum.tourplanner.service.PDFService.export(PDFService.java:36)
+	at com.example.tourplanner/at.technikum.tourplanner.viewModel.NavigationBarViewModel.exportTour(NavigationBarViewModel.java:33)
+	at com.example.tourplanner/at.technikum.tourplanner.view.NavigationBarView.exportTour(NavigationBarView.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at javafx.base@19.0.2.1/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml@19.0.2.1/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+	at javafx.fxml@19.0.2.1/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1852)
+	at javafx.fxml@19.0.2.1/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base@19.0.2.1/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.controls@19.0.2.1/javafx.scene.control.MenuItem.fire(MenuItem.java:459)
+	at javafx.controls@19.0.2.1/com.sun.javafx.scene.control.ContextMenuContent$MenuItemContainer.doSelect(ContextMenuContent.java:1385)
+	at javafx.controls@19.0.2.1/com.sun.javafx.scene.control.ContextMenuContent$MenuItemContainer.lambda$createChildren$12(ContextMenuContent.java:1338)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@19.0.2.1/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene$MouseHandler.process(Scene.java:3894)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene.processMouseEvent(Scene.java:1887)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2620)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-06-11 15:33:20.654 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.NavigationBarViewModel.exportTour(NavigationBarViewModel.java:34)ogger{36} - Tour exported successfully: tour1
+2023-06-11 15:33:54.911 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 15:33:55.866 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 15:33:59.753 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 15:33:59.766 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 15:34:02.518 [JavaFX Application Thread] ERROR com.example.tourplanner/at.technikum.tourplanner.service.PDFService.export(PDFService.java:66)ogger{36} - Error occurred while exporting PDF.
+java.nio.file.InvalidPathException: Illegal char <"> at index 33: at\technikum\tourplanner\service\"\at\technikum\tourplanner\maps\"tour1.jpg
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at java.base/sun.nio.fs.WindowsPath.parse(WindowsPath.java:92)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:232)
+	at java.base/jdk.internal.module.Resources.toSafeFilePath(Resources.java:143)
+	at java.base/jdk.internal.module.Resources.toFilePath(Resources.java:97)
+	at java.base/jdk.internal.module.ModuleReferences$ExplodedModuleReader.find(ModuleReferences.java:382)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findResource(BuiltinClassLoader.java:497)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findResource(BuiltinClassLoader.java:277)
+	at java.base/java.lang.Class.getResource(Class.java:2927)
+	at com.example.tourplanner/at.technikum.tourplanner.service.PDFService.export(PDFService.java:36)
+	at com.example.tourplanner/at.technikum.tourplanner.viewModel.NavigationBarViewModel.exportTour(NavigationBarViewModel.java:33)
+	at com.example.tourplanner/at.technikum.tourplanner.view.NavigationBarView.exportTour(NavigationBarView.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at javafx.base@19.0.2.1/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml@19.0.2.1/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+	at javafx.fxml@19.0.2.1/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1852)
+	at javafx.fxml@19.0.2.1/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base@19.0.2.1/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.controls@19.0.2.1/javafx.scene.control.MenuItem.fire(MenuItem.java:459)
+	at javafx.controls@19.0.2.1/com.sun.javafx.scene.control.ContextMenuContent$MenuItemContainer.doSelect(ContextMenuContent.java:1385)
+	at javafx.controls@19.0.2.1/com.sun.javafx.scene.control.ContextMenuContent$MenuItemContainer.lambda$createChildren$12(ContextMenuContent.java:1338)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@19.0.2.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@19.0.2.1/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene$MouseHandler.process(Scene.java:3894)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene.processMouseEvent(Scene.java:1887)
+	at javafx.graphics@19.0.2.1/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2620)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@19.0.2.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics@19.0.2.1/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-06-11 15:34:02.522 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.NavigationBarViewModel.exportTour(NavigationBarViewModel.java:34)ogger{36} - Tour exported successfully: tour1
+2023-06-11 15:34:40.371 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 15:34:41.300 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 15:34:45.155 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 15:34:45.170 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 15:34:49.094 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.service.PDFService.export(PDFService.java:61)ogger{36} - PDF exported successfully.
+2023-06-11 15:34:49.095 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.NavigationBarViewModel.exportTour(NavigationBarViewModel.java:34)ogger{36} - Tour exported successfully: tour1
+2023-06-11 15:35:46.739 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 15:35:47.715 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 15:35:57.133 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.service.PDFService.generateSummaryReport(PDFService.java:173)ogger{36} - Summary report generated successfully.
+2023-06-11 15:37:04.009 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 15:37:04.976 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 15:39:40.357 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 15:39:41.324 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 15:39:58.177 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 15:39:58.198 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour2
+2023-06-11 15:40:00.551 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
+2023-06-11 15:40:00.555 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour1
+2023-06-11 15:40:04.454 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.delete(TourRepository.java:56)ogger{36} - Tour deleted successfully: tour1
+2023-06-11 15:40:04.468 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.deleteAllByTourName(TourLogRepository.java:140)ogger{36} - Deleted all tour logs for tour name: tour1
+2023-06-11 15:40:05.679 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 15:40:05.683 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour2
+2023-06-11 15:40:11.715 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.save(TourLogRepository.java:33)ogger{36} - Create tour log for the tour: tour2
+2023-06-11
+1.0
+1
+1
+null
+2023-06-11 15:40:11.763 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:85)ogger{36} - Tour modified successfully: tour2
+2023-06-11 15:40:11.767 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 15:40:11.772 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 15:40:16.214 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 15:40:16.218 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour2
+2023-06-11 15:40:25.587 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.modify(TourRepository.java:85)ogger{36} - Tour modified successfully: tour2
+2023-06-11 15:40:25.591 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 15:40:27.757 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tourtes
+2023-06-11 15:40:27.761 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tourtes
+2023-06-11 15:40:28.895 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 15:40:28.899 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour2
+2023-06-11 15:40:54.108 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 15:40:55.088 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 15:40:58.502 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: dsdsc
+2023-06-11 15:40:58.517 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: dsdsc
+2023-06-11 15:40:59.923 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.delete(TourRepository.java:56)ogger{36} - Tour deleted successfully: dsdsc
+2023-06-11 15:40:59.927 [JavaFX Application Thread] ERROR com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.deleteAllByTourName(TourLogRepository.java:143)ogger{36} - No tour logs found for tour name: dsdsc
+2023-06-11 15:41:01.114 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: xwdsd
+2023-06-11 15:41:01.124 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: xwdsd
+2023-06-11 15:41:02.047 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.delete(TourRepository.java:56)ogger{36} - Tour deleted successfully: xwdsd
+2023-06-11 15:41:02.050 [JavaFX Application Thread] ERROR com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.deleteAllByTourName(TourLogRepository.java:143)ogger{36} - No tour logs found for tour name: xwdsd
+2023-06-11 15:41:03.145 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tourtes
+2023-06-11 15:41:03.149 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tourtes
+2023-06-11 15:41:04.305 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.delete(TourRepository.java:56)ogger{36} - Tour deleted successfully: tourtes
+2023-06-11 15:41:04.308 [JavaFX Application Thread] ERROR com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.deleteAllByTourName(TourLogRepository.java:143)ogger{36} - No tour logs found for tour name: tourtes
+2023-06-11 15:41:05.328 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour2
+2023-06-11 15:41:05.331 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateMapView(TourDetailsViewModel.java:62)ogger{36} - MapView updated for tour: tour2
+2023-06-11 15:41:06.264 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.delete(TourRepository.java:56)ogger{36} - Tour deleted successfully: tour2
+2023-06-11 15:41:06.275 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.deleteAllByTourName(TourLogRepository.java:140)ogger{36} - Deleted all tour logs for tour name: tour2
+2023-06-11 16:08:10.120 [main] ERROR com.example.tourplanner/at.technikum.tourplanner.viewModel.AddTourViewModel.saveTour(AddTourViewModel.java:101)ogger{36} - From and To fields should be place names and contain only alphabetic characters.
+2023-06-11 16:08:10.134 [main] ERROR com.example.tourplanner/at.technikum.tourplanner.viewModel.AddTourViewModel.saveTour(AddTourViewModel.java:96)ogger{36} - Please fill in all the required fields.
+2023-06-11 17:04:03.072 [main] ERROR com.example.tourplanner/at.technikum.tourplanner.viewModel.AddTourViewModel.saveTour(AddTourViewModel.java:101)ogger{36} - From and To fields should be place names and contain only alphabetic characters.
+2023-06-11 17:04:03.089 [main] ERROR com.example.tourplanner/at.technikum.tourplanner.viewModel.AddTourViewModel.saveTour(AddTourViewModel.java:96)ogger{36} - Please fill in all the required fields.
+2023-06-11 17:05:27.710 [main] ERROR com.example.tourplanner/at.technikum.tourplanner.viewModel.AddTourViewModel.saveTour(AddTourViewModel.java:101)ogger{36} - From and To fields should be place names and contain only alphabetic characters.
+2023-06-11 17:05:27.728 [main] ERROR com.example.tourplanner/at.technikum.tourplanner.viewModel.AddTourViewModel.saveTour(AddTourViewModel.java:96)ogger{36} - Please fill in all the required fields.
+2023-06-11 17:11:33.852 [main] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourLogRepository.save(TourLogRepository.java:33)ogger{36} - Create tour log for the tour: Tour 1
+null
+0.0
+0
+0
+null
+2023-06-11 18:09:36.539 [main] ERROR com.example.tourplanner/at.technikum.tourplanner.viewModel.AddTourViewModel.saveTour(AddTourViewModel.java:101)ogger{36} - From and To fields should be place names and contain only alphabetic characters.
+2023-06-11 18:09:36.566 [main] ERROR com.example.tourplanner/at.technikum.tourplanner.viewModel.AddTourViewModel.saveTour(AddTourViewModel.java:96)ogger{36} - Please fill in all the required fields.
+2023-06-11 18:10:34.673 [JavaFX Application Thread] DEBUG org.hibernate.orm.core@6.1.7.Final/org.hibernate.boot.registry.selector.internal.StrategySelectorBuilder.<clinit>(StrategySelectorBuilder.java:55)ogger{36} - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-11 18:10:35.651 [JavaFX Application Thread] INFO  org.hibernate.orm.core@6.1.7.Final/org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.logSelectedDialect(DialectFactoryImpl.java:66)ogger{36} - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-11 18:11:03.156 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.repository.TourRepository.save(TourRepository.java:38)ogger{36} - Tour saved successfully: at.technikum.tourplanner.model.Tour@775dada0
+2023-06-11 18:11:05.247 [JavaFX Application Thread] INFO  com.example.tourplanner/at.technikum.tourplanner.viewModel.TourDetailsViewModel.updateTourDetailsLabel(TourDetailsViewModel.java:71)ogger{36} - Tour details label updated for tour: tour1
